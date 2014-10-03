@@ -1,0 +1,69 @@
+{% load i18n %}
+        
+<div class="isobar-map">
+	<section class="clearfix span2-to-span1">
+		<div class="span1 fl">
+			<blockquote class="left quote" cite="Isobar" style="padding-top: 20px;">
+				{% trans 'Bringing people and brands together like never before' %}
+			</blockquote>
+		</div>
+		<div class="isobar-network-desc span1 fl">
+			<hr />
+			<p>
+				{% trans 'We are a modern communications agency network made up of over 3,000 talented individuals in 34 markets around the world.' %}
+			</p>
+			<ul class="list-external-links">
+				<li><a class="ext-link" target="_blank" href="http://www.isobar.com/">{% trans 'Find out more at www.isobar.com' %}</a></li>
+				<li><a class="ext-link" href="{% url index 'global' %}">{% trans 'View our global locations' %}</a></li>
+			</ul>
+		</div>
+	</section>
+</div>
+
+<!--        
+<div id="global-contact-list" class="dogear dogear-top dogear-bottom cb">
+    <div class="top"></div>
+    <section class="contacts-common-container tl clearfix">
+    {% for region in regions %}
+    {% if forloop.counter0 == 0 %}
+        <div class="region region-upper-left">
+    {% else %}
+    {% if forloop.counter0 == 1 %}
+        <div class="region region-upper-right">
+    {% else %}
+        <div class="region">
+    {% endif %}
+    {% endif %}
+            <div class="name">
+                <span class="region-title serif">{{ region.name }}</span>
+            </div>
+            
+            <a href="#" alt="Expand/Collapse" class="expand-button-link">
+                <div class="expand-button {% if forloop.counter0 == 0 %}collapse{% endif %}"></div>
+            </a>
+            
+           <hr class="region-rule"/>
+           
+            <ul class="region-column clearfix">
+                {% for country in region.countries.all %}
+                    <li class="item-wrap-country">
+	                    <span class="item-wrap-country-name">{{ country.name }}</span>
+	                    <ul>
+                            {% for office in country.offices.all|dictsort:"city" %}
+                                {% if office %}
+                                <li class="item-wrap-country">
+                                    <span class="country-name">{{ office.city }}: </span>
+                                    <a href="{{ office.get_absolute_url }}" alt="{{ office.name }} homepage">{{ office.name }}</a>
+                                </li>
+                                {% endif %}
+                            {% endfor %}
+	                    </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+    </section> 
+    <div class="bottom"></div>
+</div>
+-->

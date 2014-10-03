@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% trans 'Join' %}{% endblock page_title %}
+{% block additional_headers %}
+	<meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_jobs' %}{% endblock meta_keywords %}">
+	<meta name="description" content="{% block meta_description %}{% trans 'meta_description_jobs' %}{% endblock meta_description %}">
+
+{% endblock additional_headers %}
+{% block primary_nav %}
+	{% primary_nav 'join' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	<section class="jobs wrap-content">
+		<div class="main-content-pad">
+			<div class="container">
+				<div class="span2">
+					<section class="box-feature tl"> <!--box-text section-->
+						<header class="title-container">
+							<h1 class="title sub-title">{% trans 'Hello!' %}</h1>
+						</header>
+						<p class="serif">
+							{% trans 'We&#x27;re always on the lookout for established and up and coming talent across account management, planning, production, design, development and creative.' %}
+							<br>Please send through your CV or folio to <a class="int-link" href="mailto:{% trans 'iwanttowork@glueisobar.com' %}?subject={% trans 'Join' %}">{% trans 'iwanttowork@glueisobar.com' %}</a> or follow this <a class="int-link" href="{% trans 'https://www.aegismediacareers.co.uk/aegis/glueisobar/' %}">link</a> to apply to any of our current vacancies. 
+						</p>
+						<footer class="box-feature-footer">
+						  {% trans 'See our current vacancies below...' %}
+						</footer>
+					</section> <!--end box-text section-->
+				</div>
+				
+				{% if jobs %}
+					<ul class="list-job span2">
+						{% for job in jobs %}
+							<li class="job scroll-to">
+								{% if job.url %}
+									<a href="{{ job.url }}" class="clearfix" target="_blank"><h2 class="fl title">{{ job.title_label }}</h2></a>
+								{% else %}
+									<details open="open">
+										<summary class="clearfix trigger hover-bypass"><h2 class="fl title">{{ job.title_label }}</h2><span class="icon-arrowhead fr rollover"></span></summary>
+										<div class="panel clearfix">
+											<section>
+											<div class="enableBullet">
+												{{ job.body|safe }}
+											</div>
+												<footer class="job-footer">
+													<ul class="list-job-links clearfix">
+														<li><a class="int-link" href="mailto:{{ job.contact }}?subject={{ job.title_label }}">{% trans 'Apply to' %} {{ job.contact }}</a></li>
+													</ul>
+												</footer>
+											</section>
+										</div>
+									</details>
+								{% endif %}
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</div>
+		</div>
+	</section>
+{% endblock content %}

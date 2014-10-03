@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% trans 'Work' %}{% endblock page_title %}
+
+{% block additional_headers %}
+	<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+	{% primary_nav 'work' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	<section class="work wrap-content">
+		<div class="main-content-pad container case-studies">
+			<ul class="clearfix list-flow content-crossfade">
+				{% for casestudy in casestudies%}
+				<li class="span1">
+					<article class="media-box lrg-media-box" rel="{{ casestudy.country }}">
+						<a href="{{ casestudy.get_absolute_url }}" class="open-ajax-vertical-scroll">
+							<img src="{{ casestudy.hero_image|thumbnail:'300x300x1' }}" alt="casestudy.title ">
+							<div class="info">
+								<h1 class="title"><span class="int-link">{{ casestudy.title }}</span></h1>
+								{% comment %}{{ casestudy.country }} {% endcomment %}
+							</div>
+						</a>
+					</article>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+{% endblock content %}

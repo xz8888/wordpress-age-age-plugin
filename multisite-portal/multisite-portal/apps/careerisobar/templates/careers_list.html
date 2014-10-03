@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% trans 'Join' %}{% endblock page_title %}
+{% block additional_headers %}
+	<meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_jobs' %}{% endblock meta_keywords %}">
+	<meta name="description" content="{% block meta_description %}{% trans 'meta_description_jobs' %}{% endblock meta_description %}">
+{% endblock additional_headers %}
+
+{% block meta_og_title %}
+    {{careerindex.title}}
+{% endblock meta_og_title %}
+
+{% block meta_og_description %}
+    {{careerindex.meta_description}}
+{% endblock meta_og_description %}
+
+{% block primary_nav %}
+	{% primary_nav 'career' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	<section class="jobs wrap-content clearfix">
+		<div class="main-content-pad">
+			<div class="container">
+				<div class="career-header">
+					<div class="text-l career_content">
+						{{ careerindex.headline }}
+					</div>
+					<div class="fl info-career">
+               	     	<div class="sub-header">
+               	         	<a style="color:#F30 !important;" target="_blank" href="http://hire.jobvite.com/CompanyJobs/Careers.aspx?c=qwX9Vfwh&cs=9L3aVfwD&k=Notify" alt="Sign up for job notifications">Sign 	up for Job Notifications</a>
+               	 		</div>
+  					</div>
+  				</div>
+                <div class="fl span1 job-main-column" id="jobLocations">
+                    <p class="serif">Locations</p>
+                    <span class="rule rule-100-percent"></span>
+                    <ul>
+		                <li id="jobLocationBoston" class="linkArticleList jobLocation">
+			                <a href="javascript:selectLocation('Boston',true);" alt="Boston">
+			                    Boston
+			                </a>
+		                </li>
+	                    <li id="jobLocationChicago" class="linkArticleList jobLocation">
+		                    <a href="javascript:selectLocation('Chicago',true);" alt="Chicago">
+			                    Chicago
+		                    </a>
+	                    </li>
+	                    <li id="jobLocationDayton" class="linkArticleList jobLocation">
+		                    <a href="javascript:selectLocation('Dayton',true);" alt="Dayton">
+		                        Dayton
+		                    </a>
+		                </li>
+		                <li id="jobLocationDenver" class="linkArticleList jobLocation">
+			                <a href="javascript:selectLocation('Denver',true);" alt="Denver">
+			                    Denver
+			                </a>
+		                </li>
+		                <li id="jobLocationDetroit" class="linkArticleList jobLocation">
+		                    <a href="javascript:selectLocation('Detroit',true);" alt="Detroit">
+		                        Detroit
+		                    </a>
+		                </li>
+		                <li id="jobLocationNewYork" class="linkArticleList jobLocation">
+			                <a href="javascript:selectLocation('New%20York',true);" alt="New York">
+			                    New York
+			                </a>
+		                </li>
+		                <li id="jobLocationWashingtonDC" class="linkArticleList jobLocation">
+			                <a href="javascript:selectLocation('Washington%2C%20D.C.',true);" alt="Washington, D.C.">
+			                    Washington, D.C.
+			                </a>
+		                </li>
+		            </ul>
+                </div>
+                <div class="fl span1 job-main-column">
+                    <p class="serif">Positions</p>
+                    <span class="rule rule-100-percent"></span>
+                    <div id="jobList">
+                    </div>
+                </div>
+                <div class="fl span1 job-main-column">
+                    <p class="serif">Overview</p>
+                    <span class="rule rule-100-percent"></span>
+                    <div id="jobDetails">
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+	
+    <script src="{{ settings.MEDIA_URL }}js/us/jquery.address-1.5.min.js"></script>
+    <script src="{{ settings.MEDIA_URL }}js/us/roundarch-careers.js"></script>
+{% endblock content %}

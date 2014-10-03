@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{{ story.title_label }}: News{% endblock page_title %}
+
+{% block primary_nav %}
+	{% primary_nav 'news' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	{% block news_nav %}
+		{% news_nav 'news' %}
+	{% endblock news_nav %}
+
+	<section class="news-detail wrap-content extra-pad">
+		<article class="news-article main-content-pad container clearfix">
+			<a href="{% url news_view %}" class="back-link-news fr">{% trans 'Close' %}<span class="icon-close rollover">X</span></a>
+
+			<header class="news-header spanAll fl">
+				<h1 class="fl title sub-title">{{ story.title_label }}</h1>
+				{% block share %}
+					{% share story.title_label story.get_absolute_url %}
+				{% endblock share %}
+			</header>
+			<section class="clearfix">
+				<figure class="fl span520-to-span620">
+					{% if story.image %}
+						<img class="news-image" src="{{ story.image|thumbnail:'620x465x1' }}" alt="{{ story.title_label }}">
+					{% else %}
+						<img class="news-image" src="{% place_holder_img %}700x525.gif" alt="{{ story.title_label }}">
+					{% endif %}
+				</figure>
+
+				<ul class="fr no-flow span160-to-span300 list-story-meta clearfix">
+					{% block posted_by %}
+						{% posted_by story 'yes' 'large' %}
+					{% endblock posted_by %}
+
+					<li><!--Posted-->
+						<p>{% trans 'Posted on:' %}</p>
+						<time class="serif sub-title" datetime='{{ story.publish_date|date:"c" }}'>{{ story.publish_date|date:"jS F Y" }}</time>
+					</li>
+					
+					{% if not settings.ISOBAR_SITE %}
+						{% if story.category %}
+							<li><!--in-->
+								<p>{% trans 'Posted in:' %}</p>
+								<a class="serif sub-title" href="{{ story.category.get_absolute_url }}">{{ story.category.title_label }}</a>
+							</li>
+						{% endif %}
+					{% endif %}
+					
+					{% if story.related_link_story.count > 0 %}
+						<li class="related-links">
+							<p>{% trans 'Related links:' %}</p>
+							<ul class="list-related-links">
+								{% for link in story.related_link_story.all %}
+								<li><a href="{{ link.url }}" target="_blank">{{ link.description }}</a></li>
+								{% endfor %}
+							</ul><!--end related list-->
+						</li>
+					{% endif %}
+				</ul>
+			</section>
+			<section class="span2 news-body">
+				<div class="wysiwyg">
+					{{ story.body|safe }}
+				</div>
+			</section>
+		</article>
+	</section>
+{% endblock content %}

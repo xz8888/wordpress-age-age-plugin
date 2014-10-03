@@ -1,0 +1,17 @@
+<li class="span1 box">
+	<section class="box-feature"><!--box-text section-->
+		<div>
+			<h1 class="box-title title-container">{{ promo.title }}</h1>
+			<span class="rule rule-220"></span>
+		</div>
+
+		<div class="wysiwyg">
+			{{ promo.body|safe }}
+		</div>
+		
+		<span class="rule rule-30"></span>
+		<a class="serif sub-title" href="{{ promo.url }}">
+			{{ promo.url_title }}
+		</a>
+	</section><!--end box-text section-->
+</li>

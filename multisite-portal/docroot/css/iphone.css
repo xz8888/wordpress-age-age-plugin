@@ -1,0 +1,6 @@
+/*social links for facebook and tweeter*/
+
+ul.list-share li {
+	float: left;
+	padding-right:10px;
+}

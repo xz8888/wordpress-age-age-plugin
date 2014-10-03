@@ -1,0 +1,92 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}Cloudfront Distributions {{ block.super }}{% endblock title %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="../../">Home</a> &rsaquo;
+    Cloudfront
+</div>
+{% endblock %}
+
+{% block bodyclass %}change-list{% endblock %}
+
+{% block coltype %}flex{% endblock %}
+
+{% block content %}
+	<div id="content-main">
+		<h1>Distributions</h1>
+
+	    {% block object-tools %}
+		    <ul class="object-tools">
+			<li><a href="{% url cloudfront_distribution_add_view %}" class="addlink">Add Distribution</a></li>
+		    </ul>
+	    {% endblock %}
+
+	    
+	    <div class="module" id="changelist">
+		<div class="changelist-content">
+		    <div class="result-list-container">
+			<div class="result-list">
+				{% if distributions.count > 0 %}
+					<table cellspacing="0" id="result_list">
+					<thead>
+					<tr>
+						<th>
+							Active
+						</th>
+						<th>
+							ID
+						</th>
+						<th>
+							Origin
+						</th>
+						<th>
+							CloudFront Domain
+						</th>
+						<th>
+							Comment
+						</th>
+						<th>
+							
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					{% for distro in distributions %}
+						<tr class="{% cycle 'row1' 'row2' %}">
+							<td>
+								{{ distro.active }}
+							</td>
+							<td>
+								{{ distro.id }}
+							</td>
+							<th>
+								{{ distro.origin }}
+							</th>
+							<td>
+								{{ distro.domain }}
+							</td>
+							<td>
+								{{ distro.comment }}
+							</td>
+							<td>
+								<form action="." method="post">
+									{% csrf_token %}
+									<input type="hidden" name="distro" value="{{ distro.id }}">
+									<input type="submit" value="Clear cache">
+								</form>
+							</td>
+						</tr>
+					{% endfor %}
+					</tbody>
+					</table>
+				{% else %}
+					<p>No distributions yet.</p>
+				{% endif %}
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+{% endblock content %}

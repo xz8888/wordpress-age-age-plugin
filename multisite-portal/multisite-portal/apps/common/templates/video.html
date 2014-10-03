@@ -1,0 +1,21 @@
+<figure class="video-js-box">
+    <div class="video-js-box-inner">
+        {% if casestudy.video_download_url %}
+		<video id="video-1" class="video-js" controls="controls" preload="auto" poster="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}">
+		    <source src="{{ casestudy.video_download_url }}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+		    <source src="{{ casestudy.video_download_url }}.webm" type='video/webm; codecs="vp8, vorbis"'>
+		    <source src="{{ casestudy.video_download_url }}.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+		
+		    <object id="flash-1" class="vjs-flash-fallback" type="application/x-shockwave-flash" data="{{ settings.MEDIA_URL }}flash/player.swf">
+		        <param name="movie" value="{{ settings.MEDIA_URL }}flash/player.swf">
+		        <param name="allowfullscreen" value="true">
+		        <param name="wmode" value="transparent">
+		        <param name="flashvars" value='is_stream=false&img={{ settings.MEDIA_URL }}{{ casestudy.video_image }}&video={{ casestudy.video_download_url }}.mp4'>
+		        <a href="{{ casestudy.video_download_url }}.3gp"><img src="{{ settings.MEDIA_URL }}{{ casestudy.video_image|thumbnail }}" alt="{{ casestudy.title }}"></a>
+		    </object>
+		</video>
+		{% else %}
+		<img class="video-js" src="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}" alt="{{ casestudy.title }}">
+		{% endif %}
+    </div>
+ </figure>

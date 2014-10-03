@@ -1,0 +1,62 @@
+{% extends parent_template %}
+{% load i18n %}
+{% block page_title %}
+	{% if not ajax %}
+		{{ agency.title }}: {% trans 'Contact' %}:
+	{% endif %}
+{% endblock page_title %}
+
+{% block content %}
+	{% if not ajax %}
+		<section class="wrap-content">
+	{% endif %}
+
+	<div class="main-pad-content">
+		<article id="agency" class="container" style="display: block !important;">
+		  <a href="{% url contact_view %}" class="back-link fr">{% trans 'Close' %}<span class="icon-close rollover">X</span></a>
+			<ul class="list-flow clearfix">
+				<li class="span1-to-span460 fl">
+					<section id="agency-info" class="box-feature tl">
+						<header>
+							<h1 class="title sub-title">{{ agency.title }}</h1>
+							<h2 class="location"><strong>{{ agency.city }}</strong>, {{ agency.country.title }}</h2>
+						</header>
+						<p class="serif">
+							{{ agency.body|safe }}
+						</p>
+						<span class="rule rule-60"></span>
+					</section>
+				</li>
+				<li class="span1-to-span460 fl">
+					<section>
+						<div class="sml-icon-left sml-icon-marker">
+							<p class="address serif">
+								{{ agency.address|removetags:"p"|safe }}
+							</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="sml-icon-left sml-icon-contacts">
+							<ul class="list-contact-emails">
+								{% for contact in agency.contact_agency.all %}
+									<li class="fl">
+										<div><strong>{{ contact.position }}</strong> - <em>{{ contact.name }}</em></div>
+										<ul class="list-contact-details">
+											<li>{{ contact.number }}</li>
+											<li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
+										</ul>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</section>
+				</li>
+			</ul>
+		</article>
+	</div>
+
+	{% if not ajax %}
+		</section>
+	{% endif %}
+{% endblock %}

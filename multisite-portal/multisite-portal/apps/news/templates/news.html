@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load i18n truncatechars %}
+{% block page_title %}{% trans 'News' %}{% endblock page_title %}
+
+{% block additional_headers %}
+	<link href="{% url news_rss %}" title="News" rel="alternate" type="application/rss+xml">
+	<meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_news' %}{% endblock meta_keywords %}">
+	<meta name="description" content="{% block meta_description %}{% trans 'meta_description_news' %}{% endblock meta_description %}">
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+	{% primary_nav 'news' %}
+{% endblock primary_nav %}
+
+
+{% block content %}
+
+	{% block news_nav %}
+		{% if category %}
+			{% news_nav 'open' category %}
+		{% else %}
+			{% news_nav %}
+		{% endif %}
+	{% endblock news_nav %}
+
+<section class="news wrap-content">
+	<div class="main-content-pad container clearfix">
+		{% if stories.object_list %}
+			{% for story in stories.object_list %}
+				{% if page == 1 and forloop.counter == 1 %}
+					<article class="clearfix news-article spanAll top-news">
+						<figure class="fr span1-to-span460">
+							<a href="{{ story.get_absolute_url }}" title="{{ story.title_label }}">
+							{% if story.image %}
+								<img class="news-image" src="{{ story.image|thumbnail:'460x345x1' }}" alt="{{ story.title_label }}">
+							{% else %}
+								<img class="news-image" src="{% place_holder_img %}700x525.gif" alt="{{ story.title_label }}">
+							{% endif %}
+							</a>
+						</figure>
+
+						<div class="fl span1-to-span460">
+							<header>
+								<h1 class="title"><a href="{{ story.get_absolute_url }}">{{ story.title_label }}</a></h1>
+							</header>
+
+							<section><!--post meta-->
+								<ul class="clearfix list-story-meta">
+									{% block posted_by %}
+										{% posted_by story 'no' 'small' %}
+									{% endblock posted_by %}
+
+									<li><!--Posted-->
+										<p>{% trans 'Posted On:' %}</p>
+										<time class="serif sub-title" datetime='{{ story.publish_date|date:"c" }}'>{{ story.publish_date|date:"DATE_FORMAT" }}</time>
+									</li>
+
+									{% if not settings.ISOBAR_SITE %}
+										{% if story.category %}
+										<li>
+											<p>{% trans 'Posted In:' %}</p>
+											<a class="serif sub-title" href="{{story.category.get_absolute_url}}">{{ story.category.title }}</a>
+										</li>
+										{% endif %}
+									{% endif %}
+								</ul>
+							</section><!--end post meta-->
+
+							<div class="excerpt">
+								{% if request.LANGUAGE_CODE == 'jp' or request.LANGUAGE_CODE == 'cn' or request.LANGUAGE_CODE == 'ko' %}
+									{{ story.body|striptags|safe|truncatechars:150  }}
+								{% else %}
+									{{ story.body|striptags|safe|truncatewords:30  }}
+								{% endif %}
+							</div>
+
+							<footer class="clearfix">
+								<a class="more-link fl" href="{{ story.get_absolute_url }}" title="{{ story.title_label }}">{% trans 'Read More' %}<span class="icon-arrowright rollover">&gt;</span></a>
+							</footer>
+						</div>
+					</article>
+
+					<div class="clearfix">
+
+					<section class="span2 fl">
+						<ul class="clearfix masonry-no-animate-news list-news-articles list-flow show-more-content">
+				{% else %}
+
+					{% if forloop.counter == 1 %}
+						<div class="clearfix">
+
+						<section class="span2 fl">
+							<ul class="clearfix masonry-no-animate-news list-news-articles list-flow show-more-content">
+					{% endif %}
+
+					{% news_small_item story %}
+				{% endif %}
+
+			{% endfor %}
+			</ul>
+
+			{% if stories.has_next %}
+				<nav>
+					{% if category %}
+						<a href="{% url news_category_page_view category stories.next_page_number %}" class="show-more-link">{% trans 'Show More' %}<span class="icon-show-more rollover">&raquo;</span></a>
+					{% else %}
+						<a href="{% url news_page_view stories.next_page_number %}" class="show-more-link">{% trans 'Show More' %}<span class="icon-show-more rollover">&raquo;</span></a>
+					{% endif %}
+
+					<p class="show-more-end">{% trans 'No more news stories.' %}</p>
+				</nav>
+			{% endif %}
+
+						</section>
+		{% else %}
+			<p>{% trans 'No news stories for this category.' %}</p>
+		{% endif %}
+
+		<section class="span2-to-span1 fr social-feed-container">
+			<ul class="masonry-news list-flow">
+				{% if twitter_installed %}
+					{% block news_twitter %}
+						{% news_twitter %}
+					{% endblock news_twitter %}
+				{% endif %}
+
+				{% if posterous_installed %}
+					{% block news_posterous %}
+						{% news_posterous %}
+					{% endblock news_posterous %}
+				{% endif %}
+
+				{% if promo_box_installed %}
+					{% block news_promo_box %}
+						{% news_promo_box %}
+					{% endblock news_promo_box %}
+				{% endif %}
+
+				{% block news_friends %}
+					{% news_friends %}
+				{% endblock news_friends %}
+			</ul>
+		</section>
+	</div>
+</div>
+</section>
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% load i18n %}
+<article class="container clearfix zero-pad">
+<div>
+    {% if profiles %}
+	<div id="partner-bios">
+	    <div id="partner-thumbs" class="fl">
+	        <ul>
+        {% for profile in profiles %}
+	            <li class="thumb-image">
+	               <img src="{{ profile.image|thumbnail}}" alt="{{ profile.name|pluralize }} picture" class="partner-thumb">
+	            </li>
+        {% endfor %}
+	        </ul>
+	    </div>
+	    
+	    <div id="partner-summaries" class="fl">
+        {% for profile in profiles %}
+            <div class="dogear dogear-bottom partner-container">
+	        <div class="right-column clearfix">
+		        <div class="partner-large-image">
+		           <img src="{{ profile.image.url }}" alt="{{ profile.name|pluralize }} picture">
+		        </div>
+		        <div class="partner-name">{{ profile.name|safe }}</div>
+		        <div class="rule-311"></div>
+		        <div class="partner-summary">{{ profile.description|safe }}</div>
+	        </div>
+            <div class="bottom"></div>
+            </div>
+        {% endfor %}
+	    </div>
+	</div>
+	{% endif %}
+	
+    <div id="profile-list">
+        {% if profile_text %}
+            <div class="header">{{ profile_text|safe }}</div>
+        {% endif %}
+    </div>
+</div>
+</article>

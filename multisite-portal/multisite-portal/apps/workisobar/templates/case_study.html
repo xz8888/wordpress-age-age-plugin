@@ -1,0 +1,104 @@
+<article class="media-box lrg-media-box">
+  <a href="/{{ request.LANGUAGE_CODE }}/work/casestudy/{{ casestudy.slug }}/" data-slug="{{ casestudy.slug }}">
+    <img src="{{ settings.MEDIA_URL }}{{casestudy.hero_image}}" alt="{{ casestudy.title|escape }}">
+      <div class="info">
+        <h1 class="title"><span class="int-link">{{ casestudy.title }}</span></h1>
+      </div>
+  </a>
+</article>
+<script type="text/slidefill" class="case-study-details">
+    
+    {% if casestudy.video_download_url %}
+    <div class="video-js-box case-study-videobox">
+           <div class="video-js-box-inner">  
+            <video id="case-study-video-{{ forloop.counter }}" class="case-study-video" controls="controls" preload="auto" poster="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}">
+                <source src="{{ casestudy.video_download_url }}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="{{ casestudy.video_download_url }}.webm" type='video/webm; codecs="vp8, vorbis"'>
+                <source src="{{ casestudy.video_download_url }}.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+
+                <object id="flash-1" class="vjs-flash-fallback" type="application/x-shockwave-flash" data="{{ settings.MEDIA_URL }}flash/player.swf" 
+                data-flashvars="is_stream=false&img={{ settings.MEDIA_URL }}{{ casestudy.video_image }}&video={{ casestudy.video_download_url }}.mp4" 
+                data-movie="{{ settings.MEDIA_URL }}flash/player.swf"
+                data-allowfullscreen="true"
+                data-wmode="transparent">
+                    <param name="movie" value="{{ settings.MEDIA_URL }}flash/player.swf">
+                    <param name="allowfullscreen" value="true">
+                    <param name="wmode" value="transparent">
+                    <param name="flashvars" value='is_stream=false&img={{ settings.MEDIA_URL }}{{ casestudy.video_image }}&video={{ casestudy.video_download_url }}.mp4'>
+                    <a href="{{ casestudy.video_download_url }}.3gp"><img src="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}" alt="{{ casestudy.title }}"></a>
+                </object>
+            </video>
+        </div>
+    </div>
+    {% else %}
+    <figure class="case-study-slideshow">
+        {% if casestudy.client_slide and casestudy.client_slide.all|length == 0 %}
+            <img src="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}" alt="{{ casestudy.title }}">
+        {% else %}
+		    {% for slide in casestudy.client_slide.all %}
+		    <img src="{{ settings.MEDIA_URL }}{{ slide.image}}" />
+		    {% endfor %}
+	    {% endif %}
+	</figure>
+	{% endif %}
+    
+      
+    {% if casestudy.awards.all|length != 0 or casestudy.client_quotes.all|length != 0 or casestudy.press_releases.all|length != 0 %}
+    <div class="case-study-supplementary">    
+      {% if casestudy.awards.all|length != 0 %}
+      <div class="case-study-awards {% if casestudy.awards.all|length > 5 %}morethan5{% endif %}">
+        {% for award in casestudy.awards.all %}
+          <div class="case-study-award">
+          {% if award.title %}
+            {{award.title}}{% if award.date %}, {{ award.date }}{% endif %}
+          {% endif %} 
+          {% if award.description %}
+            <br/>{{award.description}}
+          {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if casestudy.client_quotes.all|length != 0 %}
+      <div class="case-study-quotes {% if casestudy.client_quotes.all|length > 5 %}morethan5{% endif %}">
+        {% for quote in casestudy.client_quotes.all %}
+          <div class="case-study-quote">
+          {% if quote.title %}{{quote.title}}<br />{% endif %}
+          {% if quote.description %}{{quote.description}}<br />{% endif %}
+          {% if quote.date %}{{quote.date}}<br />{% endif %}
+          {% if quote.url %}
+              <a href="{{ quote.url }}" target="_blank">Client Quote URL</a>
+          {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if casestudy.press_releases.all|length != 0 %}
+      <div class="case-study-press_releases {% if casestudy.press_releases.all|length > 5 %}morethan5{% endif %}">
+        {% for press in casestudy.press_releases.all %}
+          <div class="case-study-press-release">
+          {% if press.title %}{{press.title}}<br />{% endif %}
+          {% if press.description %}{{press.description}}<br />{% endif %}
+          {% if press.date %}{{press.date}}<br />{% endif %}
+          {% if press.url %}        
+              <a href="{{ press.url }}" target="_blank">Read More</a>
+          {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="case-study-body">
+      <h1>
+          {{ casestudy.title }}
+          {% if casestudy.url %}
+            <a href="{{ casestudy.url }}" target="_blank">Visit the website</a>
+          {% endif %}
+      </h1>
+      {{ casestudy.body|safe }}
+    </div>
+    {% block share %}
+      {% share casestudy.title casestudy.get_absolute_url %}
+    {% endblock share %}
+</script>

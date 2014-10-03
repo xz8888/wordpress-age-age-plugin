@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% if department %}{{ department.title }}: {% endif %}{% trans 'People' %}{% endblock page_title %}
+{% block additional_headers %}
+	<script type="text/javascript">
+		{% if department %}
+			var CAROUSEL_URL = '{% url department_ajax_view department.slug 'x' 'y' %}';
+		{% else %}
+			var CAROUSEL_URL = '{% url people_page_ajax_view 'x' 'y' %}';
+		{% endif %}
+	</script>
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+	{% primary_nav 'people' %}
+{% endblock primary_nav %}
+
+{% block content %}
+		<section class="people wrap-content">
+			<div class="main-content-pad container">
+				<section id="management-team">
+					{% for department in departments %}
+						<ul class="clearfix list-flow">
+							{% for person in people.object_list %}
+								{% if person.department = department %}
+									<li>
+										<article class="media-box lrg-media-box"><!--start media-box-->
+											<a href="{{ person.get_absolute_url }}" class="open-ajax-vertical-scroll">
+												<img src="{{ settings.MEDIA_URL }}{{person.image}}" alt="{{person.title}}">
+												<div class="info"><!--media-box content-->
+													<h1 class="title"><span class="int-link">{{ person.title }}</span></h1>
+													{% if person.role %}
+														<h2 class="subtitle">{{ person.role }}</h2>
+													{% else %}
+														<h2 class="subtitle">{{ person.department }}</h2>
+													{% endif %}
+												</div><!--end media-box content-->
+											</a>
+										</article><!--end media-box-->
+									</li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					{% endfor %}
+				</section>
+			</div>
+		</section>
+{% endblock content %}

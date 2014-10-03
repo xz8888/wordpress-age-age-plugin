@@ -1,0 +1,15 @@
+<ul class="masonry list-flow fadelist clearfix people-ajax">
+	{% for person in people.object_list %}
+			<li class="box">
+				{% if department %}
+					{% render_person person 'small' department %}
+				{% else %}
+					{% if forloop.counter|display_as_big %}
+						{% render_person person 'big' %}
+					{% else %}
+						{% render_person person %}
+					{% endif %}
+				{% endif %}
+			</li>
+	{% endfor %}
+</ul>

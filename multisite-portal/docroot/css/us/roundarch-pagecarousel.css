@@ -1,0 +1,115 @@
+/* Links/buttons */
+div.pagecarousel-button-parent {
+  margin-bottom: 30px;
+  height: 40px;
+  margin-top: 40px;
+}
+#pagecarousel-thumb-buttons {
+	text-align: center;
+	background-color: #fff;
+}
+#pagecarousel-thumb-buttons ul {
+    list-style: none;
+}
+#pagecarousel-thumb-buttons li {
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block;
+    padding-bottom: 35px;
+    margin-top: 11px;
+}
+#pagecarousel-thumb-buttons li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: normal;
+}
+#pagecarousel-thumb-buttons li.active {
+  background: url(/static/img/us/carousel/li-carousel-bg.png) bottom center no-repeat;
+  background-color: #EDEDED; /* @TODO: Change this color to the main content background color if you've changed it locally */
+}
+#pagecarousel-thumb-buttons li a:hover {
+  color: #f74902;
+}
+#pagecarousel-thumb-buttons li.active a {
+  color: #f74902;
+}
+
+
+
+/* Panels */
+.pagecarousel-parent {
+  overflow: hidden;
+  position: relative;
+    margin-top: 50px;
+}
+.pagecarousel-panel {
+  margin: 0 0 0 990px;
+  position: absolute !important;
+  width: 940px;
+  top: 0;
+}
+/* 
+  Animate moving the pagecarousel panels, but only if you're hovering over the body 
+   - This will prevent animations from happening when resizing the browser
+ */
+body:hover .pagecarousel-panel {
+  -webkit-transition: margin 500ms ease-in-out;
+  -moz-transition: margin 500ms ease-in-out;
+  -ms-transition: margin 500ms ease-in-out;
+  -o-transition: margin 500ms ease-in-out;
+  transition: margin 500ms ease-in-out;
+}
+@media screen and (min-width: 0px) and (max-width: 765px) {
+  .pagecarousel-panel {
+    width: 275px;
+  }
+}
+@media screen and (min-width: 765px) and (max-width: 1006px) {
+  .pagecarousel-panel {
+    width: 700px;
+  }
+}
+.pagecarousel-panel.active {
+  margin: 0; 
+}
+.pagecarousel-panel.beforeActive {
+  margin: 0 0 0 -990px;
+}
+  /* Offset each beforeActive div sequentially, so in the animation you see them all scroll by. */
+  .pagecarousel-panel.beforeActive:nth-last-child(3) {
+    margin: 0 0 0 -1980px;
+  }
+  .pagecarousel-panel.beforeActive:nth-last-child(4) {
+    margin: 0 0 0 -2970px;
+  }
+  .pagecarousel-panel.afterActive:nth-last-child(5) {
+    margin: 0 0 0 -3960px;
+  }
+  .pagecarousel-panel.afterActive:nth-last-child(6) {
+    margin: 0 0 0 -4950;
+  }
+
+.pagecarousel-panel.afterActive {
+  margin: 0 0 0 990px;
+}
+  /* Offset each afterActive div sequentially, so in the animation you see them all scroll by. */
+  .pagecarousel-panel.afterActive:nth-child(3) {
+    margin: 0 0 0 1980px;
+  }
+  .pagecarousel-panel.afterActive:nth-child(4) {
+    margin: 0 0 0 2970px;
+  }
+  .pagecarousel-panel.afterActive:nth-child(5) {
+    margin: 0 0 0 3960px;
+  }
+  .pagecarousel-panel.afterActive:nth-child(6) {
+    margin: 0 0 0 4950;
+  }
+
+@media only screen and (max-width: 765px) {
+   #pagecarousel-thumb-buttons li {
+     font-size: 8pt;
+   }
+}

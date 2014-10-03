@@ -1,0 +1,37 @@
+
+-- *** run in QA to get data *** 
+export SITE=ca
+python26 ../manage.py dumpdata --indent 2 > ca_qa_data.json
+export SITE=hu
+python26 ../manage.py dumpdata --indent 2 > hu_qa_data.json
+
+
+
+
+-- *** run in Production *** 
+mysqldump -u[USERDB] -p[PASSWORDDB] -r isobar_uk_20110915.sql isobar_uk
+mysqldump -u[USERDB] -p[PASSWORDDB] -r isobar_uk_20110915.sql isobar_us
+
+-- make a backup of directory: PRODSERVER/docroot/img/uploads
+
+mysql -u[USERDB] -p[PASSWORDDB] < sql/PROD_create_db.sql
+
+
+-- BUILD for PRODUCTION
+-- DEPLOY in PRODUCTION adding recipe migrate_prod.sh
+
+
+mysql -u[USERDB] -p[PASSWORDDB] isobar_uk < sql/normalize_db.sql
+mysql -u[USERDB] -p[PASSWORDDB] isobar_us < sql/normalize_db.sql
+
+
+export SITE=ca
+python26 ../manage.py loaddata ca_qa_data
+export SITE=hu
+python26 ../manage.py loaddata hu_qa_data
+
+
+-- copy static files:
+	-- copy images from QASERVER/docroot/img/uploads to PRODSERVER/docroot/img/uploads
+	-- copy videos from S3/qa/ca to S3/prod/ca 
+	-- copy videos from S3/qa/hu to S3/prod/hu

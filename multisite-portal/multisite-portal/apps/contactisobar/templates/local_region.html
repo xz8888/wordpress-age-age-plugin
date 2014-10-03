@@ -1,0 +1,90 @@
+{% load dict_extras %}
+                <div class="contact-headline serif">We reach over 34 <br/>markets worldwide</div>
+                
+                {% if global_contact %}
+                
+                <div class="fl span1-to-span460">
+                    <div class="office-container">
+                        <div class="header"> 
+                            <p> HEAD OFFICE </p>
+                            <hr class="office-rule" style="width:435px; float:left; margin-bottom: 25px;"/>
+                        </div>
+                        <ul class="office-column">
+                            <li>
+                                <div class="icon"></div>
+                                <div class="office">
+                                    <span class="city"> {{ global_contact.address_line1 }}</span>
+                                    <span class="city"> {{ global_contact.address_line2 }}</span>
+                                    <ul class ="office-contact">
+                                        <li><a class="directions-link ext-link" target="_blank" href="http://maps.google.co.uk/maps?f=d&source=s_d&saddr=&daddr={{ global_contact.latitude }},{{ global_contact.longitude }}" alt="Get Directions"><b>Get Directions</b></a></li>
+                                        <li><a href="tel:{{global_contact.telephone}}" alt="" class="telephone-link">{{ global_contact.telephone }}</a></li>
+                                        <li><a href="mailto:{{global_contact.email}}" alt="" class="email-link">{{ global_contact.email }}</a></li>
+                                    </ul>
+                                </div> 
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="region-contact-container">
+                    <p> GLOBAL CONTACTS </p>
+                    <hr class="office-rule" style="margin-bottom: 25px;"/>
+                    <div class="contact-icon"></div>    
+                    <div class="contact-container">
+		                {% for person in region.people.all %}
+		                <div class="regional-contact">   
+		                    <div><strong>{{ person.title }}</strong> <br/> <em>{{ person.name }}</em></div>
+		                       <ul class="list-contact-details">
+		                           <li><a href="mailto:{{ person.email }}">{{ person.email }}</a></li>
+		                         </ul>   
+		                </div>
+		                {% endfor %}
+	                </div>
+                </div>
+                
+                {% else %}
+                
+                <div class="region-name"> {{region.name}} </div>
+                <div class="office-container">
+                {% for country in rc|hash:region.id %}
+		                    {% if co|hash:country.id|length_is:"1" and forloop.counter != 1 %}
+			                <div class="country-offices solo">
+			                {% else %}
+		                    <div class="country-offices">
+			                {% endif %}
+			                
+	                        <div class="header"> {{ country.name|upper }} OFFICES</div>
+	                        
+	                        {% if forloop.counter == 1 or co|hash:country.id|length_is:"1" %}
+	                        <hr class="office-rule" style="width:435px; float:left;"/>
+	                        {% else %}
+	                        <hr class="office-rule"/>
+	                        {% endif %}
+	                        
+                            <ul class="office-column">
+	                        {% for office in co|hash:country.id %}
+		                        {% if forloop.parentloop.counter == 1 and forloop.counter == 2 %}
+	                            <li class="column-element">
+	                            </li>
+	                            <li class="column-element">
+		                        {% else %}
+		                        <li class="column-element">
+		                        {% endif %}
+	                            <div class="icon"></div>
+	                            <div class="office">
+	                                <span class="name">{{ office.name|upper }}</span>
+	                                <span class="city">{{ office.city }}</span>
+	                                <p class="serif address">{{ office.address_line1 }}<br />{{ office.address_line2 }}</p>
+	                            </div> 
+	                                <ul class ="office-contact">
+	                                    <li><a class="directions-link ext-link" target="_blank" href="http://maps.google.co.uk/maps?f=d&source=s_d&saddr=&daddr={{ office.latitude }},{{ office.longitude }}" alt="Get Directions"><b>Get Directions</b></a></li>
+	                                    <li><a href="tel:{{office.telephone}}" alt="" class="telephone-link">{{ office.telephone }}</a></li>
+	                                    <li><a href="mailto:{{office.email}}" alt="" class="email-link">{{ office.email }}</a></li>
+	                                </ul>
+	                         </li>
+	                        {% endfor %} 
+                            </ul> 
+	                    </div>
+                {% endfor %}
+                </div>
+                
+                {% endif %}

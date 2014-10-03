@@ -1,0 +1,31 @@
+{% load i18n %}
+<nav class="sub-nav clearfix">
+	<div class="container relative">
+	
+		<ul class="list-news-sections clearfix">
+
+			<li><a class="no-trigger{% if additional_class = 'archive' %} selected{% endif %}" href="{% url news_archive_view %}">{% trans 'Archives' %}</a></li>
+			
+			{% if promo %}
+				<li><a class="no-trigger" href="{{ promo.url }}">{{ promo.title }}</a></li>
+			{% endif %}
+			
+			<li><a class="no-trigger" href="{% url news_rss %}"><div class="icon-rss rollover no-trigger">{% trans 'RSS' %}</div></a></li>
+		</ul>
+		
+		{% if not settings.ISOBAR_SITE %}
+			<dl class="list-news-categories clearfix {{ additional_class }}">
+
+				<dt class="trigger"><span class="icon-arrowhead rollover"></span>{% trans 'Filter category' %}</dt>
+				<dd class="panel">
+					<ul class="clearfix">
+						<li class="fadeitem"><a href="{% url news_view %}"{% if not selected and additional_class != 'archive' %} class="selected"{% endif %}>{% trans 'All' %}</a><span class="number" style="color:#9b9b9b;">{{ categories.0.overall_total }}</span></li>
+						{% for category in categories %}
+							<li class="fadeitem"><a href="{{ category.get_absolute_url }}"{% if category.slug = selected %} class="selected"{% endif %}>{{ category.title_label }}</a><span class="number" style="color:#9b9b9b;">{{ category.category_total }}</span></li>
+						{% endfor %}
+					</ul>
+				</dd>
+			</dl>
+		{% endif %}
+	</div>
+</nav>

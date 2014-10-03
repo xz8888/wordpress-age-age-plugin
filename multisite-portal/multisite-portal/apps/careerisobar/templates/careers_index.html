@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{{ careerindex.title }}{% endblock page_title %}
+{% block additional_headers %}
+	<meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_jobs' %}{% endblock meta_keywords %}">
+	<meta name="description" content="{% block meta_description %}{{ careerindex.meta_description }}{% endblock meta_description %}">
+
+{% endblock additional_headers %}
+
+{% block meta_og_title %}
+    {{careerindex.title}}
+{% endblock meta_og_title %}
+
+{% block meta_og_description %}
+    {{careerindex.meta_description}}
+{% endblock meta_og_description %}
+
+{% block primary_nav %}
+	{% primary_nav 'career' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	<section class="jobs wrap-content">
+		<div class="main-content-pad">
+			<div class="container">
+				<section class="dogear dogear-top dogear-bottom isobar-video-header tl clearfix space"> <!--box-text section-->
+                <div class="top"></div>
+                          <div class="text-l career_content">
+                              {{ careerindex.content|safe }}
+                          </div>
+
+                    <div class="fl info-career">
+                            <div class="sub-header">
+                                Positions
+                            </div>
+                        
+                        <a href="{% url job_list %}" alt="{% trans 'See our current vacancies below...' %}">{% trans 'See our current vacancies below...' %}</a>
+                    </div>
+                    <div class="fl info-career">
+                            <div class="sub-header">
+                                Notifications
+                            </div>
+                       
+                        <a href="http://www.jobvite.com/CompanyJobs/Careers.aspx?c=qwX9Vfwh&k=Notify" alt="Sign up for job notifications">Sign up for Job Notifications</a>
+                    </div>
+                <div class="bottom"></div>
+			</section>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}

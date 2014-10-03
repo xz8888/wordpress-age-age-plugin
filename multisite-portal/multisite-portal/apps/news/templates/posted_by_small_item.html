@@ -1,0 +1,9 @@
+{% load i18n %}
+{% if item.author %}
+	<li>
+		<section class="vcard">
+			<span>{% trans 'By' %}&nbsp;</span>
+			<span class="fn url serif"><a class="sub-title" href="{{ item.author.get_absolute_url }}">{{ item.author.title }}</a></span>
+		</section>
+	</li>
+{% endif %}

@@ -1,0 +1,30 @@
+{% if casestudies|length != 0 %}
+<div class="slidefill tl">
+  <div class="slidefill-close">Close</div>
+  <div class="slidefill-content"></div>
+</div>
+
+<ul class="clearfix list-flow content-crossfade">
+{% for casestudy in casestudies|slice:":6" %}
+  <li class="span1">
+      {% include "workisobar/templates/case_study.html" %}
+  </li>
+{% endfor %}
+
+{% if casestudies|length > 6 %}
+    {% for casestudy in casestudies|slice:"6:" %}
+        <li class="span1 hidden-work-item">
+          {% include "workisobar/templates/case_study.html" %}
+        </li>
+    {% endfor %}
+{% endif %}
+</ul>
+
+{% if casestudies|length > 6 %}
+<div class="seeMoreWork" style="height: 70px; text-align: center">
+  <span class="rule rule-300" style="background-color: #ccc; margin-top: 30px; margin-bottom: 25px;"></span>
+  <a id="showMoreWorkLink" alt="Show More" class="colored-link">See More Work</a>
+</div>
+{% endif %}
+
+{% endif %}

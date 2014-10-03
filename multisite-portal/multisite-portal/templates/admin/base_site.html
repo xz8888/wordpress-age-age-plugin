@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'Isobar admin' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Isobar admin' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block footer %}
+	{{ block.super }}
+	<link rel="stylesheet" type="text/css" href="{{ settings.MEDIA_URL }}css/admin.css">
+	<script type="text/javascript" src="{{ settings.MEDIA_URL }}filebrowser/js/TinyMCEAdmin.js"></script>
+{% endblock %}

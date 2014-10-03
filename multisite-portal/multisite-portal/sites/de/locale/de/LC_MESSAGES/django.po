@@ -1,0 +1,997 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-15 15:48-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: apps/about/templates/about.html:3 apps/common/templates/primary_nav.html:7
+msgid "About"
+msgstr ""
+
+#: apps/common/templates/primary_nav.html:8
+#: apps/work/templates/case_studies.html:3
+#: sites/isobar/work/templates/case_studies.html:3
+msgid "Work"
+msgstr ""
+
+#: apps/common/templates/primary_nav.html:9
+#: apps/people/templates/people.html:3 apps/people/templates/person.html:3
+#: sites/isobar/people/templates/people.html:3
+msgid "People"
+msgstr ""
+
+#: apps/common/templates/primary_nav.html:10 apps/jobs/templates/job.html:3
+#: apps/jobs/templates/jobs.html:3
+msgid "Join"
+msgstr ""
+
+#: apps/common/templates/primary_nav.html:11 apps/news/templates/news.html:3
+#: sites/isobar/home/templates/home.html:130
+#: sites/isobar/home/templates/home.html:192
+msgid "News"
+msgstr ""
+
+#: apps/common/templates/primary_nav.html:12
+#: sites/isobar/location/templates/agencies.html:3
+#: sites/isobar/location/templates/agency.html:5
+msgid "Contact"
+msgstr ""
+
+#: apps/contact/templates/contact.html:58
+#: apps/contact/templates/contact.html:154
+msgid "Get in touch"
+msgstr ""
+
+#: apps/contact/templates/contact.html:62
+msgid ""
+"If you are interested in talking to us then please get in touch via the "
+"contact details below. Don't be shy now."
+msgstr "Interessiert? Dann treten Sie gerne mit uns in Kontakt."
+
+#: apps/contact/templates/contact.html:110 apps/home/templates/home.html:26
+#: sites/isobar/home/templates/home.html:26
+msgid "Address"
+msgstr "Adresse"
+
+#: apps/contact/templates/contact.html:112
+msgid "Addresses"
+msgstr "Adressen"
+
+#: apps/contact/templates/contact.html:124
+#: sites/isobar/home/templates/home.html:34
+#: sites/isobar/location/templates/agencies.html:185
+msgid "Get directions"
+msgstr "Wegbeschreibung"
+
+#: apps/contact/templates/contact.html:126
+#: sites/isobar/home/templates/home.html:35
+#: sites/isobar/location/templates/agencies.html:186
+msgid "View on Google Maps"
+msgstr "Auf Google Maps ansehen"
+
+#: apps/contact/templates/contact.html:135 apps/home/templates/home.html:43
+#: sites/isobar/home/templates/home.html:44
+msgid "Phone"
+msgstr ""
+
+#: apps/contact/templates/contact.html:142 apps/home/templates/home.html:51
+#: sites/isobar/home/templates/home.html:52
+msgid "Email"
+msgstr ""
+
+#: apps/contact/templates/contact.html:156
+msgid ""
+"If you are a client or agency interested in talking to us then please get in "
+"touch with us via the phone numbers and email addresses below. Don't be shy "
+"now."
+msgstr "Sie sind ein Kunde oder eine Agentur und möchten mit uns sprechen? Dann treten Sie gerne mit uns in Kontakt."
+
+#: apps/contact/templates/contact.html:177
+msgid "Social"
+msgstr ""
+
+#: apps/contact/templates/contact.html:194
+#: apps/footer/templates/footer.html:10
+msgid "Bringing people and brands together like never before."
+msgstr ""
+
+#: apps/filebrowser/fields.py:58
+#, python-format
+msgid "Extension %(ext)s is not allowed. Only %(allowed)s is allowed."
+msgstr ""
+
+#: apps/filebrowser/forms.py:26
+#: apps/filebrowser/templates/filebrowser/versions.html:64
+msgid "Name"
+msgstr ""
+
+#: apps/filebrowser/forms.py:26 apps/filebrowser/forms.py:32
+#: apps/filebrowser/forms.py:49 apps/filebrowser/forms.py:55
+msgid "Only letters, numbers, underscores, spaces and hyphens are allowed."
+msgstr ""
+
+#: apps/filebrowser/forms.py:35 apps/filebrowser/forms.py:58
+msgid "The Folder already exists."
+msgstr ""
+
+#: apps/filebrowser/forms.py:49
+msgid "New Name"
+msgstr ""
+
+#: apps/filebrowser/forms.py:60
+msgid "The File already exists."
+msgstr ""
+
+#: apps/filebrowser/settings.py:116
+msgid "Folder"
+msgstr ""
+
+#: apps/filebrowser/settings.py:117
+msgid "Image"
+msgstr ""
+
+#: apps/filebrowser/settings.py:118
+msgid "Video"
+msgstr ""
+
+#: apps/filebrowser/settings.py:119
+msgid "Document"
+msgstr ""
+
+#: apps/filebrowser/settings.py:120
+msgid "Audio"
+msgstr ""
+
+#: apps/filebrowser/settings.py:121
+msgid "Code"
+msgstr ""
+
+#: apps/filebrowser/views.py:54 apps/filebrowser/views.py:164
+#: apps/filebrowser/views.py:219 apps/filebrowser/views.py:316
+#: apps/filebrowser/views.py:398 apps/filebrowser/views.py:459
+msgid "The requested Folder does not exist."
+msgstr ""
+
+#: apps/filebrowser/views.py:58
+msgid "Error finding Upload-Folder. Maybe it does not exist?"
+msgstr ""
+
+#: apps/filebrowser/views.py:141
+#: apps/filebrowser/templates/filebrowser/append.html:5
+#: apps/filebrowser/templates/filebrowser/append.html:7
+#: apps/filebrowser/templates/filebrowser/include/breadcrumbs.html:8
+#: apps/filebrowser/templates/filebrowser/include/breadcrumbs.html:10
+msgid "FileBrowser"
+msgstr ""
+
+#: apps/filebrowser/views.py:182
+#, python-format
+msgid "The Folder %s was successfully created."
+msgstr ""
+
+#: apps/filebrowser/views.py:191
+msgid "Permission denied."
+msgstr ""
+
+#: apps/filebrowser/views.py:193
+msgid "Error creating folder."
+msgstr ""
+
+#: apps/filebrowser/views.py:200 apps/filebrowser/views.py:203
+#: apps/filebrowser/templates/filebrowser/index.html:52
+msgid "New Folder"
+msgstr ""
+
+#: apps/filebrowser/views.py:231
+msgid "Select files to upload"
+msgstr ""
+
+#: apps/filebrowser/views.py:235
+#: apps/filebrowser/templates/filebrowser/index.html:53
+#: apps/filebrowser/templates/filebrowser/upload.html:108
+msgid "Upload"
+msgstr ""
+
+#: apps/filebrowser/views.py:318 apps/filebrowser/views.py:400
+#: apps/filebrowser/views.py:461
+msgid "The requested File does not exist."
+msgstr ""
+
+#: apps/filebrowser/views.py:341
+#, python-format
+msgid "The file %s was successfully deleted."
+msgstr ""
+
+#: apps/filebrowser/views.py:357
+#, python-format
+msgid "The folder %s was successfully deleted."
+msgstr ""
+
+#: apps/filebrowser/views.py:427
+msgid "Renaming was successful."
+msgstr ""
+
+#: apps/filebrowser/views.py:432
+msgid "Error."
+msgstr ""
+
+#: apps/filebrowser/views.py:440
+#, python-format
+msgid "Rename \"%s\""
+msgstr ""
+
+#: apps/filebrowser/views.py:443
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:75
+msgid "Rename"
+msgstr ""
+
+#: apps/filebrowser/views.py:469 apps/filebrowser/views.py:472
+#, python-format
+msgid "Versions for \"%s\""
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/makedir.html:25
+#: apps/filebrowser/templates/filebrowser/rename.html:25
+msgid "Please correct the following errors."
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/makedir.html:33
+#: apps/filebrowser/templates/filebrowser/upload.html:98
+msgid ""
+"The Name will be converted to lowercase. Spaces will be replaced with "
+"underscores."
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/makedir.html:38
+#: apps/filebrowser/templates/filebrowser/rename.html:36
+msgid "Submit"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:46
+msgid "BROWSE"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:47
+msgid "An Error occured"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:48
+msgid "Completed"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:49
+msgid "Do you want to replace the file"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:50
+msgid "KB"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:51
+msgid "MB"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:81
+msgid "Help"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:85
+msgid "Allowed"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:91
+msgid "Max. Filesize"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/upload.html:106
+msgid "Clear Queue"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/versions.html:67
+msgid "Image Version"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/versions.html:70
+msgid "Debug"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/versions.html:84
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:12
+msgid "Select"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/versions.html:96
+#: apps/filebrowser/templates/filebrowser/versions.html:108
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:26
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:40
+msgid "Select File"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/versions.html:119
+msgid "Width"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/versions.html:120
+msgid "Height"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/breadcrumbs.html:5
+#: apps/multilingual/templates/admin/multilingual/change_form.html:64
+#: templates/base.html:6
+msgid "Home"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:51
+msgid "Show Versions"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:62
+msgid "View Image"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:87
+msgid "Are you sure you want to delete this file?"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:87
+msgid "Delete File"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:90
+msgid "Are you sure you want to delete this Folder?"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filelisting.html:90
+msgid "Delete Folder"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:3
+msgid "Filter"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:9
+msgid "By Date"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:11
+msgid "Any Date"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:13
+msgid "Today"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:15
+msgid "Past 7 days"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:17
+msgid "Past 30 days"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:19
+msgid "This year"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:27
+msgid "By Type"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/filter.html:29
+msgid "All"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/paginator.html:5
+msgid "No Items Found"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/paginator.html:11
+#, python-format
+msgid "%(counter)s Item"
+msgid_plural "%(counter)s Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: apps/filebrowser/templates/filebrowser/include/paginator.html:26
+msgid "No Items"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/search.html:3
+#, python-format
+msgid "1 result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: apps/filebrowser/templates/filebrowser/include/search.html:4
+#: apps/filebrowser/templates/filebrowser/include/toolbar.html:19
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/search.html:5
+msgid "Clear Restrictions"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/search.html:7
+#: apps/filebrowser/templates/filebrowser/include/toolbar.html:16
+msgid "Search"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/search.html:19
+msgid "Go"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/search.html:24
+#, python-format
+msgid "%(counter)s Item found"
+msgid_plural "%(counter)s Items found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: apps/filebrowser/templates/filebrowser/include/search.html:25
+#, python-format
+msgid "%(counter)s Item total"
+msgid_plural "%(counter)s Items total"
+msgstr[0] ""
+msgstr[1] ""
+
+#: apps/filebrowser/templates/filebrowser/include/tableheader.html:16
+#: apps/filebrowser/templates/filebrowser/include/tableheader.html:17
+msgid "Filename"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/tableheader.html:21
+#: apps/filebrowser/templates/filebrowser/include/tableheader.html:22
+msgid "Size"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/tableheader.html:24
+#: apps/filebrowser/templates/filebrowser/include/tableheader.html:25
+msgid "Date"
+msgstr ""
+
+#: apps/filebrowser/templates/filebrowser/include/toolbar.html:19
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: apps/footer/templates/legal.html:2 templates/base.html:100
+msgid "glue Isobar"
+msgstr "Xenion Isobar GmbH"
+
+#: apps/footer/templates/legal.html:2
+msgid "is a trading division of"
+msgstr "gehört zur "
+
+#: apps/footer/templates/legal.html:2
+msgid "Aegis Media Limited"
+msgstr "deutschen AEGIS Media Gruppe"
+
+#: apps/footer/templates/legal.html:2
+msgid ""
+". Registered office 43-49 Parker St. London WC2B 5PS. Registered in England "
+"and Wales No. 01939690"
+msgstr "Copyright 2012 Xenion Isobar GmbH. All Rights Reserved."
+
+#: apps/home/templates/home.html:31
+msgid "Location map"
+msgstr ""
+
+#: apps/home/templates/home.html:69
+msgid "Welcome!"
+msgstr "Willkommen!"
+
+#: apps/home/templates/home.html:70
+msgid ""
+"We are glue Isobar, a creative agency with digital very much at our heart.  "
+"Our London office is home to 150 fabulously talented individuals and is the "
+"HQ for Isobar global creative network."
+msgstr "Xenion Isobar kreiert seit 1999 digitale Kommunikation, die bewegt. Durch die enge Vernetzung der Disziplinen Creative, Technology, Media, SEM, SEO und Campaign Management schaffen wir einzigartige Synergien für integrierte Online Marketing Maßnahmen."
+
+#: apps/home/templates/home.html:74
+msgid "View our showreel"
+msgstr "Jetzt unseren showreel ansehen"
+
+#: apps/home/templates/home.html:130 apps/home/templates/home.html.py:192
+msgid "glue News"
+msgstr "Xenion Isobar News"
+
+#: apps/home/templates/home.html:255 apps/news/templates/news_twitter.html:5
+#: sites/isobar/home/templates/home.html:255
+msgid "Our Latest Tweet"
+msgstr ""
+
+#: apps/home/templates/home.html:264 apps/news/templates/news_twitter.html:22
+#: sites/isobar/home/templates/home.html:264
+msgid "follow us @"
+msgstr ""
+
+#: apps/jobs/templates/job.html:15 apps/jobs/templates/jobs.html:15
+msgid "Hello!"
+msgstr "Hallo!"
+
+#: apps/jobs/templates/job.html:18 apps/jobs/templates/jobs.html:18
+msgid ""
+"We&#x27;re always on the lookout for established and up and coming talent "
+"across account management, planning, production, design, development and "
+"creative."
+msgstr "Wir sind immer auf der Suche nach talentierten Social Media Experten, Kreativen, Projekt Managern, Designern und Entwicklern."
+
+#: apps/jobs/templates/job.html:19 apps/jobs/templates/jobs.html:19
+msgid "iwanttowork@glueisobar.com"
+msgstr "recruiting@aemedia.com"
+
+#: apps/jobs/templates/job.html:23 apps/jobs/templates/jobs.html:23
+msgid "See our current vacancies below..."
+msgstr "Hier geht's zu unseren offenen Stellenangeboten…"
+
+#: apps/jobs/templates/job.html:36 apps/jobs/templates/jobs.html:42
+msgid "Apply to"
+msgstr "Bewerben"
+
+#: apps/jobs/templates/jobs.html:19
+msgid "Drop us a line at"
+msgstr "Schreiben Sie uns unter"
+
+#: apps/multilingual/admin.py:232
+#: apps/multilingual/templates/admin/multilingual/change_form.html:82
+msgid "language"
+msgstr ""
+
+#: apps/multilingual/admin.py:237
+msgid "and"
+msgstr ""
+
+#: apps/multilingual/admin.py:239
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#: apps/multilingual/admin.py:374
+#, python-format
+msgid "The %(name)s \"%(obj)s\" was changed successfully."
+msgstr ""
+
+#: apps/multilingual/admin.py:375
+msgid "You may edit it again below."
+msgstr ""
+
+#: apps/multilingual/flatpages/admin.py:9
+#: apps/multilingual/flatpages/models.py:11
+msgid "URL"
+msgstr ""
+
+#: apps/multilingual/flatpages/admin.py:10
+msgid ""
+"Example: '/about/contact/'. Make sure to have leading and trailing slashes."
+msgstr ""
+
+#: apps/multilingual/flatpages/admin.py:12
+msgid ""
+"This value must contain only letters, numbers, underscores, dashes or "
+"slashes."
+msgstr ""
+
+#: apps/multilingual/flatpages/admin.py:23
+msgid "Advanced options"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:12
+msgid "enable comments"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:13
+msgid "template name"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:14
+msgid ""
+"Example: 'flatpages/contact_page.html'. If this isn't provided, the system "
+"will use 'flatpages/default.html'."
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:15
+msgid "registration required"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:15
+msgid "If this is checked, only logged-in users will be able to view the page."
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:34
+msgid "title"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:35
+msgid "content"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:39
+msgid "multilingual flat page"
+msgstr ""
+
+#: apps/multilingual/flatpages/models.py:40
+msgid "multilingual flat pages"
+msgstr ""
+
+#: apps/multilingual/templates/admin/multilingual/change_form.html:67
+msgid "Add"
+msgstr ""
+
+#: apps/multilingual/templates/admin/multilingual/edit_inline/tabular.html:15
+msgid "Delete?"
+msgstr ""
+
+#: apps/multilingual/templates/admin/multilingual/edit_inline/tabular.html:28
+msgid "View on site"
+msgstr ""
+
+#: apps/multilingual/templates/admin/multilingual/edit_inline/tabular.html:112
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: apps/multilingual/templates/admin/multilingual/edit_inline/tabular.html:115
+msgid "Remove"
+msgstr ""
+
+#: apps/news/templates/archive.html:3
+msgid "Archive"
+msgstr ""
+
+#: apps/news/templates/news.html:72 apps/news/templates/news_small_item.html:3
+#: apps/news/templates/news_small_item.html:49
+msgid "Read More"
+msgstr "Mehr lesen"
+
+#: apps/news/templates/news.html:99 apps/news/templates/news.html.py:101
+msgid "Show More"
+msgstr "Mehr zeigen"
+
+#: apps/news/templates/news.html:104
+msgid "No more news stories."
+msgstr "Keine weiteren Einträge vorhanden"
+
+#: apps/news/templates/news.html:110
+msgid "No news stories for this category."
+msgstr "Keine Einträge vorhanden"
+
+#: apps/news/templates/news_friends.html:6
+msgid "Our Friends"
+msgstr "Unsere Freunde"
+
+#: apps/news/templates/news_nav.html:7
+msgid "Archives"
+msgstr "Archiv"
+
+#: apps/news/templates/news_nav.html:13
+msgid "RSS"
+msgstr ""
+
+#: apps/news/templates/news_nav.html:19
+msgid "Filter category"
+msgstr "Kategorie filtern"
+
+#: apps/news/templates/news_posterous.html:5
+msgid "glue Loves"
+msgstr "Xenion Isobar loves"
+
+#: apps/news/templates/news_posterous.html:19
+msgid "glue loves on posterous"
+msgstr ""
+
+#: apps/news/templates/news_small_item.html:27
+msgid "on"
+msgstr ""
+
+#: apps/news/templates/news_small_item.html:29
+msgid "Posted on"
+msgstr "gepostet am"
+
+#: apps/news/templates/posted_by_small_item.html:5
+#: sites/isobar/news/templates/posted_by_small_item.html:5
+msgid "By"
+msgstr "von"
+
+#: apps/news/templates/story.html:16
+#: sites/isobar/location/templates/agency.html:16
+msgid "Close"
+msgstr "schließen"
+
+#: apps/news/templates/story.html:39
+msgid "Posted on:"
+msgstr "Gepostet am:"
+
+#: apps/news/templates/story.html:46
+msgid "Posted in:"
+msgstr "Gepostet in:"
+
+#: apps/news/templates/news.html:52
+msgid "Posted On:"
+msgstr "Gepostet am:"
+
+#: apps/news/templates/news.html:59
+msgid "Posted In:"
+msgstr "Gepostet in:"
+
+#: apps/news/templates/story.html:54
+msgid "Related links:"
+msgstr "Ähnliche Links:"
+
+#: apps/people/templates/departments_nav.html:5
+msgid "Filter department"
+msgstr "Bereiche filtern"
+
+#: apps/people/templates/departments_nav.html:8
+msgid "Everyone"
+msgstr "Alle"
+
+#: apps/people/templates/people.html:57
+msgid "previous"
+msgstr "Vorherige"
+
+#: apps/people/templates/people.html:78
+msgid "next"
+msgstr "Nächste"
+
+#: apps/tinymce/views.py:68
+msgid "Error running spellchecker"
+msgstr ""
+
+#: apps/transurlvania/templates/admin/includes/ml_links.html:10
+msgid "Save"
+msgstr ""
+
+#: apps/transurlvania/templates/admin/includes/ml_links.html:12
+msgid "Save and Add/Edit Translation:"
+msgstr ""
+
+#: apps/work/templates/case_study.html:30
+msgid "Featured work from"
+msgstr "Arbeitsbeispiele von"
+
+#: apps/work/templates/case_study.html:71
+msgid "Share this video"
+msgstr "Dieses Video teilen"
+
+#: apps/work/templates/case_study.html:85
+msgid "View the work"
+msgstr "Arbeitsbeispiel ansehen"
+
+#: sites/isobar/home/templates/home.html:70
+msgid ""
+"We're a modern communications agency network made up of over 2,500 talented "
+"individuals in 34 markets around the world. Together we bring people and "
+"brands together, like never before."
+msgstr ""
+
+#: sites/isobar/location/templates/agencies.html:31
+msgid "Map showing office locations"
+msgstr ""
+
+#: sites/isobar/location/templates/agencies.html:38
+msgid "Locations A-Z"
+msgstr ""
+
+#: sites/isobar/location/templates/agencies.html:176
+msgid "Head Office"
+msgstr ""
+
+#: sites/isobar/news/templates/posted_by.html:6
+msgid "Author:"
+msgstr "Autor:"
+
+#: templates/404.html:3
+msgid "File not found"
+msgstr ""
+
+#: templates/404.html:11
+msgid "404"
+msgstr ""
+
+#: templates/404.html:15
+msgid "Sorry, we couldn't find the page you're looking for..."
+msgstr "Sorry, diese Seite konnten wir leider nicht finden…"
+
+#: templates/404.html:20 templates/500.html:11
+msgid "Try going to the home page"
+msgstr "Versuchen Sie es auf der Homepage"
+
+#: templates/500.html:5
+msgid "Server Error"
+msgstr ""
+
+#: templates/500.html:9
+msgid "Sorry, something's gone wrong, very wrong indeed"
+msgstr "Oops, da ist wohl ein Fehler passiert…"
+
+#: templates/base.html:6
+msgid "glue Isobar: A Modern Communications Agency"
+msgstr "Xenion Isobar: Eine innovative Kommunikationsagentur"
+
+#: templates/base.html:63
+msgid "Isobar"
+msgstr ""
+
+#: templates/isobar_network.html:7
+msgid "Bringing people and brands together like never before"
+msgstr ""
+
+#: templates/isobar_network.html:12
+msgid ""
+"We are a modern communications agency network made up of over 2,500 talented "
+"individuals in 34 markets around the world. Together we bring people and "
+"brands together, like never before."
+msgstr ""
+
+#: templates/isobar_network.html:14
+msgid "Find out more at www.isobar.com"
+msgstr ""
+
+#: templates/isobar_network.html:15
+msgid "View our global locations"
+msgstr ""
+
+#: templates/admin/base_site.html:4 templates/admin/base_site.html.py:7
+msgid "Isobar admin"
+msgstr ""
+
+##################
+####: meta tags :####
+##################
+#: apps/home/templates/base.html:8
+msgid ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, Online marketing, "
+"Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, Mobile marketing, Direct Marketing"
+msgstr ""
+
+#: apps/home/templates/base.html:9
+msgid ""
+"Isobar is an advertising agency specialising in digital creative work. Our philosophy is simple: Stick great creative teams who really "
+"understand brands with the most talented designers and developers around and you will create unique and hard working advertising."
+msgstr ""
+
+#: apps/about/templates/home.html:5
+msgid ""
+"meta_keywords_home"
+msgstr ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, "
+"Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, "
+"Mobile marketing, Direct Marketing"
+
+#: apps/about/templates/home.html:9
+msgid ""
+"meta_description_home"
+msgstr ""
+"Xenion Isobar kreiert seit 1999 digitale Markenkommunikationen, die bewegen."
+"In enger Zusammenarbeit mit der Mediaplanung, Social Media, Search, Reporting und dem Admanagement," 
+"sorgen wir für außergewöhnliche Inszenierungen Ihrer Kommunikation in der digitalen Welt. "
+
+#: apps/about/templates/about.html:7
+msgid ""
+"meta_keywords_about"
+msgstr ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, "
+"Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, "
+"Mobile marketing, Direct Marketing"
+
+#: apps/about/templates/about.html:8
+msgid ""
+"meta_description_about"
+msgstr ""
+"Isobar is an advertising agency specialising in digital creative work. "
+"Our philosophy is simple: Stick great creative teams who really understand brands "
+"with the most talented designers and developers around and you will create unique and hard working advertising."
+
+#: apps/work/templates/case_study.html:8
+msgid ""
+"meta_keywords_casestudy"
+msgstr ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, "
+"Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, "
+"Mobile marketing, Direct Marketing"
+
+#: apps/work/templates/case_study.html:9
+msgid ""
+"meta_description_casestudy"
+msgstr ""
+"Isobar is an advertising agency specialising in digital creative work. "
+"Our philosophy is simple: Stick great creative teams who really understand brands "
+"with the most talented designers and developers around and you will create unique and hard working advertising."
+
+#: apps/work/templates/case_studies.html:8
+msgid ""
+"meta_keywords_casestudies"
+msgstr ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, "
+"Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, "
+"Mobile marketing, Direct Marketing"
+
+#: apps/work/templates/casestudies.html:9
+msgid ""
+"meta_description_casestudies"
+msgstr ""
+"Isobar is an advertising agency specialising in digital creative work. "
+"Our philosophy is simple: Stick great creative teams who really understand brands "
+"with the most talented designers and developers around and you will create unique and hard working advertising."
+
+#: apps/people/templates/people.html:5
+msgid ""
+"meta_keywords_people"
+msgstr ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, "
+"Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, "
+"Mobile marketing, Direct Marketing"
+
+#: apps/people/templates/people.html:6
+msgid ""
+"meta_description_people"
+msgstr ""
+"Isobar is an advertising agency specialising in digital creative work. "
+"Our philosophy is simple: Stick great creative teams who really understand brands "
+"with the most talented designers and developers around and you will create unique and hard working advertising."
+
+#: apps/jobs/templates/jobs.html:5
+msgid ""
+"meta_keywords_jobs"
+msgstr ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, "
+"Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, "
+"Mobile marketing, Direct Marketing"
+
+#: apps/jobs/templates/jobs.html:6
+msgid ""
+"meta_description_jobs"
+msgstr ""
+"Isobar is an advertising agency specialising in digital creative work. "
+"Our philosophy is simple: Stick great creative teams who really understand brands "
+"with the most talented designers and developers around and you will create unique and hard working advertising."
+
+#: apps/news/templates/news.html:7
+msgid ""
+"meta_keywords_news"
+msgstr ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, "
+"Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, "
+"Mobile marketing, Direct Marketing"
+
+#: apps/news/templates/news.html:8
+msgid ""
+"meta_description_news"
+msgstr ""
+"Isobar is an advertising agency specialising in digital creative work. "
+"Our philosophy is simple: Stick great creative teams who really understand brands "
+"with the most talented designers and developers around and you will create unique and hard working advertising."
+
+#: apps/contact/templates/contact.html:23
+msgid ""
+"meta_keywords_contact"
+msgstr ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, "
+"Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, "
+"Mobile marketing, Direct Marketing"
+
+#: apps/contact/templates/contact.html:24
+msgid ""
+"meta_description_contact"
+msgstr ""
+"Isobar is an advertising agency specialising in digital creative work. "
+"Our philosophy is simple: Stick great creative teams who really understand brands "
+"with the most talented designers and developers around and you will create unique and hard working advertising."

@@ -1,0 +1,310 @@
+
+/*
+
+boxes
+
+*/
+
+.site-header {
+	background-color: #f74902;
+	padding-top: 27px;
+	padding-bottom: 30px;
+}
+
+/*
+
+Loading gifs
+
+*/
+
+#brand-map-loading .loading{
+	left:50%;
+	margin:250px 0 0 -17px;
+	position:absolute;
+}
+
+/*
+	Lists 
+*/
+
+.list-site-nav li a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	-webkit-transition: color 0.15s ease-in-out;
+	-moz-transition: color 0.15s ease-in-out;
+	-ms-transition: color 0.15s ease-in-out;
+	-o-transition: color 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out;
+}
+
+.list-site-nav a:hover,
+.list-site-nav a.selected {
+	color: #383838;
+	text-decoration: none;
+}
+
+#global-locations .box-title {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 0px;
+	padding-bottom: 6px;
+}
+
+ul.list-wrap-country {
+	margin-left: -20px;
+}
+
+li.item-wrap-country {
+	width: 160px;
+	float:left;
+	margin-left: 20px;
+}
+
+ul.list-country {
+	padding-left: 20px;
+}
+
+ul.list-country li {
+	border-bottom: 1px #fff solid;
+	float: none;
+	font-weight: bold;
+	margin: 10px 0;
+	text-align: left;
+	list-style-image: url(/static/img/icons/shared/list-icon.gif);
+}
+
+
+ul.list-city {
+	padding-left: 20px;
+}
+
+ul.list-city li {
+	border-bottom: 0;
+	color: #f74902;
+	font-weight: normal;
+	list-style: square;
+	list-style-image: none;
+}
+
+ul.single-agency {
+	margin-bottom: 10px;
+	padding-left: 0px;
+}
+
+ul.single-agency li {
+	font-weight: bold;
+	list-style: none;
+	list-style-image: none;
+}
+
+ul.list-city li a {
+	color: #2b2b2b;
+}
+
+ul.list-contact-emails {
+	min-height: 80px;
+	height: auto !important;
+	height: 80px;
+	margin: 10px 0 0 -20px;
+}
+
+ul.list-contact-emails li{
+	margin: 0 0 15px 20px;
+	width: 310px;
+}
+
+ul.list-contact-emails h3 {
+	display: inline;
+}
+
+ul.list-accordian {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+ul.list-accordian .icon-arrowhead{
+	margin-right: 0;
+}
+
+ul.list-accordian .first {
+	border-top:#fff 1px solid;
+	margin-right:0 !important;
+}
+
+ul.list-accordian .expander {
+	border-bottom: #fff 1px solid;
+	padding: 25px 20px;
+}
+
+ul.list-accordian .hover .title,
+ul.list-accordian .active .title,
+ul.list-accordian .active h2{
+	color: #f74902;
+}
+
+/* icons */
+
+.sml-icon-left {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding: 0px 0 0 55px;
+	min-height:	55px;
+	height: auto !important;
+	height: 55px;
+}
+
+/*font*/
+
+#global-locations .title{
+	margin-bottom: 15px;
+	font-size: 2em;
+}
+
+.phone-number, .site-footer .phone-number {
+	padding-top:0.6em;
+	font-size: 1.8em;
+}
+
+.case-study .box-feature .serif {
+  font-size: 1.3em;
+}
+
+/*logo*/
+.isobar_logo{
+	width:81px;
+	height:24px;
+}
+/*
+	pages
+*/
+
+.case-header .title {
+	padding-top: 0px;
+}
+
+#agency ul.list-flow {
+	padding-top: 25px;
+}
+
+.country-agencies #agency {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.country-agencies #agency .back-link {
+  margin-top: -60px !important;
+}
+
+#agency-info .title {
+	font-size: 2em;
+}
+
+#agency-info .location {
+	font-size: 1.3em;
+}
+
+.address {
+  line-height: 26px;
+  padding: 0.3em 0;
+}
+
+.people .team-header {
+	padding: 10px 0 15px;
+}
+
+#container-map {
+  margin-bottom: 10px;
+}
+
+#map {
+	height: 450px;
+	border: 1px solid #ffffff;
+	overflow: hidden;
+}
+
+.site-footer #local-agencies p {
+	padding: 0.7em 0 0;
+}
+
+/*styles for 320px and up!*/
+@media screen and (min-width: 0px) and (max-width: 765px) {
+
+	.site-header{
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+	
+	ul.list-agencies {
+	  margin-top: 0;
+	}
+
+	.contact .span1 .box-title-underlined {
+	  margin-top: 10px;
+	}
+
+	ul.list-wrap-country {
+		margin-left: -15px;
+	}
+
+	li.item-wrap-country {
+		width: 125px;
+		margin-left: 15px;
+	}
+
+	ul.list-contact-emails li{
+		margin: 0 0 15px 20px;
+		width: 100%;
+	}
+
+	#global-locations .title {
+	  margin-bottom: 10px;
+	}
+
+	/* accordian list*/
+	.list-accordian {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.list-accordian .expander {
+		padding: 10px 20px 8px;
+	}
+
+	/* fonts */
+	.list-accordian .expander .title {
+		font-size: 1.5em;
+	}
+
+	#global-locations .title,
+	#agency-info .title {
+		font-size: 1.3em;
+	}
+
+	#agency-info .location {
+		font-size: 1.1em;
+	}
+
+	.case-study .box-feature .serif {
+	  font-size: 1.15em;
+	}
+
+
+
+}/*/mediaquery*/
+
+/*styles for 1006px and up!*/
+@media only screen and (min-width: 1006px) {
+	li.item-wrap-country {
+		width: 140px;
+	}
+
+	ul.list-contact-emails li{
+		margin: 0 0 15px 20px;
+		width: 245px;
+	}
+	
+	#global-locations .title {
+	  font-size: 2.25em;
+	}
+}/*/mediaquery*/

@@ -1,0 +1,7 @@
+Django==1.2.5
+
+boto
+
+httplib2
+
+

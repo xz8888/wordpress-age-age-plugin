@@ -1,0 +1,62 @@
+[
+    {
+        "pk": 1,
+        "model": "labsisobar.partnershiptranslation",
+        "fields": {
+            "language_code": "en",
+            "master": 1,
+            "description": "<p><br />The MIT Media Lab is a collaborative creative environment in which designers, engineers, artists, and scientists apply unorthodox approaches that employ emerging technologies to enhance everyday life. <br /><br />For sponsors (including those in the media, entertainment, FMCG, and technology sectors) the Media Lab is a chance to incubate the kind of innovation that is essential to future growth.<br /><a href=\"http://www.media.mit.edu/\" target=\"_blank\"><br />http://www.media.mit.edu/</a></p>",
+            "title": "Partnership with MIT MediaLab"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "labsisobar.partnershiptranslation",
+        "fields": {
+            "language_code": "en",
+            "master": 2,
+            "description": "<p>The image links to the google</p>",
+            "title": "Another test partnership"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "labsisobar.partnership",
+        "fields": {
+            "url": "",
+            "image": "img/uploads/labsisobar/MITMediaLABS_image_1.png",
+            "remove_image": 0
+        }
+    },
+    {
+        "pk": 2,
+        "model": "labsisobar.partnership",
+        "fields": {
+            "url": "http://www.google.com/",
+            "image": "",
+            "remove_image": 0
+        }
+    },
+    {
+        "pk": 3,
+        "model": "labsisobar.labsindextranslation",
+        "fields": {
+            "headline": "We built nowLabs to bring digital innovation to our clients \u2026 Now.",
+            "meta_description": "",
+            "language_code": "en",
+            "master": 3,
+            "title": "Labs"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "labsisobar.labsindex",
+        "fields": {
+            "active": 1,
+            "featured_video": 16,
+            "partnerships": [
+                1
+            ]
+        }
+    }
+]

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% if department %}{{ department.title_label }}: {% endif %}{% trans 'People' %}{% endblock page_title %}
+{% block additional_headers %}
+	<meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_people' %}{% endblock meta_keywords %}">
+	<meta name="description" content="{% block meta_description %}{% trans 'meta_description_people' %}{% endblock meta_description %}">
+	<script type="text/javascript">
+		{% if department %}
+			var CAROUSEL_URL = '{% url department_ajax_view department.slug 'x' 'y' %}';
+		{% else %}
+			var CAROUSEL_URL = '{% url people_page_ajax_view 'x' 'y' %}';
+		{% endif %}
+	</script>
+	
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+	{% primary_nav 'people' %}
+{% endblock primary_nav %}
+
+{% block content %}
+		{% block department_nav %}
+			{% if department %}
+				{% department_nav 'open' department.slug %}
+			{% else %}
+				{% department_nav %}
+			{% endif %}
+		{% endblock department_nav %}
+
+		<div class="people {% if department %}people-dept{% endif %} wrap-content">
+				<section class="main-content-pad container container-pagination">
+				<div class="carousel-container">
+					<ul class="masonry list-flow clearfix">
+						{% for person in people.object_list  %}
+							<li class="box">
+								{% if forloop.counter|display_as_big %}
+									{% render_person person 'big' %}
+								{% else %}
+									{% if department %}
+										{% render_person person 'small' department %}
+									{% else %}
+										{% render_person person 'small' %}
+									{% endif %}
+								{% endif %}
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			<nav class="clearfix pagination">
+				<div class="step-links">
+					{% if people.previous_page_number == 0 %}
+						<a class="carousel-previous inactive">
+					{% else %}
+						{% if department %}
+							<a href="{% url people_department_page_view department.slug people.previous_page_number %}" class="carousel-previous">
+						{% else %}
+							<a href="{% url people_page_view people.previous_page_number %}" class="carousel-previous">
+						{% endif %}
+					{% endif %}
+						<span class="single-prev">{% trans 'previous' %}</span>
+					</a>
+					
+					{% if people.paginator.num_pages > 1 %}
+					<div class="carousel-link-container" style="width: {{ pagination_width }}px">
+					{% for page in people.paginator.page_range %}
+						{% if department %}
+							<a href="{% url people_department_page_view department.slug forloop.counter %}" class="carousel-link rollover fl{% if forloop.first %} selected{% endif %}"><span>{{ forloop.counter }}</span></a>
+						{% else %}
+							<a href="{% url people_page_view forloop.counter %}" class="carousel-link rollover fl{% if forloop.first %} selected{% endif %}"><span>{{ forloop.counter }}</span></a>
+						{% endif %}
+					{% endfor %}
+					</div>
+					{% endif %}
+
+					{% if department %}
+						<a href="{% url people_department_page_view department.slug people.next_page_number %}" class="carousel-next">
+					{% else %}
+						<a href="{% url people_page_view people.next_page_number %}" class="carousel-next">
+					{% endif %}
+
+					<span class="single-next">{% trans 'next' %}</span></a>
+				</div>
+			</nav>
+			</section>
+
+		</div>
+{% endblock content %}

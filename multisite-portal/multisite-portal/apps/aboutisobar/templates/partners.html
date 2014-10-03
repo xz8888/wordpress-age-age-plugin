@@ -1,0 +1,18 @@
+{% load i18n %}
+<article class="container clearfix zero-pad">
+    {% if partners %}
+     <section>
+            <ul>
+             {% for partner in partners %}
+                <li class="partner">
+                    <img src="{{ settings.MEDIA_URL }}{{ partner.image }}" alt="{{ partner.name|pluralize }} picture">
+                   
+	                <div class="partner-text">
+	                    <p>{{ partner.description|safe }}</p>
+	                </div>
+                </li>
+            {% endfor %}
+            </ul>
+    </section>
+    {% endif %}
+</article>

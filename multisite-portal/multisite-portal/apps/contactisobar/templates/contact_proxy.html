@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}Contact{% endblock page_title %}
+{% block additional_headers %}
+{% endblock additional_headers %}
+{% block primary_nav %}
+    {% primary_nav 'contact' %}
+{% endblock primary_nav %}    
+
+{% block content %}
+
+    {{ contact_data|safe }}
+
+{% endblock content %}

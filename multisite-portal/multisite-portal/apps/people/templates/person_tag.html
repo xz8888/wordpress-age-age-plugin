@@ -1,0 +1,37 @@
+{% if size = 'big' %}
+	<article class="media-box lrg-media-box">
+			{% if department %}
+				<a href="{% url people_department_person_view department.slug person.slug %}">
+			{% else %}
+				<a href="{{ person.get_absolute_url }}" >
+			{% endif %}
+			<img src="{{ person.image|thumbnail_no_gif:'300x300x1' }}" alt="{{ person.title_label }}">
+			<div class="info"><!--media-box content-->
+				<h1 class="title"><span class="int-link">{{ person.title_label }}</span></h1>
+				{% if person.role %}
+					<h2 class="subtitle">{{ person.role }}</h2>
+				{% else %}
+					<h2 class="subtitle">{{ person.department.title_label }}</h2>
+				{% endif %}
+
+{% else %}
+	<article class="media-box sml-media-box">
+			{% if department %}
+				<a href="{% url people_department_person_view department.slug person.slug %}" >
+			{% else %}
+				<a href="{{ person.get_absolute_url }}" >
+			{% endif %}
+			<img src="{{ person.image|thumbnail_no_gif:'140x140x1' }}" alt="{{ person.title_label }}">
+			<div class="media-box-rollover">
+				<h1 class="title">{{ person.title_label }}</h1>
+				<span class="rule rule-30"></span>
+				{% if person.role %}
+					<h2 class="subtitle">{{ person.role }}</h2>
+				{% else %}
+					<h2 class="subtitle">{{ person.department.title_label }}</h2>
+				{% endif %}
+{% endif %}
+
+		</div>
+	</a>
+</article>

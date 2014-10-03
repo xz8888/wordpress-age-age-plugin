@@ -1,0 +1,15 @@
+{% load i18n %}
+<nav class="clearfix sub-nav">
+	<dl class="list-departments clearfix container {{ additional_class }}">
+			
+		<dt class="trigger"><span class="icon-arrowhead rollover"></span>{% trans 'Filter department' %}</dt>
+		<dd class="panel">
+			<ul class="clearfix">
+				<li class="department fadeitem"><a href="{% url people_view %}" onmouseover="javascript:this.style.color='#9b9b9b'" onmouseout="javascript:this.style.color=''">{% trans 'Everyone' %}</a><span class="number" style="color:#9b9b9b;">{{ total_people }}</span></li>
+				{% for department in departments %}
+				<li class="department fadeitem"><a href="{{ department.get_absolute_url }}"{% if department.slug = selected %} class="selected" style="color:{{department.colour}};"{% else %} onmouseover="javascript:this.style.color='{{department.colour}}'" onmouseout="javascript:this.style.color=''"{% endif %}>{{ department.title_label }}</a><span class="number" style="color:{{department.colour}};">{{department.get_total_people}}</span></li>
+				{% endfor %}
+			</ul>
+		</dd>
+	</dl>
+</nav>

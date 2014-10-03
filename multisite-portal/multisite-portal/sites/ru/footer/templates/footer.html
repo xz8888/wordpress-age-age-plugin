@@ -1,0 +1,73 @@
+{% load i18n %}
+<div class="clearfix wrap-network site-footer">
+	<footer class="container clearfix">
+		<ul class="list-flow">
+			<li class="span2-to-span1">
+				<div class="fl">
+					<section id="isobar-details">
+						<h2 class="quote" style="font-style:normal;">{% trans 'Isobar' %}</h2>
+						<blockquote class="quote" cite="Isobar">
+							{% trans 'Bringing people and brands together like never before.' %}
+						</blockquote>
+					</section>
+				</div>
+			</li>
+
+			<li class="span1">
+				<div class="fl" style="width: 350px;">
+					<section id="phone-number">
+						<div class="footer-item-container">
+							<div class="icon-left icon-phone">
+								{% for phone_item in phone %}
+									<p class="phone-number serif">
+										{{ phone_item.number }}
+									</p>
+								{% endfor %}
+							</div>
+						</div>
+					</section>
+					<section id="email-address">
+						<div class="last-footer-item-container">						
+							<ul class="list-emails icon-left icon-emails">
+								{% for email_item in email %}
+									<li>
+										<a class="serif" href="mailto:{{ email_item.address }}">{{ email_item.address }}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</section>
+				</div>
+			</li>
+
+			<li class="span1">
+				<div class="fl">
+					<section id="newsletter-signup">
+						<div class="footer-item-container">
+							<div class="icon-left" style="background-image: url({{ settings.MEDIA_URL }}{{ promo.image }});">
+								{% if promo.content %}{{ promo.content|safe }}{% endif %}
+							</div>
+						</div>
+					</section>
+					<section id="socialise-with-us">
+						<nav class="last-footer-item-container">
+							<ul class="list-social-links">
+								{% for social_item in social %}
+									<li>
+										<a class="rollover" target="_blank" href="{{ social_item.link }}" style="background-image:url({{ settings.MEDIA_URL }}{{ social_item.image }});"></a>
+									</li>
+								{% endfor %}
+							</ul>
+						</nav>
+					</section>
+				</div>
+			</li>
+		</ul>
+	</footer>	
+</div>
+
+<div class="container">
+	<section class="legal">
+		{% include "footer/templates/legal.html" %}
+	</section>
+</div>

@@ -1,0 +1,40 @@
+        {% load dict_extras %}
+        <div class="dogear dogear-top dogear-bottom cb">
+                <div class="top"></div>
+                <section class="contacts-common-container tl clearfix">
+                {% for region in regions %}
+                    <div class="region">
+                        <div class="name">
+                            <span class="region-title serif">{{ region.name }}</span>
+                        </div>
+                        
+                        <div class="region-contact">
+                            <p>
+                            {% for contact in region.people.all %}
+                                {% if contact.title %}<b>{{contact.title}}</b>{% endif %}{% if contact.name %}, {{ contact.name }}{% endif %}{% if contact.email %}, <a href="mailto:{{ contact.email }}" alt="" class="email-link">{{ contact.email }}</a>{% endif %}
+                                 <br />
+                            {% endfor %}
+                            </p>
+                         </div>
+                        
+                       <hr class="region-rule"/>
+                       
+                        <ul class="region-column clearfix">
+                            {% for country in rc|hash:region.id %}
+                                {% for office in co|hash:country.id %}
+		                          {% if office.show %}
+		                              <li class="item-wrap-country">
+		                                   <span class="country-link">{{ country.name|upper }}: </span>
+		                                   <a href="{{ office.get_absolute_url }}" class="map-link" alt="{{ office.name }} homepage">{{ office.name }}</a>
+		                                   <br/>
+		                                   <a href="{{ office.get_absolute_url }}" class="website-link" alt="{{ office.get_absolute_url }} homepage">{{ office.url }}</a>
+		                              </li>
+                                    {% endif %}
+                                {% endfor %}         
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+                </section>
+                <div class="bottom"></div>
+            </div>

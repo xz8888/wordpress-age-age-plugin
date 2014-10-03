@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{{casestudyindex.title}}: {% trans 'glue Isobar: A Modern Communications Agency' %}{% endblock page_title %}
+
+{% block meta_description %}
+    {{casestudyindex.meta_description}}
+{% endblock meta_description %}
+
+{% block meta_og_title %}
+    {{casestudyindex.title}}
+{% endblock meta_og_title %}
+
+{% block meta_og_description %}
+    {{casestudyindex.meta_description}}
+{% endblock meta_og_description %}
+
+{% block additional_headers %}
+    <script>
+      /*  
+        -- This is kind of a cheap hack, but we're going to pre-load the position indicator 
+           for the PageCarousel subnav so that it doens't look like a gray square until it loads.
+      */
+      (function(window, document, undefined){
+      	var i = new Image;
+      	i.src = '/static/img/us/carousel/li-carousel-bg.png';
+      })(this, this.document);
+    </script>
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/us/local.css">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/us/roundarch-pagecarousel.css">
+    
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/us/roundarch-urls.js"></script>
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/us/roundarch-work.js"></script>
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/us/roundarch-pagecarousel.js"></script>
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/slidefill.js"></script>
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+	{% primary_nav 'work' %}
+{% endblock primary_nav %}
+
+{% block content %}
+    
+    <div id="fb-root"></div>
+    <script>
+	    (function(d, s, id) {
+	      var js, fjs = d.getElementsByTagName(s)[0];
+	      if (d.getElementById(id)) return;
+	      js = d.createElement(s); js.id = id;
+	      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	      fjs.parentNode.insertBefore(js, fjs);
+	    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+	<section class="work wrap-content">
+    <div class="main-content-pad">
+    <div class="container clearfix">
+    
+	
+	    {% if casestudyindex.headline %}
+        <section class="serif headline">
+            <span>{{ casestudyindex.headline }}</span>
+        </section>
+        {% endif %}
+                
+	    {% if casestudyindex and casestudyindex.featured_video %}
+	    {% with casestudyindex.featured_video as casestudy %}
+        <!--box-text section-->
+        <section class="dogear dogear-top dogear-bottom isobar-video-header tl clearfix"> 
+            <div class="top"></div>
+            
+            <ul class="list-flow mobile-clear clearfix force-clear">
+	            <li class="container-pagination isobar-span fl">
+	                <figure class="video-js-box">
+	                    <div class="video-js-box-inner">
+	                        {% if casestudy.video_download_url %}
+	                        <video id="video-1" class="video-js" controls="controls" preload="auto" poster="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}">
+	                            <source src="{{ casestudy.video_download_url }}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+	                            <source src="{{ casestudy.video_download_url }}.webm" type='video/webm; codecs="vp8, vorbis"'>
+	                            <source src="{{ casestudy.video_download_url }}.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+	
+	                            <object id="flash-1" class="vjs-flash-fallback" type="application/x-shockwave-flash" data="{{ settings.MEDIA_URL }}flash/player.swf">
+	                                <param name="movie" value="{{ settings.MEDIA_URL }}flash/player.swf">
+	                                <param name="allowfullscreen" value="true">
+	                                <param name="wmode" value="transparent">
+	                                <param name="flashvars" value='is_stream=false&img={{ settings.MEDIA_URL }}{{ casestudy.video_image }}&video={{ casestudy.video_download_url }}.mp4'>
+	                                <a href="{{ casestudy.video_download_url }}.3gp"><img src="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}" alt="{{ casestudy.title }}"></a>
+	                            </object>
+	                        </video>
+	                        {% else %}
+	                        <img class="video-js" src="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}" alt="{{ casestudy.title }}">
+	                        {% endif %}
+	                    </div>
+	                </figure>
+	            </li>
+                <li class="content-crossfade">
+                    <div class="isobar-video-text box fl span2-to-span1">
+                        <p class="title">{{ casestudy.title|safe|upper }}</p>
+                        <span class="rule" style="margin-bottom: 10px;"></span>
+                         <div class="panel-summary">{{ casestudy.body|safe }}</div>
+                        {% if casestudy.video_download_url %}
+                        <span class="rule rule-60"></span>
+                        <a class="call-to-action-text sub-title play-video" href="#" alt="Watch the Video">Watch the Video</a>
+                        {% endif %}
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="bottom"></div>
+        </section> <!--end box-text section-->
+	    {% endwith %}
+	    {% endif %}
+		
+		<div class="pagecarousel-button-parent">
+		  	<div class="dogear dogear-top aftershadow">
+		  	 <div class="top"></div>
+		  	 <div id="pagecarousel-thumb-buttons">
+		    	 <ul>
+		    	   <li class="pagecarousel-thumb {% if page == 'casestudies' %}active{% endif %}"><a href="/{{ request.LANGUAGE_CODE }}/work/" data-target="#work-casestudies">Work</a></li>
+		    	   <li class="pagecarousel-thumb {% if page == 'clients' %}active{% endif %}"><a href="/{{ request.LANGUAGE_CODE }}/work/clients/" data-target="#work-clients">Clients</a></li>
+		    	 </ul>
+		  	 </div>
+		  	</div>
+		</div>
+		<div class="pagecarousel-parent work-carousel" id="pagecarousel">
+		  	<div class="main-content-pad case-studies slidefill-parent pagecarousel-panel {% if page == 'casestudies' %}
+active{% endif %}" id="work-casestudies">
+		      {% if page == 'casestudies' %}
+            {% include "case_study_list.html" %}
+          {% else %}
+            <script>
+	            raURL.ajaxUrl('casestudies', '#work-casestudies', function() { ISOBAR.setUpSlideFill(); ISOBAR.attachShowMoreWork(); });
+            </script>
+            }
+          {% endif %}	
+		  	</div>
+		  	<div class="main-content-pad pagecarousel-panel {% if page == 'clients' %}
+active{% endif %}" id="work-clients">
+		      {% if page == 'clients' %}
+            {% include "clients.html" %}
+          {% else %}
+            <script>
+            raURL.ajaxUrl('clients', '#work-clients', ISOBAR.attachShowMoreClients);
+            </script>
+          {% endif %}
+		  	</div>
+		</div>
+	
+	</div>
+	</div>
+	</section> <!--end content area-->
+
+{% endblock content %}

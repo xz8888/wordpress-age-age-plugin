@@ -1,0 +1,22 @@
+{% load i18n %}
+<li class="span1 box">
+	<section class="box-feature"><!--box-text section-->
+		<div>
+			<h1 class="box-title title-container">{% trans 'glue Loves' %}</h1>
+			<span class="rule rule-220"></span>
+		</div>
+		<ul  class="list-standard">
+			{% for post in posts %}
+			<li>
+				<p class="serif"><a class="sub-title" href="{{ post.url }}">{{ post.title }}</a></p>
+<!--				<time datetime='{{ post.created|date:"c" }}'>{{ post.created|date:"jS F" }}</time>-->
+					<time datetime='{{ post.created|date:"c" }}'>{{ post.created|date:"jS M Y, h:i A" }}</time>
+				<span class="rule rule-30"></span>
+			</li>
+			{% endfor %}
+		</ul>
+		<footer class="wrap-int-link">
+			<a href="http://{{ account.user }}.posterous.com/" title="posterous"><span class="int-link">{% trans 'glue loves on posterous' %}</span></a>
+		</footer>
+	</section><!--end box-text section-->
+</li>

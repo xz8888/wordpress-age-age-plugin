@@ -1,0 +1,20 @@
+{% load i18n %}
+{% if friends %}
+<li class="span1 box">
+	<section class="box-feature"><!--box-text section-->
+		<div>
+			<h1 class="box-title title-container">{% trans 'Our Friends' %}</h1>
+			<span class="rule rule-220"></span>
+		</div>
+			<ul class="list-standard">
+				{% for friend in friends %}
+				<li>
+					<h3 class="serif sub-title"><a href="{{ friend.url }}">{{ friend.title }}</a></h3>
+					<p>{{ friend.description }}</p>
+					<span class="rule rule-30"></span>
+				</li>
+				{% endfor %}
+			</ul>
+	</section><!--end box-text section-->
+</li>
+{% endif %}

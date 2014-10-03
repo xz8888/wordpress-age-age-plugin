@@ -1,0 +1,42 @@
+{% load i18n %}
+{% if services %}
+<article class="container clearfix zero-pad">
+     <section class="services">
+	     {% for service in services %}
+		     {% if forloop.counter0 < 4 %}
+			     <div class="service-container ">
+			         <div class="service-short-description dogear dogear-bottom">
+  					     <div class="service">
+  			                 <h1 class="title">{{ service.title|safe }}</h1>
+  			                 {{ service.short_description|safe }}
+  				        </div>
+  		                <div class="bottom"></div>
+			        </div>
+		             <div class="service-long-description">
+		                 <div class="service">
+		                     <h1 class="title">{{ service.title|safe }}</h1>
+                             {% if service.long_description %}{{ service.long_description|safe }}{% else %}{{ service.short_description|safe }}{% endif %}
+		                </div>
+		            </div>
+			    </div>
+		    {% else %}
+                 <div class="service-container-full">
+                     <div class="service-short-description dogear dogear-bottom">
+                         <div class="service">
+                             <h1 class="title">{{ service.title|safe }}</h1>
+                             {{ service.short_description|safe }}
+                        </div>
+                        <div class="bottom"></div>
+                    </div>
+                     <div class="service-long-description">
+                         <div class="service">
+                             <h1 class="title">{{ service.title|safe }}</h1>
+                             {% if service.long_description %}{{ service.long_description|safe }}{% else %}{{ service.short_description|safe }}{% endif %}
+                        </div>
+                    </div>
+                </div>
+		    {% endif %}
+	    {% endfor %}
+    </section>
+</article>
+{% endif %}

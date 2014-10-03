@@ -1,0 +1,8 @@
+{% if active %}
+<div class="share-box" data-lang="{{ language }}" data-fb-url="{% if share_domain %}{{ share_domain }}{% else %}{% current_domain_full %}{% endif %}{{ url }}" >
+	<span class="title">{{ text|safe }}</span>
+	<span class="url">{% if share_domain %}{{ share_domain }}{% else %}{% current_domain_full %}{% endif %}{{ url }}</span>
+</div>{{ settings.CONTACT_DEFAULT }}
+{% endif %}
+
+

@@ -1,0 +1,905 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-26 11:09-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/join.html:3
+#: templates/symlinked/workisobar/templates/case_study_index.html:3
+#: templates/symlinked/workisobar/templates/clients_index.html:3
+msgid "glue Isobar: A Modern Communications Agency"
+msgstr "Roundarch Isobar: A Modern Communications Agency"
+
+#: templates/symlinked/about/templates/about.html:3
+#: templates/symlinked/aboutisobar/templates/aboutisobar.html:3
+#: templates/symlinked/common/templates/primary_nav.html:9
+msgid "About"
+msgstr ""
+
+#: templates/symlinked/about/templates/about.html:7
+msgid "meta_keywords_about"
+msgstr ""
+
+#: templates/symlinked/about/templates/about.html:8
+msgid "meta_description_about"
+msgstr ""
+
+#: templates/symlinked/aboutisobar/templates/aboutisobar.html:7
+msgid "meta_keywords_aboutisobar"
+msgstr ""
+
+#: templates/symlinked/aboutisobar/templates/aboutisobar.html:8
+msgid "meta_description_aboutisobar"
+msgstr ""
+
+#: templates/symlinked/common/templates/primary_nav.html:10
+#: templates/symlinked/work/templates/case_studies.html:3
+msgid "Work"
+msgstr ""
+
+#: templates/symlinked/common/templates/primary_nav.html:11
+#: templates/symlinked/people/templates/people.html:3
+#: templates/symlinked/people/templates/person.html:3
+msgid "People"
+msgstr ""
+
+#: templates/symlinked/common/templates/primary_nav.html:12
+#: templates/symlinked/jobs/templates/job.html:3
+#: templates/symlinked/jobs/templates/jobs.html:3
+#: templates/symlinked/jobs/templates/jobs.html:24
+msgid "Join"
+msgstr "Careers"
+
+#: templates/symlinked/common/templates/primary_nav.html:13
+#: templates/symlinked/news/templates/news.html:3
+msgid "News"
+msgstr ""
+
+#: templates/symlinked/common/templates/primary_nav.html:14
+msgid "Contact"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:23
+msgid "meta_keywords_contact"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:24
+msgid "meta_description_contact"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:37
+#: templates/symlinked/contact/templates/contact.html:112
+#: templates/symlinked/home/templates/home.html:38
+msgid "Address"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:39
+#: templates/symlinked/contact/templates/contact.html:114
+msgid "Addresses"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:50
+#: templates/symlinked/contact/templates/contact.html:126
+msgid "Get directions"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:51
+#: templates/symlinked/contact/templates/contact.html:128
+msgid "View on Google Maps"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:60
+#: templates/symlinked/contact/templates/contact.html:156
+msgid "Get in touch"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:64
+msgid ""
+"If you are interested in talking to us then please get in touch via the "
+"contact details below. Don't be shy now."
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:137
+#: templates/symlinked/home/templates/home.html:55
+msgid "Phone"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:144
+#: templates/symlinked/home/templates/home.html:63
+msgid "Email"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:158
+msgid ""
+"If you are a client or agency interested in talking to us then please get in "
+"touch with us via the phone numbers and email addresses below. Don't be shy "
+"now."
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:179
+msgid "Social"
+msgstr ""
+
+#: templates/symlinked/contact/templates/contact.html:196
+#: templates/symlinked/footer/templates/footer.html:10
+msgid "Bringing people and brands together like never before."
+msgstr ""
+
+#: templates/symlinked/filebrowser/fields.py:58
+#, python-format
+msgid "Extension %(ext)s is not allowed. Only %(allowed)s is allowed."
+msgstr ""
+
+#: templates/symlinked/filebrowser/forms.py:26
+#: templates/symlinked/filebrowser/templates/filebrowser/versions.html:64
+msgid "Name"
+msgstr ""
+
+#: templates/symlinked/filebrowser/forms.py:26
+#: templates/symlinked/filebrowser/forms.py:32
+#: templates/symlinked/filebrowser/forms.py:49
+#: templates/symlinked/filebrowser/forms.py:55
+msgid "Only letters, numbers, underscores, spaces and hyphens are allowed."
+msgstr ""
+
+#: templates/symlinked/filebrowser/forms.py:35
+#: templates/symlinked/filebrowser/forms.py:58
+msgid "The Folder already exists."
+msgstr ""
+
+#: templates/symlinked/filebrowser/forms.py:49
+msgid "New Name"
+msgstr ""
+
+#: templates/symlinked/filebrowser/forms.py:60
+msgid "The File already exists."
+msgstr ""
+
+#: templates/symlinked/filebrowser/settings.py:116
+msgid "Folder"
+msgstr ""
+
+#: templates/symlinked/filebrowser/settings.py:117
+msgid "Image"
+msgstr ""
+
+#: templates/symlinked/filebrowser/settings.py:118
+msgid "Video"
+msgstr ""
+
+#: templates/symlinked/filebrowser/settings.py:119
+msgid "Document"
+msgstr ""
+
+#: templates/symlinked/filebrowser/settings.py:120
+msgid "Audio"
+msgstr ""
+
+#: templates/symlinked/filebrowser/settings.py:121
+msgid "Code"
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:54
+#: templates/symlinked/filebrowser/views.py:164
+#: templates/symlinked/filebrowser/views.py:219
+#: templates/symlinked/filebrowser/views.py:316
+#: templates/symlinked/filebrowser/views.py:398
+#: templates/symlinked/filebrowser/views.py:459
+msgid "The requested Folder does not exist."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:58
+msgid "Error finding Upload-Folder. Maybe it does not exist?"
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:141
+#: templates/symlinked/filebrowser/templates/filebrowser/append.html:5
+#: templates/symlinked/filebrowser/templates/filebrowser/append.html:7
+#: templates/symlinked/filebrowser/templates/filebrowser/include/breadcrumbs.html:8
+#: templates/symlinked/filebrowser/templates/filebrowser/include/breadcrumbs.html:10
+msgid "FileBrowser"
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:182
+#, python-format
+msgid "The Folder %s was successfully created."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:191
+msgid "Permission denied."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:193
+msgid "Error creating folder."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:200
+#: templates/symlinked/filebrowser/views.py:203
+#: templates/symlinked/filebrowser/templates/filebrowser/index.html:52
+msgid "New Folder"
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:231
+msgid "Select files to upload"
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:235
+#: templates/symlinked/filebrowser/templates/filebrowser/index.html:53
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:108
+msgid "Upload"
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:318
+#: templates/symlinked/filebrowser/views.py:400
+#: templates/symlinked/filebrowser/views.py:461
+msgid "The requested File does not exist."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:341
+#, python-format
+msgid "The file %s was successfully deleted."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:357
+#, python-format
+msgid "The folder %s was successfully deleted."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:427
+msgid "Renaming was successful."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:432
+msgid "Error."
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:440
+#, python-format
+msgid "Rename \"%s\""
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:443
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:75
+msgid "Rename"
+msgstr ""
+
+#: templates/symlinked/filebrowser/views.py:469
+#: templates/symlinked/filebrowser/views.py:472
+#, python-format
+msgid "Versions for \"%s\""
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/makedir.html:25
+#: templates/symlinked/filebrowser/templates/filebrowser/rename.html:25
+msgid "Please correct the following errors."
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/makedir.html:33
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:98
+msgid ""
+"The Name will be converted to lowercase. Spaces will be replaced with "
+"underscores."
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/makedir.html:38
+#: templates/symlinked/filebrowser/templates/filebrowser/rename.html:36
+msgid "Submit"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:46
+msgid "BROWSE"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:47
+msgid "An Error occured"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:48
+msgid "Completed"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:49
+msgid "Do you want to replace the file"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:50
+msgid "KB"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:51
+msgid "MB"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:81
+msgid "Help"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:85
+msgid "Allowed"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:91
+msgid "Max. Filesize"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/upload.html:106
+msgid "Clear Queue"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/versions.html:67
+msgid "Image Version"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/versions.html:70
+msgid "Debug"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/versions.html:84
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:12
+msgid "Select"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/versions.html:96
+#: templates/symlinked/filebrowser/templates/filebrowser/versions.html:108
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:26
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:40
+msgid "Select File"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/versions.html:119
+msgid "Width"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/versions.html:120
+msgid "Height"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/breadcrumbs.html:5
+#: templates/symlinked/multilingual/templates/admin/multilingual/change_form.html:64
+msgid "Home"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:51
+msgid "Show Versions"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:62
+msgid "View Image"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:87
+msgid "Are you sure you want to delete this file?"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:87
+msgid "Delete File"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:90
+msgid "Are you sure you want to delete this Folder?"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filelisting.html:90
+msgid "Delete Folder"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:3
+msgid "Filter"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:9
+msgid "By Date"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:11
+msgid "Any Date"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:13
+msgid "Today"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:15
+msgid "Past 7 days"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:17
+msgid "Past 30 days"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:19
+msgid "This year"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:27
+msgid "By Type"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/filter.html:29
+#: templates/symlinked/news/templates/news_nav.html:22
+msgid "All"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/paginator.html:5
+msgid "No Items Found"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/paginator.html:11
+#, python-format
+msgid "%(counter)s Item"
+msgid_plural "%(counter)s Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/paginator.html:26
+msgid "No Items"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/search.html:3
+#, python-format
+msgid "1 result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/search.html:4
+#: templates/symlinked/filebrowser/templates/filebrowser/include/toolbar.html:19
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/search.html:5
+msgid "Clear Restrictions"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/search.html:7
+#: templates/symlinked/filebrowser/templates/filebrowser/include/toolbar.html:16
+msgid "Search"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/search.html:19
+msgid "Go"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/search.html:24
+#, python-format
+msgid "%(counter)s Item found"
+msgid_plural "%(counter)s Items found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/search.html:25
+#, python-format
+msgid "%(counter)s Item total"
+msgid_plural "%(counter)s Items total"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/tableheader.html:16
+#: templates/symlinked/filebrowser/templates/filebrowser/include/tableheader.html:17
+msgid "Filename"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/tableheader.html:21
+#: templates/symlinked/filebrowser/templates/filebrowser/include/tableheader.html:22
+msgid "Size"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/tableheader.html:24
+#: templates/symlinked/filebrowser/templates/filebrowser/include/tableheader.html:25
+msgid "Date"
+msgstr ""
+
+#: templates/symlinked/filebrowser/templates/filebrowser/include/toolbar.html:19
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/symlinked/footer/templates/legal.html:2
+msgid "glue Isobar"
+msgstr "Roundarch Isobar"
+
+#: templates/symlinked/footer/templates/legal.html:2
+msgid "is a trading division of"
+msgstr ""
+
+#: templates/symlinked/footer/templates/legal.html:2
+msgid "Aegis Media Limited"
+msgstr ""
+
+#: templates/symlinked/footer/templates/legal.html:2
+msgid ""
+". Registered office 43-49 Parker St. London WC2B 5PS. Registered in England "
+"and Wales No. 01939690"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:5
+#: templates/symlinked/homeisobar/templates/home.html:6
+msgid "meta_keywords_home"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:9
+msgid "meta_description_home"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:13
+msgid "Isobar: A Modern Communications Agency"
+msgstr "Roundarch Isobar: A Slightly More Modern Communications Agency"
+
+#: templates/symlinked/home/templates/home.html:17
+msgid "Isobar is an advertising agency specialising in digital creative work."
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:21
+msgid "default.jpg"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:43
+msgid "Location map"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:81
+msgid "Welcome!"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:82
+msgid ""
+"We are glue Isobar, a creative agency with digital very much at our heart.  "
+"Our London office is home to 150 fabulously talented individuals and is the "
+"HQ for Isobar global creative network."
+msgstr " We are RoundarchIsobar, a creative agency with digital very much at our heart. "
+
+#: templates/symlinked/home/templates/home.html:86
+msgid "View our showreel"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:142
+#: templates/symlinked/home/templates/home.html:204
+#: templates/symlinked/homeisobar/templates/home.html:50
+#: templates/symlinked/homeisobar/templates/home.html:61
+msgid "glue News"
+msgstr "RoundarchIsobar News"
+
+#: templates/symlinked/home/templates/home.html:148
+#: templates/symlinked/home/templates/home.html:210
+#: templates/symlinked/homeisobar/templates/home.html:56
+#: templates/symlinked/homeisobar/templates/home.html:67
+#: templates/symlinked/news/templates/news.html:78
+#: templates/symlinked/news/templates/news_small_item.html:3
+#: templates/symlinked/news/templates/news_small_item.html:54
+msgid "Read More"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:267
+#: templates/symlinked/homeisobar/templates/home.html:76
+#: templates/symlinked/news/templates/news_twitter.html:5
+msgid "Our Latest Tweet"
+msgstr ""
+
+#: templates/symlinked/home/templates/home.html:276
+#: templates/symlinked/homeisobar/templates/home.html:85
+#: templates/symlinked/news/templates/news_twitter.html:22
+msgid "follow us @"
+msgstr ""
+
+#: templates/symlinked/homeisobar/templates/home.html:97
+#: templates/symlinked/homeisobar/templates/home.html:116
+msgid "From the Blog"
+msgstr ""
+
+#: templates/symlinked/jobs/templates/job.html:15
+#: templates/symlinked/jobs/templates/jobs.html:20
+msgid "Hello!"
+msgstr ""
+
+#: templates/symlinked/jobs/templates/job.html:18
+#: templates/symlinked/jobs/templates/jobs.html:23
+msgid ""
+"We&#x27;re always on the lookout for established and up and coming talent "
+"across account management, planning, production, design, development and "
+"creative."
+msgstr ""
+
+#: templates/symlinked/jobs/templates/job.html:19
+#: templates/symlinked/jobs/templates/jobs.html:24
+#: templates/symlinked/jobs/templates/careers_index.html:24
+msgid "iwanttowork@glueisobar.com"
+msgstr "careers@roundarch.com"
+
+#: templates/symlinked/jobs/templates/job.html:23
+#: templates/symlinked/jobs/templates/jobs.html:28
+msgid "See our current vacancies below..."
+msgstr "See all of our open positions."
+
+#: templates/symlinked/jobs/templates/job.html:36
+#: templates/symlinked/jobs/templates/jobs.html:49
+msgid "Apply to"
+msgstr ""
+
+#: templates/symlinked/jobs/templates/jobs.html:5
+msgid "meta_keywords_jobs"
+msgstr ""
+
+#: templates/symlinked/jobs/templates/jobs.html:6
+msgid "meta_description_jobs"
+msgstr ""
+
+#: templates/symlinked/jobs/templates/jobs.html:24
+msgid "Drop us a line at"
+msgstr ""
+
+#: templates/symlinked/jobs/templates/jobs.html:24
+msgid "."
+msgstr ""
+
+#: templates/symlinked/multilingual/admin.py:238
+#: templates/symlinked/multilingual/templates/admin/multilingual/change_form.html:82
+msgid "language"
+msgstr ""
+
+#: templates/symlinked/multilingual/admin.py:243
+msgid "and"
+msgstr ""
+
+#: templates/symlinked/multilingual/admin.py:245
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#: templates/symlinked/multilingual/admin.py:380
+#, python-format
+msgid "The %(name)s \"%(obj)s\" was changed successfully."
+msgstr ""
+
+#: templates/symlinked/multilingual/admin.py:381
+msgid "You may edit it again below."
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/admin.py:9
+#: templates/symlinked/multilingual/flatpages/models.py:11
+msgid "URL"
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/admin.py:10
+msgid ""
+"Example: '/about/contact/'. Make sure to have leading and trailing slashes."
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/admin.py:12
+msgid ""
+"This value must contain only letters, numbers, underscores, dashes or "
+"slashes."
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/admin.py:23
+msgid "Advanced options"
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:12
+msgid "enable comments"
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:13
+msgid "template name"
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:14
+msgid ""
+"Example: 'flatpages/contact_page.html'. If this isn't provided, the system "
+"will use 'flatpages/default.html'."
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:15
+msgid "registration required"
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:15
+msgid "If this is checked, only logged-in users will be able to view the page."
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:34
+msgid "title"
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:35
+msgid "content"
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:39
+msgid "multilingual flat page"
+msgstr ""
+
+#: templates/symlinked/multilingual/flatpages/models.py:40
+msgid "multilingual flat pages"
+msgstr ""
+
+#: templates/symlinked/multilingual/templates/admin/multilingual/change_form.html:67
+msgid "Add"
+msgstr ""
+
+#: templates/symlinked/multilingual/templates/admin/multilingual/edit_inline/tabular.html:15
+msgid "Delete?"
+msgstr ""
+
+#: templates/symlinked/multilingual/templates/admin/multilingual/edit_inline/tabular.html:28
+msgid "View on site"
+msgstr ""
+
+#: templates/symlinked/multilingual/templates/admin/multilingual/edit_inline/tabular.html:112
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: templates/symlinked/multilingual/templates/admin/multilingual/edit_inline/tabular.html:115
+msgid "Remove"
+msgstr ""
+
+#: templates/symlinked/news/templates/archive.html:3
+msgid "Archive"
+msgstr ""
+
+#: templates/symlinked/news/templates/news.html:7
+msgid "meta_keywords_news"
+msgstr ""
+
+#: templates/symlinked/news/templates/news.html:8
+msgid "meta_description_news"
+msgstr ""
+
+#: templates/symlinked/news/templates/news.html:54
+msgid "Posted On:"
+msgstr ""
+
+#: templates/symlinked/news/templates/news.html:61
+msgid "Posted In:"
+msgstr ""
+
+#: templates/symlinked/news/templates/news.html:105
+#: templates/symlinked/news/templates/news.html:107
+msgid "Show More"
+msgstr ""
+
+#: templates/symlinked/news/templates/news.html:110
+msgid "No more news stories."
+msgstr ""
+
+#: templates/symlinked/news/templates/news.html:116
+msgid "No news stories for this category."
+msgstr ""
+
+#: templates/symlinked/news/templates/news_friends.html:6
+msgid "Our Friends"
+msgstr ""
+
+#: templates/symlinked/news/templates/news_nav.html:7
+msgid "Archives"
+msgstr ""
+
+#: templates/symlinked/news/templates/news_nav.html:13
+msgid "RSS"
+msgstr ""
+
+#: templates/symlinked/news/templates/news_nav.html:19
+msgid "Filter category"
+msgstr ""
+
+#: templates/symlinked/news/templates/news_posterous.html:5
+msgid "glue Loves"
+msgstr ""
+
+#: templates/symlinked/news/templates/news_posterous.html:19
+msgid "glue loves on posterous"
+msgstr ""
+
+#: templates/symlinked/news/templates/news_small_item.html:27
+msgid "on"
+msgstr ""
+
+#: templates/symlinked/news/templates/news_small_item.html:29
+msgid "Posted on"
+msgstr ""
+
+#: templates/symlinked/news/templates/posted_by.html:13
+msgid "Author:"
+msgstr ""
+
+#: templates/symlinked/news/templates/posted_by_small_item.html:5
+msgid "By"
+msgstr ""
+
+#: templates/symlinked/news/templates/story.html:16
+#: templates/symlinked/people/templates/person.html:38
+#: templates/symlinked/work/templates/case_study.html:32
+msgid "Close"
+msgstr ""
+
+#: templates/symlinked/news/templates/story.html:39
+msgid "Posted on:"
+msgstr ""
+
+#: templates/symlinked/news/templates/story.html:46
+msgid "Posted in:"
+msgstr ""
+
+#: templates/symlinked/news/templates/story.html:54
+msgid "Related links:"
+msgstr ""
+
+#: templates/symlinked/people/templates/departments_nav.html:5
+msgid "Filter department"
+msgstr ""
+
+#: templates/symlinked/people/templates/departments_nav.html:8
+msgid "Everyone"
+msgstr ""
+
+#: templates/symlinked/people/templates/people.html:5
+msgid "meta_keywords_people"
+msgstr ""
+
+#: templates/symlinked/people/templates/people.html:6
+msgid "meta_description_people"
+msgstr ""
+
+#: templates/symlinked/people/templates/people.html:60
+msgid "previous"
+msgstr ""
+
+#: templates/symlinked/people/templates/people.html:81
+msgid "next"
+msgstr ""
+
+#: templates/symlinked/tinymce/views.py:68
+msgid "Error running spellchecker"
+msgstr ""
+
+#: templates/symlinked/transurlvania/templates/admin/includes/ml_links.html:10
+msgid "Save"
+msgstr ""
+
+#: templates/symlinked/transurlvania/templates/admin/includes/ml_links.html:12
+msgid "Save and Add/Edit Translation:"
+msgstr ""
+
+#: templates/symlinked/work/templates/case_studies.html:8
+msgid "meta_keywords_casestudies"
+msgstr ""
+
+#: templates/symlinked/work/templates/case_studies.html:9
+msgid "meta_description_casestudies"
+msgstr ""
+
+#: templates/symlinked/work/templates/case_study.html:11
+msgid "meta_keywords_casestudy"
+msgstr ""
+
+#: templates/symlinked/work/templates/case_study.html:12
+msgid "meta_description_casestudy"
+msgstr ""
+
+#: templates/symlinked/work/templates/case_study.html:40
+msgid "Featured work from"
+msgstr ""
+
+#: templates/symlinked/work/templates/case_study.html:87
+msgid "Share this video"
+msgstr ""
+
+#: templates/symlinked/work/templates/case_study.html:101
+msgid "View the work"
+msgstr ""

@@ -1,0 +1,30 @@
+{% extends "admin/base_site.html" %}
+{% block title %}Add Cloudfront Distribution {{ block.super }}{% endblock title %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="../../">Home</a> &rsaquo;
+    <a href="../">Cloudfront</a>  &rsaquo;
+    Add Distribution
+</div>
+{% endblock %}
+
+{% block bodyclass %}change-list{% endblock %}
+
+{% block coltype %}flex{% endblock %}
+
+{% block content %}
+	<div id="content-main">
+		<h1>Add Distribution</h1>
+
+	    
+	    <div class="module" id="changelist">
+		    <form action="." method="post">
+			{% csrf_token %}
+			    {{ form.as_p }}
+
+			    <button>Save</button>
+		    </form>
+	    </div>
+	</div>
+{% endblock content %}

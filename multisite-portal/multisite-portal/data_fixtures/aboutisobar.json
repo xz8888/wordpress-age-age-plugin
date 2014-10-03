@@ -1,0 +1,386 @@
+[
+    {
+        "pk": 1,
+        "model": "aboutisobar.profiletranslation",
+        "fields": {
+            "master": 1,
+            "description": "<p>A passionate advocate for the power of digital, Jeff has 16 years of experience shaping interactive and multi-channel strategies for clients that include: AVIS, Bloomberg, Citi, BNY Mellon, Healthways, Motorola, The Hershey Company, and others. Prior to leading a management buyout in 2005, Jeff played multiple roles at Roundarch, including head of strategy and Chief Experience Officer.</p>\r\n<p>Before Roundarch, Jeff was a senior manager in the CRM practice of Deloitte Consulting where he served clients from their Chicago, London and Boston offices. Prior to joining Deloitte Consulting, Maling served in Accenture's Boston office. He has an MBA from the University of Chicago, and also holds both an MA and BA in history from Tufts University. Jeff lives in Chicago with his wife and three boys.</p>",
+            "language_code": "en"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "aboutisobar.profiletranslation",
+        "fields": {
+            "master": 2,
+            "description": "<p>Jim has been assisting clients drive digital strategies from the beginning of the internet era for clients such as: AVIS, Bloomberg, Deutsche Bank, Citi and others. Prior to joining Roundarch, Jim led the financial services practice at Avenue A / Razorfish, where he served clients from their New York, Boston and Florida offices.</p>\r\n<p>Butler's deep understanding of user experience design, channel integration, and technology provided clients such as JPMorgan Chase, Citibank, MetLife, Morgan Stanley and NCCI with highly desirable user-centered solutions. He has more than 24 years of financial services experience as both a buyer of professional services and as a consultant. Jim has a BS in Economics Management from Ithaca College. He lives with his wife and son in Ho-Ho-Kus, New Jersey.</p>",
+            "language_code": "en"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "aboutisobar.profiletranslation",
+        "fields": {
+            "master": 3,
+            "description": "<p>Geoff has significant experience designing and managing complex web solutions with integration to enterprise systems for several industry-leading organizations, including: American Express, Bear Stearns, JPMorgan Chase, Northern Trust, HBO, Agilent, Molex, Waters, Baxter Healthcare and Best Buy. Prior to leading a management buyout in 2005, Geoff was Chief Technology Officer at Roundarch, where he led the build-out of Roundarch&rsquo;s highly successful J2EE frameworks, rich internet offering, and multi-channel enablement layer.</p>\r\n<p>Geoff has 20 years of systems development, operations improvement and consulting expertise&mdash;with the past 12 years focused on digital channels. Before joining Roundarch, Cubit was one of the founding members of Deloitte Consulting&rsquo;s CRM and eBusiness practice. He has an MS in Industrial Engineering from Stanford University and a BS in Industrial Engineering from Purdue University. Geoff lives in Evanston, Illinois with his wife and two boys.</p>",
+            "language_code": "en"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "aboutisobar.profiletranslation",
+        "fields": {
+            "master": 4,
+            "description": "<p>As Chief Financial Officer, Bruce is responsible for all Finance, Human Resources and Administration functions. Prior to joining Roundarch, he was CFO of Cap Gemini's U.S. business. Bruce wore many hats during his 17-year tenure with their U.S. operations&mdash;Vice President of Human Resources, National Staffing Manager, Northeast Business Unit Manager and Controller. Before Cap Gemini, Bruce held positions at The Baker &amp; Taylor Companies and worked as an auditor for Touche Ross &amp; Co. He has a BS from the City University of New York (Brooklyn College) and is a Certified Public Accountant.</p>",
+            "language_code": "en"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "aboutisobar.profiletranslation",
+        "fields": {
+            "master": 5,
+            "description": "<p>Darryl is passionate about transforming the way the world&rsquo;s biggest brands reach, connect and engage with consumers. His cross-disciplinary expertise in e-commerce, social media, mobile marketing and brand strategy has helped drive new levels of engagement between brand and consumer for clients such as: adidas, Boston Celtics, Coca-Cola, Fidelity Investments, Monster, Nikon, Nokia, and Staples.</p>\r\n<p>Before being appointed president, Gehly served as head of business development for Aegis Media North America&mdash;where he helped propel business growth and collaboration at the group level. Darryl was a founding member of Molecular, which was acquired by Aegis and rebranded Isobar in 2005. Prior to Molecular, he held management positions for a publishing firm and served as a PR professional for the USAF. Darryl studied computer science at the Florida Institute of Technology and Keene State College, and graduated with honors from the Defense Information School of Journalism. He lives in Plymouth, MA with his wife and son.</p>",
+            "language_code": "en"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "aboutisobar.profile",
+        "fields": {
+            "image": "img/uploads/aboutisobar/WhoWeAre_01_JMaling_lrg.jpg",
+            "name": "Jeff Maling",
+            "order": 100
+        }
+    },
+    {
+        "pk": 3,
+        "model": "aboutisobar.profile",
+        "fields": {
+            "image": "img/uploads/aboutisobar/WhoWeAre_02_GCubit_lrg_1.jpg",
+            "name": "Geoff Cubitt",
+            "order": 200
+        }
+    },
+    {
+        "pk": 4,
+        "model": "aboutisobar.profile",
+        "fields": {
+            "image": "img/uploads/aboutisobar/WhoWeAre_03_BPosner_lrg_1.jpg",
+            "name": "Bruce Posner",
+            "order": 300
+        }
+    },
+    {
+        "pk": 2,
+        "model": "aboutisobar.profile",
+        "fields": {
+            "image": "img/uploads/aboutisobar/WhoWeAre_04_JButler_lrg.jpg",
+            "name": "Jim Butler",
+            "order": 400
+        }
+    },
+    {
+        "pk": 5,
+        "model": "aboutisobar.profile",
+        "fields": {
+            "image": "img/uploads/aboutisobar/WhoWeAre_05_DGehly_lrg1.jpg",
+            "name": "Darryl Gehly",
+            "order": 500
+        }
+    },
+    {
+        "pk": 1,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/Adobe_1.jpg",
+            "description": "The long time web innovators have recently added enterprise CMS (CQ5) and measurements (Omniture) products.",
+            "title": "Adobe"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/amazon_1.jpg",
+            "description": "Amazon has moved from retailer to digital heavyweight with the ubiquitous Kindle and their EC2 cloud offering.",
+            "title": "Amazon"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/apple_-_minimized_1.jpg",
+            "description": "iPhone, iPad and IAd have made apple a major digital platform.",
+            "title": "Apple"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/Autonomy-HP-logo_-_Minimized.jpg",
+            "description": "A pioneer in its industry, Autonomy's unique, market-leading software technology helps companies make sense of unstructured 'human information', drawing real business value from the most modernized forms  communication.",
+            "title": "Autonomy"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/brightcove.jpg",
+            "description": "Brightcove Inc. helps design and distribute the world's  digital media thanks to a robust portfolio featuring the Brightcove Video Cloud and the Brightcove App Cloud, a pioneering content platform.",
+            "title": "Brightcove"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/crownpeak_logo.jpg",
+            "description": "CrownPeak drives more powerful online campaigns and delivers more leads to sales with enterprise-grade Web Content Management (WCM) and Optimization (WCO) solutions.",
+            "title": "Crown Peak"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/ektron_color.jpg",
+            "description": "Ektron delivers innovative software that is changing the way people experience the web.",
+            "title": "Ektron"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/eZ.jpg",
+            "description": "EZ Systems advances innovation in the Web Content Management space by offering open source software technology to the world\u2019s professionals. ",
+            "title": "EZ Systems"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/facebook.jpg",
+            "description": "Facebook, Inc. builds game-changing tools that empower users and developers to connect, share, discover and communicate like never before. ",
+            "title": "Facebook"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/Google.jpg",
+            "description": "Google provides internet-related products and services, including search, cloud computing, software and  advertising technologies.",
+            "title": "Google"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/IBM.jpg",
+            "description": "IBM's server and portal applications have become the technology platform of choice for an increasing number of global enterprises.",
+            "title": "IBM"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/Microsoft.jpg",
+            "description": "Lauded for its decades-long commitment to software innovation, Microsoft's Business and Online Division has helped to make it an increasingly relevant player in the digital services arena.",
+            "title": "Microsoft"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/Oracle.jpg",
+            "description": "Oracle's recent acquisitions has positioned it as one of the few truly dominant players in the digital experiences market.",
+            "title": "Oracle"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/percussion_logo.jpg.png",
+            "description": "For over 10 years Percussion has created web content, experience, and engagement software products that create a more engaging experience online.",
+            "title": "Percussion"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/sdl-tridion-logo.jpg",
+            "description": "SDL Tridion provides innovative, market-leading solutions that helps businesses around the world engage with their customers in the language, media and moment they prefer.",
+            "title": "SDL Tridion"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/sitecore_color.jpg",
+            "description": "Sitecore has received industry recognition for Web Content Management and online customer experience.",
+            "title": "Sitecore"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "aboutisobar.partner",
+        "fields": {
+            "image": "img/uploads/aboutisobar/Teradata.jpg",
+            "description": "Leading the way\u2014and the field\u2014in analytics, Teradata delivers unparalleled service to a broad range of industries in the areas of data warehousing, business intelligence and CRM.  ",
+            "title": "Teradata"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "aboutisobar.servicetranslation",
+        "fields": {
+            "short_description": "<p>We develop digital product and communication strategies that influence people and positively affect<br /> business results.</p>",
+            "language_code": "en",
+            "master": 1,
+            "long_description": "<p><strong>strategy</strong>: brand, interactive, multi-channel, social, content</p>\r\n<p>&nbsp;</p>\r\n<p><strong>Business&nbsp; planning</strong>:&nbsp; business case, roadmap</p>\r\n<p>&nbsp;</p>\r\n<p><strong>new product development</strong></p>\r\n<p><strong><br /></strong></p>\r\n<p><strong>NOWlab&trade;</strong></p>",
+            "title": "Plan"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "aboutisobar.servicetranslation",
+        "fields": {
+            "short_description": "<p>We design intuitive&nbsp; experiences that are a joy to use</p>",
+            "language_code": "en",
+            "master": 2,
+            "long_description": "<p><strong>research</strong>:&nbsp; primary, secondary, segmentation, persona development, heuristics, and competitive analysis</p>\r\n<p>&nbsp;</p>\r\n<p><strong>requirements and specs</strong>:&nbsp; content analysis and specs, functional requirements, functional specifications</p>\r\n<p>&nbsp;</p>\r\n<p><strong>user experience design</strong>: information architecture, taxonomy and meta data, interaction design, mobile</p>",
+            "title": "Design"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "aboutisobar.servicetranslation",
+        "fields": {
+            "short_description": "<p>We build highly scalable and flexible technology solutions.</p>",
+            "language_code": "en",
+            "master": 3,
+            "long_description": "<p><strong>architecture strategy</strong></p>\r\n<p>&nbsp;</p>\r\n<p><strong>software selection</strong></p>\r\n<p>&nbsp;</p>\r\n<p><strong>technical design and build</strong>: content management, search, portals, front-end technology, mobile, internet-enabled devices, social apps, web services, security</p>",
+            "title": "Build"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "aboutisobar.servicetranslation",
+        "fields": {
+            "short_description": "<p>We create, measure, and optimize digitally-centered&nbsp; programs and campaigns</p>",
+            "language_code": "en",
+            "master": 4,
+            "long_description": "<p><strong>creative</strong>: advertising, visual design, experience design, content creation, studio production</p>\r\n<p>&nbsp;</p>\r\n<p><strong>communications planning</strong>: innovation and insight, audience planning and social, programming and propagation, integrated platform, service design</p>\r\n<p>&nbsp;</p>\r\n<p><strong>optimization</strong>: analytics, monitoring, SEO, landing pages, MVT, search, media ROI analysis</p>\r\n<p>&nbsp;</p>",
+            "title": "Market"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "aboutisobar.servicetranslation",
+        "fields": {
+            "short_description": "<p>We run large, complex, digitally-centered programs</p>",
+            "language_code": "en",
+            "master": 5,
+            "long_description": "<p><strong>account services | program management | AOR | hosting | outsourcing</strong></p>",
+            "title": "Manage"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "aboutisobar.service",
+        "fields": {
+            "order": 999
+        }
+    },
+    {
+        "pk": 2,
+        "model": "aboutisobar.service",
+        "fields": {
+            "order": 999
+        }
+    },
+    {
+        "pk": 3,
+        "model": "aboutisobar.service",
+        "fields": {
+            "order": 999
+        }
+    },
+    {
+        "pk": 4,
+        "model": "aboutisobar.service",
+        "fields": {
+            "order": 999
+        }
+    },
+    {
+        "pk": 5,
+        "model": "aboutisobar.service",
+        "fields": {
+            "order": 999
+        }
+    },
+    {
+        "pk": 4,
+        "model": "aboutisobar.abouttranslation",
+        "fields": {
+            "meta_description": "digital",
+            "master": 4,
+            "language_code": "en"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "aboutisobar.about",
+        "fields": {
+            "partners": [
+                1,
+                5,
+                6,
+                2,
+                7,
+                16,
+                8,
+                9,
+                3,
+                4,
+                10,
+                11,
+                12,
+                17,
+                13
+            ],
+            "title": "About",
+            "profiles": [
+                1,
+                3,
+                4,
+                2,
+                5
+            ],
+            "active": 1,
+            "featured_video": 15,
+            "featured_slogan": "We bring people and brands together like never before.",
+            "services": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "profiles_text": "<p>We like to remind ourselves of nine critical things we need to do for each other and for our clients:<br /><br /></p>\r\n<ul>\r\n<li>Be relevant.</li>\r\n<li>Be experts</li>\r\n<li>Debate, but be nice about it. </li>\r\n<li>Put great ideas above great execution. </li>\r\n<li>Ensure that the execution lives up to the idea.</li>\r\n<li>Get the best ideas from inside the tent, and outside. </li>\r\n<li>Merge art with tech seamlessly. </li>\r\n<li>Expect creativity from yourself and others. </li>\r\n<li>Create brand experiences that surprise and delight the consumer.</li>\r\n</ul>"
+        }
+    }
+]

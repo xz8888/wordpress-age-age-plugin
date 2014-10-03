@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% trans 'About' %}{% endblock page_title %}
+{% block additional_headers %}
+	<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+	<meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_about' %}{% endblock meta_keywords %}">
+	<meta name="description" content="{% block meta_description %}{% trans 'meta_description_about' %}{% endblock meta_description %}">
+
+{% endblock additional_headers %}
+<!--{% block primary_nav %}
+	{% primary_nav 'about' %}
+{% endblock primary_nav %}
+-->
+{% block content %}
+	<section class="about wrap-content">
+		<div class="main-content-pad">
+			<article class="container clearfix">
+				<ul class="list-flow">
+					<li>
+						<figure class="video-js-box span2 fl"><!--video-->
+							<div class="video-js-box-inner">
+								{% if about.video_download_url %}
+								<video id="video-1" class="video-js" width="100%" height="100%" controls="controls" preload="auto" poster="{{ settings.MEDIA_URL }}{{ about.video_image }}">
+									<source src="{{ about.video_download_url }}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+									<source src="{{ about.video_download_url }}.webm" type='video/webm; codecs="vp8, vorbis"'>
+									<source src="{{ about.video_download_url }}.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+
+									<object id="flash-1" class="vjs-flash-fallback" width="620" height="348" type="application/x-shockwave-flash" data="{{ settings.MEDIA_URL }}flash/player.swf">
+										<param name="movie" value="{{ settings.MEDIA_URL }}flash/player.swf">
+										<param name="allowfullscreen" value="true">
+										<param name="wmode" value="transparent">
+										<param name="flashvars" value='is_stream=false&img={{ settings.MEDIA_URL }}{{ about.video_image }}&video={{ about.video_download_url }}.mp4'>
+										<img src="{{ settings.MEDIA_URL }}{{ about.video_image }}" alt="{{ about.title }}">
+									</object>
+								</video>
+								{% else %}
+								<img class="video-js" width="620" height="348" style="width: 620px;height: 348px;" src="{{ settings.MEDIA_URL }}{{ about.video_image }}" alt="{{ about.title }}">
+								
+								{% endif %}
+							</div>
+						</figure><!--END video-->
+					</li>
+					<li>
+						<div class="box fl span2-to-span1">
+							<section class="box-feature tl serif">
+								{{ about.tagline|safe }}
+							</section>
+						</div>
+					</li>
+					<li class="fl span1-to-span460">
+						<section>
+							<header>
+								<h1 class="title sub-title">{{ about.left_header }}</h1>
+
+							</header>
+							<div class="wysiwyg">
+								{{ about.left_body|safe }}
+							</div>
+						</section>
+					</li>
+					<li class="fl span1-to-span460">
+						<section>
+
+							<header>
+								<h1 class="title sub-title">{{ about.right_header }}</h1>
+							</header>
+							<div class="wysiwyg">
+								{{ about.right_body|safe }}
+							</div>
+						</section>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+{% endblock %}

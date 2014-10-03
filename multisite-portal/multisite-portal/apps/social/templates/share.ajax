@@ -1,0 +1,9 @@
+{% if items %}
+	<ul class="list-share clearfix">
+		{% for item in items %}
+		<li>{% share_include text url item.install %}</li>
+		{% endfor %}
+	</ul>
+{% endif %}
+
+

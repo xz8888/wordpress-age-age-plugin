@@ -1,0 +1,22 @@
+/*Additional CSS for Chinese site only*/
+
+/*styles for 940px and up!*/
+@media only screen and (min-width: 1006px) {
+	.container {
+		/*width: 960px !important;*/
+	}
+
+	.span1{
+		/*width: 335px !important;*/
+	}
+
+	.span2-to-span1 {
+		/*width: 250px !important;*/
+	}
+
+}
+
+
+#newsletter-signup{
+	margin-bottom:59px !important;
+}

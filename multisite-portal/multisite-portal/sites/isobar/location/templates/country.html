@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="wrap-content">
+	<div class="main-pad-content">
+		{% for agency in agencies %}
+	
+		<article id="agency" class="container"  style="display: block !important;">
+			<ul class="list-flow clearfix">
+				<li class="span1-to-span460 fl">
+					<section id="agency-info" class="box-feature tl">
+						<header>
+							<h1 class="title sub-title">{{ agency.title }}</h1>
+							<h2 class="location"><strong>{{ agency.city }}</strong>, {{ agency.country.title }}</h2>	
+						</header>
+						<p class="serif">
+							{{ agency.body|safe }}
+						</p>
+						<span class="rule rule-60"></span>
+					</section>
+				</li>
+				<li class="span1-to-span460 fl">
+					<section>
+						<div class="sml-icon-left sml-icon-marker">
+							<p class="serif">
+								{{ agency.address|removetags:"p"|safe }}
+							</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="sml-icon-left sml-icon-contacts">
+							<ul class="list-contact-emails">
+								{% for contact in agency.contact_agency.all %}
+									<li class="fl">
+										<div><strong>{{ contact.position }}</strong> - <em>{{ contact.name }}</em></div>
+										<ul class="list-contact-details">
+											<li>{{ contact.number }}</li>
+											<li><a href="mailto:{{ person.email }}">{{ contact.email }}</a></li>
+										</ul>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</section>
+				</li>
+			</ul>
+		</article>
+			{% endfor %}
+	</div>
+
+	
+</section>
+
+{% endblock %}
+
+
+
+
+

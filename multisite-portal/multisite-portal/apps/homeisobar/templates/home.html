@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+{% load i18n truncatechars %}
+{% block page_title %}{{homepage.title}}{% endblock page_title %}
+
+{% block meta_keywords %}
+    {% trans "meta_keywords_home" %}
+{% endblock meta_keywords %}
+
+{% block meta_description %}
+    {{homepage.meta_description}}
+{% endblock meta_description %}
+
+{% block meta_og_title %}
+    {{homepage.title}}
+{% endblock meta_og_title %}
+
+{% block meta_og_image %}
+{% trans "roundarchisobar.jpg" %}
+{% endblock meta_og_image %}
+
+{% block meta_og_description %}
+    {{homepage.meta_description}}
+{% endblock meta_og_description %}
+
+{% block additional_headers %}
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/us/local.css">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/us/carousel.css">
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/carousel.js"></script>
+    <script src="{{ settings.MEDIA_URL }}js/slidefill.js"></script>
+
+
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+    {% primary_nav 'home' %}
+{% endblock primary_nav %}
+
+{% block content %}
+<div class="home wrap-content">
+	<div class="main-content-pad">
+		<section class="container mobile">
+
+		</section>
+		<section class="container">
+            {% if homepage.headline %}
+                <section class="serif headline">
+                    <span>{{ homepage.headline }}</span>
+                </section>
+            {% endif %}
+            
+			<div class="dogear dogear-top dogear-bottom" id="carousel-outer">
+                <div class="top"></div>
+                <div id="carousel">
+                    <div class="slides">
+            
+        			{% for casestudy in homepage.featured_case_studies.all|slice:":6" %}		
+                			<div class="slide-panel {% if forloop.first %}active{% endif %}" data-thumb="{{ settings.MEDIA_URL }}{{casestudy.logo_sprite}}" style="background-image: url({{ settings.MEDIA_URL }}{{casestudy.homepage_image}})">
+                                <div class="span290 slide-left-column" data-href="{% url work_view %}casestudy/{{ casestudy.slug }}/">
+                                    <p class="title">{{casestudy.title}}</p>
+                                    <div class="rule-290"></div>  
+                                    <div class="panel-summary">{{casestudy.body|safe}}</div>  
+		                            {% if casestudy.video_download_url %}
+		                            <span class="rule rule-60 dark-rule"></span>
+		                            <a class="call-to-action-text sub-title play-video" href="{{ casestudy.url }}" alt="{% if casestudy.link_text %}{{ casestudy.link_text }}{% else %}Watch the Video{% endif %}">{% if casestudy.link_text %}{{ casestudy.link_text }}{% else %}Watch the Video{% endif %}</a>
+		                            
+		                            <div class="casestudy-video">
+		                              <div class="video-close"></div>
+		                              <div class="video-content"></div>
+	  		                            <script type="text/template" class="hidden">
+	  		                              <figure class="video-js-box case-study-videobox">
+	      						                  <div class="video-js-box-inner">
+	      						                      <video id="case-study-video-{{ forloop.counter }}" class="case-study-video" controls="controls" preload="auto" poster="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}">
+	      						                          <source src="{{ casestudy.video_download_url }}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+	      						                          <source src="{{ casestudy.video_download_url }}.webm" type='video/webm; codecs="vp8, vorbis"'>
+	      						                          <source src="{{ casestudy.video_download_url }}.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+	      						
+	      						                          <object id="flash-1" class="" style="width: 500px; height: 280px;" type="application/x-shockwave-flash" width="500" data="{{ settings.MEDIA_URL }}flash/player.swf">
+	      						                              <param name="movie" value="{{ settings.MEDIA_URL }}flash/player.swf">
+	      						                              <param name="allowfullscreen" value="true">
+	      						                              <param name="wmode" value="transparent">
+	      						                              <param name="flashvars" value='is_stream=false&img={{ settings.MEDIA_URL }}{{ casestudy.video_image }}&video={{ casestudy.video_download_url }}.mp4'>
+	      						                              <a href="{{ casestudy.video_download_url }}.3gp"><img src="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}" alt="{{ casestudy.title }}"></a>
+	      						                          </object>
+	      						                      </video>
+	      						                  </div>
+	   						              </figure>
+   						              </script>
+		                            </div>
+		                            {% else %}
+		                              <span class="rule rule-60 dark-rule"></span>
+		                              <a class="call-to-action-text sub-title" href="{% url work_view %}casestudy/{{ casestudy.slug }}/" alt="">Go To Project</a>
+		                            {% endif %}
+                                </div>
+                            </div>
+        			{% endfor %}
+                    </div>
+                    <div class="thumbs"></div>
+                    <div class="see-more-home-carousel">
+                        <a href="{% url work_view %}" title="See more work" class="colored-link">See More Work</a>
+                    </div>
+                    
+                </div>
+                <div class="bottom"></div>
+            </div>
+			
+      {% if homepage.headline %}
+      <section class="serif outbursts">
+        <span>News, Press Releases, and Social Media</span>
+      </section>
+      {% endif %}
+			
+			<div class="home-news hwgrid">
+			
+          <div class="masonry-target dogear dogear-bottom dogear-gray w2 h2 news {% if latest_news.show_homepage_thumbnail %}hasimage slidefill-parent{% endif %}" {% if latest_news.show_homepage_thumbnail %}style="background-image:url('{{latest_news.homepage_image|thumbnail:'400x400x1'}}');"{% endif %}>
+            <a href="{{ latest_news.get_absolute_url }}" >
+              <h1 class="news-title">{% trans 'News' %}</h1>
+              <span class=""></span>
+              <div class="news-headline">
+                <span>{{ latest_news.title_label|truncatewords:17|striptags|safe }}</span>
+              </div>
+              <p>{% if request.LANGUAGE_CODE == 'jp' or request.LANGUAGE_CODE == 'cn' or request.LANGUAGE_CODE == 'ko' %}
+                {{ latest_news.body|striptags|safe|truncatechars:75  }}
+              {% else %}
+                {{ latest_news.body|striptags|safe|truncatewords:15  }}
+              {% endif %}</p>
+              <strong>{% trans 'Read More' %}</strong>
+              {% if latest_news.show_homepage_thumbnail %}
+              <div class="slidefill">
+                <h1 class="news-title">{% trans 'News' %}</h1>
+                <p>{% if request.LANGUAGE_CODE == 'jp' or request.LANGUAGE_CODE == 'cn' or request.LANGUAGE_CODE == 'ko' %}
+                {{ latest_news.body|striptags|safe|truncatechars:15  }}
+              {% else %}
+                {{ latest_news.body|striptags|safe|truncatewords:5  }}
+              {% endif %}</p>
+                <strong>{% trans 'Read More' %}</strong>
+              </div>
+              {% endif %}
+            </a>
+            
+            <div class="bottom"></div>
+          </div>
+              
+          <div class="masonry-target blog dogear dogear-bottom h1 w2">
+            <div id="">
+              <a href="{{blog_1.url}}">
+                <div>
+                  <h1 class="">{% trans 'From the Blog' %}</h1>
+                  <span class=""></span>
+                  
+                </div>
+                <p class="">
+                {{blog_1.title|safe}}
+                </p>
+              </a>
+            </div>
+            <div class="bottom"></div>
+          </div>
+            
+        {% if twitter_installed %}
+          <div class="masonry-target  dogear dogear-bottom h1 w2 tweet">
+                  <a href="http://twitter.com/{{tweet.screen_name}}/" target="_blank">
+                      <div>
+                          <h1 class="">{% trans 'Our Latest Tweet' %}</h1>
+                          <span class=""></span>
+                          <div class=""></div>
+                      </div>
+                      <p class="">
+                          {{tweet.text|safe|truncatechars:85}}
+                      </p>
+                      <span class=""></span>
+                      <footer class="">
+                          <span class="">{% trans 'follow us @' %}{{tweet.screen_name}}</span>
+                      </footer>
+                  </a>
+                  <div class="bottom"></div>
+          </div>
+            {% endif %}
+                
+                
+          
+          <div class="masonry-target dogear dogear-bottom dogear-gray w1 h1 news {% if homepage.featured_news_1.show_homepage_thumbnail %}slidefill-parent hasimage{% endif %}" {% if homepage.featured_news_1.show_homepage_thumbnail %}style="background-image:url('{{homepage.featured_news_1.homepage_image|thumbnail:'400x400x1'}}');"{% endif %}>
+            <a href="{{ homepage.featured_news_1.get_absolute_url }}">
+              <h1 class="">{% trans 'News' %}</h1>
+              <span class="news-title"></span>
+              <div class="news-headline">
+                <span>{{ homepage.featured_news_1.title_label|truncatechars:17|striptags|safe }}</span>
+              </div>
+              <strong>{% trans 'Read More' %}</strong>
+              {% if homepage.featured_news_1.show_homepage_thumbnail %}
+              <div class="slidefill">
+                <h1 class="news-title">{% trans 'News' %}</h1>
+                <p>{{ homepage.featured_news_1.body|striptags|truncatewords:10  }}</p>
+                <strong>{% trans 'Read More' %}</strong>              </div>
+              {% endif %}
+            </a>
+            <div class="bottom"></div>
+          </div>
+          
+          
+           <div class="masonry-target blog dogear dogear-bottom h1 w1"> 
+              <a href="{{blog_2.url}}">
+                <div>
+                  <h1 class="">{% trans 'From the Blog' %}</h1>
+                  <span class=""></span>
+                  
+                </div>
+                <p class="">
+                {{blog_2.title|safe}}
+                </p>
+              </a>
+            <div class="bottom"></div>
+          </div>
+          <div class="masonry-target facebook dogear dogear-bottom h1 w2">
+            <a href="{{facebook_link}}" target="_blank">
+              <div>
+                <h1 class="">{% trans 'From Facebook' %}</h1>
+                <span class=""></span>
+                
+              </div>
+              <p class="">
+              {{facebook_title|safe}}               </p>
+            </a>
+          <div class="bottom"></div>
+        </div>
+			
+		</section>
+		</div>
+	</div>
+</div>
+<script src="{{ settings.MEDIA_URL }}js/us/roundarch-home.js"></script>
+{% endblock %}

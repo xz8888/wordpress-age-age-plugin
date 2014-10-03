@@ -1,0 +1,48 @@
+	{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{{clientindex.title}}: {% trans 'glue Isobar: A Modern Communications Agency' %}{% endblock page_title %}
+
+{% block meta_description %}
+    {{clientindex.meta_description}}
+{% endblock meta_description %}
+
+{% block meta_og_title %}
+    {{clientindex.title}}
+{% endblock meta_og_title %}
+
+{% block meta_og_description %}
+    {{clientindex.meta_description}}
+{% endblock meta_og_description %}
+
+{% block additional_headers %}
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+    {% primary_nav 'work' %}
+{% endblock primary_nav %}
+
+{% block content %}
+
+    <section class="clients wrap-content">
+    {% if clientindex %}
+            <ul>
+              <li>{{clientindex.title}}</li>
+              <li>{{clientindex.headline}}</li>
+              <li>Featured Video:
+                  <ul>
+                      <li>{{clientindex.featured_video.title}}</li>
+                      <li>{{clientindex.featured_video.body|safe}}</li>
+                      <li>{{clientindex.featured_video.url}}</li>
+                      <li><img src="{{ settings.MEDIA_URL }}{{clientindex.featured_video.hero_image}}" /></li>
+                      <li><img src="{{ settings.MEDIA_URL }}{{clientindex.featured_video.video_image}}" /></li>
+                      <li>{{clientindex.featured_video.video_download_url}}</li>
+                  </ul>
+              </li>
+            </ul>
+    {% endif %}
+    {% include 'clients.html' %}    
+                                    
+    </section> <!--end content area-->
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% trans 'Work' %}{% endblock page_title %}
+
+{% block additional_headers %}
+	<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+	<meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_casestudies' %}{% endblock meta_keywords %}">
+	<meta name="description" content="{% block meta_description %}{% trans 'meta_description_casestudies' %}{% endblock meta_description %}">
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+	{% primary_nav 'work' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	<section class="work wrap-content">
+		<div class="main-content-pad container case-studies">
+			<ul class="clearfix list-flow content-crossfade">
+				{% for casestudy in casestudies%}
+				<li class="span1">
+					<article class="media-box lrg-media-box">
+						<a href="{{ casestudy.get_absolute_url }}" >
+							<img src="{{ casestudy.hero_image|thumbnail:'300x300x1' }}" alt="{{ casestudy.title_label }}">
+							<div class="info">
+								<h1 class="title"><span class="int-link">
+									{{ casestudy.title_label }}
+								</span></h1>
+							</div>
+						</a>
+					</article>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section> <!--end content area-->
+{% endblock content %}

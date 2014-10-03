@@ -1,0 +1,68 @@
+{% extends parent_template %}
+{% load i18n %}
+{% block page_title %}{{ person.title_label }}: {% if department %}{{department.title_label }}: {% endif %}{% trans 'People' %}{% endblock page_title %}
+{% block additional_headers %}
+	{% if department %}
+		<link rel="canonical" href="{{ person.get_absolute_url }}">
+	{% endif %}
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+	{% primary_nav 'people' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	{% if not ajax %}
+		{% block department_nav %}
+			{% if not settings.ISOBAR_SITE %}
+				{% if department %}
+					{% department_nav 'open' department.slug %}
+				{% else %}
+					{% department_nav %}
+				{% endif %}
+			{% endif %}
+		{% endblock department_nav %}
+	{% endif %}
+
+	{% if not ajax %}
+		<section class="wrap-content single-person">
+	{% else %}
+		<span class="ajax-page-title-update hide">{{ person.title_label }}</span>
+	{% endif %}
+		<div class="main-content-pad container container-pagination">
+			{% if department %}
+				<a href="{% url people_department_view department.slug %}" class="back-link fr">
+			{% else %}
+				<a href="{% url people_view %}" class="back-link fr">
+			{% endif %}
+			{% trans 'Close' %}<span class="icon-close rollover">X</span></a>
+			<div class="wrap-person">
+				<article class="vcard person clearfix content-crossfade">
+					<figure class="fl span520-to-span460 person-picture">
+						<img class="img photo" src="{{ settings.MEDIA_URL }}{{ person.image }}" alt="{{ person.title_label }}">
+					</figure>
+					<div class="fl person-info span520-to-span460">
+						<section class="box-feature tl br">
+							<header class="title-container">
+									<h1 class="name title sub-title">{{person.title_label}}</h1>
+							</header>
+							<p class="serif">
+								{% if person.body %}{{ person.body|removetags:"p"|safe }}{% endif %}
+							</p>
+							<span class="rule rule-60"></span>
+							<footer>
+								<section class="title-dept">
+									{% if person.role %}<h2 class="role"><strong>{{ person.role }}</strong></h2>{% endif %}
+									{% if not settings.ISOBAR_SITE %}<h3 class="organisation-unit"><a href="{{ person.department.get_absolute_url }}">{{ person.department.title_label }}</a></h2>{% endif %}
+								</section>
+							</footer>
+						</section>
+					</div>
+				</article>
+			</div>
+		</div>
+
+	{% if not ajax %}
+		</section>
+	{% endif %}
+{% endblock %}

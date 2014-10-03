@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_keywords %}
+{% trans "Full service digital marketing agency, Online marketing agency, Modern communications agency, Interactive marketing agency network, Digital creative agency, Global digital agency network, Isobar, Isobar Communications, Isobar Worldwide, Isobar Global, Digital advertising, Digital agency, Digital agencies, Digital marketing, Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, Mobile marketing, Direct Marketing" %}
+{% endblock meta_keywords %}
+
+{% block meta_description %}
+{% trans "Isobar is a modern communications agency network with digital at its heart.  Made up of over 2000 talented individuals in 32 markets worldwide. What we do is simple, we bring people and brands together, like never before." %}
+{% endblock meta_description %}
+
+{% block primary_nav %}
+	{% primary_nav 'home' %}
+{% endblock primary_nav %}
+
+{% block content %}
+
+<div class="home wrap-content">
+	<div class="main-content-pad">
+		<section class="container mobile">
+			<ul class="list-flow clearfix">
+			{% for location in locations %}
+				<li class="span1 fl">
+					<section class="box-text-alt box-text"> <!--box-text section-->
+						<header>							
+							<h1 class="box-title sub-title">{% trans 'Address' %}</h1>
+						</header>
+						<span class="rule rule-220"></span>
+						<p class="serif">
+							{{ location.address }}
+						</p>
+						<img src="{{ settings.MEDIA_URL }}{{ location.map_image }}" alt="google map to us" height="235" width="235">
+						<ul class="clearfix list-center-links">						
+							<li><a class="ext-link" href="http://maps.google.co.uk/maps?f=d&source=s_d&saddr=&daddr={{ location.latitude }},{{ location.longitude }}">{% trans 'Get directions' %}</a></li>
+							<li><a class="ext-link" href="http://maps.google.co.uk/maps?f=q&amp;hl=en&amp;geocode=&amp;q={{ location.latitude }},{{ location.longitude }}+(Isobar)&amp;aq=&amp;sll=51.524299,-0.143144&amp;z=15">{% trans 'View on Google Maps' %}</a></li>
+						</ul>
+					</section> <!--end box-text section-->
+				</li>
+				{% endfor %}
+				<li class="span1 fl">
+					<div class="box-text br"> <!--box-text section-->
+						<section>
+							<header  class="title-container">
+								<h1 class="box-title"><img src="{{ settings.MEDIA_URL }}img/mobile/icons/phone.png" alt="{% trans 'Phone' %}"></h1>
+							</header>
+							{% for phone in phones %}
+								<p class="phone-number serif">{{ phone.number }}</p>
+							{% endfor %}
+						</section>
+						<section>
+							<header>
+								<h1  class="box-title"><img src="{{ settings.MEDIA_URL }}img/mobile/icons/envelope.png" alt="{% trans 'Email' %}"></h1>
+							</header>							
+							<ul class="list-center-links email clearfix">
+								{% for email in emails %}
+								<li><a class="serif" href="mailto:{{ email.address }}">{{ email.address }}</a></li>
+								{% endfor %}
+							</ul>
+						</section>
+					</div> <!--end box-text section-->
+				</li>
+			</ul>
+		</section>
+		<section class="container">
+			<ul class="masonry list-flow clearfix">
+				<li class="span2 box">
+					<section id="welcome" class="box-feature tl"> <!--box-text section-->
+						<a href="{% url about_view %}">
+							<p class="serif">
+								{% trans "We're a modern communications agency network made up of over 2,200 talented individuals in 32 markets around the world. Together we bring people and brands together, like never before." %}
+							</p>
+							<span class="rule rule-60"></span>
+							<footer class="wrap-int-link">
+								<span class="int-link">View our showreel</span>
+							</footer>
+						</a>
+					</section> <!--end box-text section-->
+				</li>
+	
+				{% if casestudy_1 and casestudy_1.hero_image %}
+				<li class="box">
+					<article class="media-box sml-media-box" rel="{{ casestudy_1.country }}"><!--start media-box-->
+						<a href="{{ casestudy_1.get_absolute_url }}">
+							<img src="{{ casestudy_1.hero_image|thumbnail:'140x140x1' }}" alt="{{ casestudy_1.title }}">
+							<div class="media-box-rollover"><!--media-box content-->
+								<h1 class="title">{{ casestudy_1.title }}</h1>
+								<span class="rule rule-30"></span>
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+				
+				{% if person_1 %}
+				<li class="box">
+					<article class="media-box sml-media-box"><!--start media-box-->
+						<a href="{{ person_1.get_absolute_url }}">
+							<img src="{{ person_1.image|thumbnail_no_gif:'140x140x1' }}" alt="{{ person_1.title }}">
+							
+							<div class="media-box-rollover"><!--media-box content-->
+								<h1 class="title">{{ person_1.title }}</h1>
+								<span class="rule rule-30"></span>
+								{% if person_1.role %}
+									<h2>{{ person_1.role }}</h2>
+								{% else %}
+									<h2>{{ person_1.department }}</h2>
+								{% endif %}
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+				
+				{% if casestudy_4 and casestudy_4.hero_image %}
+				<li class="box">
+					<article class="media-box lrg-media-box" rel="{{ casestudy_4.country }}"><!--start media-box-->
+						<a href="{{ casestudy_4.get_absolute_url }}">
+							<img src="{{ casestudy_4.hero_image|thumbnail:'300x300x1' }}" alt="{{ casestudy_4.title }}">
+							<div class="info"><!--media-box content-->
+								<h1 class="title"><span class="int-link">{{ casestudy_4.title }}</span></h1>
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+				
+				{% if news_1 %}
+				<li class="span1 box">
+					<section class="box-text"><!--box-text section-->
+						<a href="{{ news_1.get_absolute_url }}">
+							<h1 class="box-title title-container">{% trans 'News' %}</h1>
+							<span class="rule rule-220"></span>
+							<blockquote class="quote">
+								{{ news_1.title|truncatewords:17|striptags|safe }}
+							</blockquote>
+							<span class="rule rule-30"></span>
+							<strong>Read more</strong>
+						</a>
+					</section><!--end box-text section-->
+				</li>
+				{% endif %}
+				
+				{% if person_2 %}
+				<li class="box">
+					<article class="media-box sml-media-box"><!--start media-box-->
+						<a href="{{ person_2.get_absolute_url }}">
+							<img src="{{ person_2.image|thumbnail_no_gif:'140x140x1' }}" alt="{{ person_2.title }}">
+							<div class="media-box-rollover"><!--media-box content-->
+								<h1 class="title">{{ person_2.title }}</h1>
+								<span class="rule rule-30"></span>
+								{% if person_2.role %}
+									<h2>{{ person_2.role }}</h2>
+								{% else %}
+									<h2>{{ person_2.department }}</h2>
+								{% endif %}
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+
+				{% if casestudy_2 and casestudy_2.hero_image %}				
+				<li class="box">
+					<article class="media-box sml-media-box" rel="{{ casestudy_2.country }}"><!--start media-box-->
+						<a href="{{ casestudy_2.get_absolute_url }}">
+							<img src="{{ casestudy_2.hero_image|thumbnail:'140x140x1' }}" alt="{{ casestudy_2.title }}">
+							<div class="media-box-rollover"><!--media-box content-->
+								<h1 class="title">{{ casestudy_2.title }}</h1>
+								<span class="rule rule-30"></span>
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+				
+				{% if casestudy_5 and casestudy_5.hero_image %}
+				<li class="box">
+					<article class="media-box lrg-media-box" rel="{{ casestudy_5.country }}"><!--start media-box-->
+						<a href="{{ casestudy_5.get_absolute_url }}">
+							<img src="{{ casestudy_5.hero_image|thumbnail:'300x300x1' }}" alt="{{ casestudy_5.title }}">
+							<div class="info"><!--media-box content-->
+								<h1 class="title"><span class="int-link">{{ casestudy_5.title }}</span></h1>
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+				
+				{% if news_2 %}
+				<li class="span1 box">
+					<section class="box-text"><!--box-text section-->
+						<a href="{{ news_2.get_absolute_url }}">
+							<h1 class="box-title title-container">{% trans 'News' %}</h1>
+							<span class="rule rule-220"></span>
+							<blockquote class="quote">
+								{{ news_2.title|truncatewords:17|striptags|safe }}
+							</blockquote>
+							<span class="rule rule-30"></span>
+							<strong>Read more</strong>
+						</a>
+					</section><!--end box-text section-->
+				</li>
+				{% endif %}
+				
+				{% if casestudy_6 and casestudy_6.hero_image %}
+				<li class="box">
+					<article class="media-box lrg-media-box" rel="{{ casestudy_6.country }}"><!--start media-box-->
+						<a href="{{ casestudy_6.get_absolute_url }}">
+							<img src="{{ casestudy_6.hero_image|thumbnail:'300x300x1' }}" alt="{{ casestudy_6.title }}">
+							<div class="info"><!--media-box content-->
+								<h1 class="title"><span class="int-link">{{ casestudy_6.title }}</span></h1>
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+				
+				{% if casestudy_3 and casestudy_3.hero_image %}
+				<li class="box">
+					<article class="media-box sml-media-box" rel="{{ casestudy_3.country }}"><!--start media-box-->
+						<a href="{{ casestudy_3.get_absolute_url }}">
+							<img src="{{ casestudy_3.hero_image|thumbnail:'140x140x1' }}" alt="{{ casestudy_3.title }}">
+							<div class="media-box-rollover"><!--media-box content-->
+								<h1 class="title">{{ casestudy_3.title }}</h1>
+								<span class="rule rule-30"></span>
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+				
+				{% if person_3 %}
+				<li class="box">
+					<article class="media-box sml-media-box"><!--start media-box-->
+						<a href="{{ person_3.get_absolute_url }}">
+							<img src="{{ person_3.image|thumbnail_no_gif:'140x140x1' }}" alt="{{ person_3.title }}">
+							<div class="media-box-rollover"><!--media-box content-->
+								<h1 class="title">{{ person_3.title }}</h1>
+								<span class="rule rule-30"></span>
+								{% if person_3.role %}
+									<h2>{{ person_3.role }}</h2>
+								{% else %}
+									<h2>{{ person_3.department }}</h2>
+								{% endif %}
+							</div><!--end media-box content-->
+						</a>
+					</article><!--end media-box-->
+				</li>
+				{% endif %}
+				
+				{% if twitter_installed %}
+					<li class="span1 box">
+						<section id="tweet" class="box-feature"><!--box-text section-->
+							<a href="http://twitter.com/{{tweet.screen_name}}/">
+								<div>
+									<h1 class="box-title title-container">{% trans 'Our Latest Tweet' %}</h1>
+									<span class="rule rule-220"></span>
+									<div class="icon-twitter-bird rollover"></div>
+								</div>
+								<p class="serif sub-title">
+									{{tweet.text|safe}}
+								</p>
+								<span class="rule rule-30"></span>
+								<footer class="wrap-int-link">
+									<span class="int-link">{% trans 'follow us @' %}{{tweet.screen_name}}</span>
+								</footer>
+							</a>
+						</section><!--end box-text section-->
+					</li>
+				{% endif %}
+			</ul>
+		</section>
+	</div>
+</div>
+
+{% endblock %}

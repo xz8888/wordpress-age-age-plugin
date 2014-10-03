@@ -1,0 +1,600 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-17 09:58-0400\n"
+"PO-Revision-Date: 2013-01-23 10:30-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: .\apps\about\templates\about.html.py:3
+#: .\apps\common\templates\primary_nav.html.py:7
+msgid "About"
+msgstr ""
+
+#: .\apps\about\templates\about.html.py:7
+msgid "meta_keywords_about"
+msgstr ""
+
+#: .\apps\about\templates\about.html.py:8
+msgid "meta_description_about"
+msgstr ""
+
+#: .\apps\common\templates\primary_nav.html.py:8
+#: .\apps\work\templates\case_studies.html.py:3
+#: .\sites\isobar\work\templates\case_studies.html.py:3
+msgid "Work"
+msgstr ""
+
+#: .\apps\common\templates\primary_nav.html.py:9
+#: .\apps\people\templates\people.html.py:3
+#: .\apps\people\templates\person.html.py:3
+#: .\sites\isobar\people\templates\people.html.py:3
+msgid "People"
+msgstr ""
+
+#: .\apps\common\templates\primary_nav.html.py:10
+#: .\apps\jobs\templates\job.html.py:3 .\apps\jobs\templates\jobs.html.py:3
+#: .\apps\jobs\templates\jobs.html.py:24
+#: .\sites\au\jobs\templates\jobs.html.py:3
+#: .\sites\fr\jobs\templates\jobs.html.py:3
+#: .\sites\uk\jobs\templates\jobs.html.py:3
+msgid "Join"
+msgstr ""
+
+#: .\apps\common\templates\primary_nav.html.py:11
+#: .\apps\news\templates\news.html.py:3
+#: .\sites\isobar\home\templates\home.html.py:130
+#: .\sites\isobar\home\templates\home.html.py:192
+msgid "News"
+msgstr ""
+
+#: .\apps\common\templates\primary_nav.html.py:12
+#: .\sites\isobar\location\templates\agencies.html.py:3
+#: .\sites\isobar\location\templates\agency.html.py:5
+#: .\sites\isobar\location\templates\archive\agencies-temp.html.py:3
+msgid "Contact"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:23
+msgid "meta_keywords_contact"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:24
+msgid "meta_description_contact"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:37
+#: .\apps\contact\templates\contact.html.py:112
+#: .\apps\home\templates\home.html.py:38
+#: .\sites\isobar\home\templates\home.html.py:26
+msgid "Address"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:39
+#: .\apps\contact\templates\contact.html.py:114
+msgid "Addresses"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:50
+#: .\apps\contact\templates\contact.html.py:126
+#: .\sites\isobar\home\templates\home.html.py:34
+#: .\sites\isobar\location\templates\agencies.html.py:185
+#: .\sites\isobar\location\templates\archive\agencies-temp.html.py:185
+msgid "Get directions"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:51
+#: .\apps\contact\templates\contact.html.py:128
+#: .\sites\isobar\home\templates\home.html.py:35
+#: .\sites\isobar\location\templates\agencies.html.py:186
+#: .\sites\isobar\location\templates\archive\agencies-temp.html.py:186
+msgid "View on Google Maps"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:60
+#: .\apps\contact\templates\contact.html.py:156
+msgid "Get in touch"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:64
+msgid ""
+"If you are interested in talking to us then please get in touch via the "
+"contact details below. Don't be shy now."
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:137
+#: .\apps\home\templates\home.html.py:55
+#: .\sites\isobar\home\templates\home.html.py:44
+msgid "Phone"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:144
+#: .\apps\home\templates\home.html.py:63
+#: .\sites\isobar\home\templates\home.html.py:52
+msgid "Email"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:158
+msgid ""
+"If you are a client or agency interested in talking to us then please get in "
+"touch with us via the phone numbers and email addresses below. Don't be shy "
+"now."
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:179
+msgid "Social"
+msgstr ""
+
+#: .\apps\contact\templates\contact.html.py:196 .\apps\footer\templates\footer
+#: - Copy.html.py:10 .\apps\footer\templates\footer.html.py:10
+msgid "Bringing people and brands together like never before."
+msgstr ""
+
+#: .\apps\footer\templates\legal.html.py:2
+#: .\sites\ch\footer\templates\legal.html.py:3 .\templates\base.html.py:129
+msgid "glue Isobar"
+msgstr "TUS Isobar"
+
+#: .\apps\footer\templates\legal.html.py:2
+#: .\sites\ch\footer\templates\legal.html.py:3
+msgid "is a trading division of"
+msgstr "is a trading division of"
+
+#: .\apps\footer\templates\legal.html.py:2
+#: .\sites\ch\footer\templates\legal.html.py:3
+msgid "Aegis Media Limited"
+msgstr "Aegis Media Limited"
+
+#: .\apps\footer\templates\legal.html.py:2
+#: .\sites\ch\footer\templates\legal.html.py:3
+msgid ""
+". Registered office 43-49 Parker St. London WC2B 5PS. Registered in England "
+"and Wales No. 01939690"
+msgstr "Copyright 2012 TUS Isobar Inc. All Rights Reserved."
+
+#: .\apps\home\templates\home.html.py:5
+msgid "meta_keywords_home"
+msgstr ""
+
+#: .\apps\home\templates\home.html.py:9
+msgid "meta_description_home"
+msgstr ""
+
+#: .\apps\home\templates\home.html.py:13 .\templates\base.html.py:13
+msgid "Isobar: A Modern Communications Agency"
+msgstr "TUS Isobar: A Modern Communications Agency"
+
+#: .\apps\home\templates\home.html.py:17
+msgid "Isobar is an advertising agency specialising in digital creative work."
+msgstr ""
+
+#: .\apps\home\templates\home.html.py:21 .\templates\base.html.py:15
+msgid "default.jpg"
+msgstr ""
+
+#: .\apps\home\templates\home.html.py:43
+msgid "Location map"
+msgstr ""
+
+#: .\apps\home\templates\home.html.py:81
+msgid "Welcome!"
+msgstr ""
+
+#: .\apps\home\templates\home.html.py:82
+msgid ""
+"We are glue Isobar, a creative agency with digital very much at our heart.  "
+"Our London office is home to 150 fabulously talented individuals and is the "
+"HQ for Isobar global creative network."
+msgstr ""
+"We are TUS Isobar, a digital creative agency bent on delivering innovation "
+"that makes a truly human connection. Do stay a while and learn more about us!"
+
+#: .\apps\home\templates\home.html.py:86
+msgid "View our showreel"
+msgstr "View our showreel"
+
+#: .\apps\home\templates\home.html.py:142
+#: .\apps\home\templates\home.html.py:204
+msgid "glue News"
+msgstr "TUS Isobar News"
+
+#: .\apps\home\templates\home.html.py:148
+#: .\apps\home\templates\home.html.py:210
+#: .\apps\news\templates\news.html.py:77
+#: .\apps\news\templates\news_small_item.html.py:3
+#: .\apps\news\templates\news_small_item.html.py:54
+msgid "Read More"
+msgstr ""
+
+#: .\apps\home\templates\home.html.py:267
+#: .\apps\news\templates\news_twitter.html.py:5
+#: .\sites\isobar\home\templates\home.html.py:255
+msgid "Our Latest Tweet"
+msgstr ""
+
+#: .\apps\home\templates\home.html.py:276
+#: .\apps\news\templates\news_twitter.html.py:22
+#: .\sites\isobar\home\templates\home.html.py:264
+msgid "follow us @"
+msgstr ""
+
+#: .\apps\jobs\templates\job.html.py:15 .\apps\jobs\templates\jobs.html.py:20
+#: .\sites\au\jobs\templates\jobs.html.py:15
+#: .\sites\fr\jobs\templates\jobs.html.py:15
+#: .\sites\uk\jobs\templates\jobs.html.py:15
+msgid "Hello!"
+msgstr ""
+
+#: .\apps\jobs\templates\job.html.py:18 .\apps\jobs\templates\jobs.html.py:23
+#: .\sites\au\jobs\templates\jobs.html.py:18
+#: .\sites\fr\jobs\templates\jobs.html.py:18
+#: .\sites\uk\jobs\templates\jobs.html.py:18
+msgid ""
+"We&#x27;re always on the lookout for established and up and coming talent "
+"across account management, planning, production, design, development and "
+"creative."
+msgstr ""
+
+#: .\apps\jobs\templates\job.html.py:19 .\apps\jobs\templates\jobs.html.py:24
+msgid "iwanttowork@glueisobar.com"
+msgstr "hireme.sg@isobar.com"
+
+#: .\apps\jobs\templates\job.html.py:23 .\apps\jobs\templates\jobs.html.py:28
+msgid "See our current vacancies below..."
+msgstr ""
+
+#: .\apps\jobs\templates\job.html.py:36 .\apps\jobs\templates\jobs.html.py:49
+msgid "Apply to"
+msgstr ""
+
+#: .\apps\jobs\templates\jobs.html.py:5
+msgid "meta_keywords_jobs"
+msgstr ""
+
+#: .\apps\jobs\templates\jobs.html.py:6
+msgid "meta_description_jobs"
+msgstr ""
+
+#: .\apps\jobs\templates\jobs.html.py:24
+msgid "Drop us a line at"
+msgstr ""
+
+#: .\apps\jobs\templates\jobs.html.py:24
+msgid "."
+msgstr ""
+
+#: .\apps\news\templates\archive.html.py:3
+msgid "Archive"
+msgstr ""
+
+#: .\apps\news\templates\news.html.py:7
+msgid "meta_keywords_news"
+msgstr ""
+
+#: .\apps\news\templates\news.html.py:8
+msgid "meta_description_news"
+msgstr ""
+
+#: .\apps\news\templates\news.html.py:53
+msgid "Posted On:"
+msgstr ""
+
+#: .\apps\news\templates\news.html.py:60
+msgid "Posted In:"
+msgstr ""
+
+#: .\apps\news\templates\news.html.py:104
+#: .\apps\news\templates\news.html.py:106
+msgid "Show More"
+msgstr ""
+
+#: .\apps\news\templates\news.html.py:109
+msgid "No more news stories."
+msgstr ""
+
+#: .\apps\news\templates\news.html.py:115
+msgid "No news stories for this category."
+msgstr ""
+
+#: .\apps\news\templates\news_friends.html.py:6
+msgid "Our Friends"
+msgstr ""
+
+#: .\apps\news\templates\news_nav.html.py:7
+#: .\sites\au\news\templates\news_nav.html.py:7
+msgid "Archives"
+msgstr ""
+
+#: .\apps\news\templates\news_nav.html.py:13
+#: .\sites\au\news\templates\news_nav.html.py:13
+msgid "RSS"
+msgstr ""
+
+#: .\apps\news\templates\news_nav.html.py:19
+#: .\sites\au\news\templates\news_nav.html.py:19
+msgid "Filter category"
+msgstr ""
+
+#: .\apps\news\templates\news_nav.html.py:22
+#: .\sites\au\news\templates\news_nav.html.py:22
+msgid "All"
+msgstr ""
+
+#: .\apps\news\templates\news_posterous.html.py:5
+msgid "glue Loves"
+msgstr "TUS Isobar Loves"
+
+#: .\apps\news\templates\news_posterous.html.py:19
+msgid "glue loves on posterous"
+msgstr "TUS Isobar loves on posterous"
+
+#: .\apps\news\templates\news_small_item.html.py:27
+msgid "on"
+msgstr ""
+
+#: .\apps\news\templates\news_small_item.html.py:29
+msgid "Posted on"
+msgstr ""
+
+#: .\apps\news\templates\posted_by.html.py:13
+#: .\sites\isobar\news\templates\posted_by.html.py:6
+msgid "Author:"
+msgstr ""
+
+#: .\apps\news\templates\posted_by_small_item.html.py:5
+#: .\sites\isobar\news\templates\posted_by_small_item.html.py:5
+msgid "By"
+msgstr ""
+
+#: .\apps\news\templates\story.html.py:16
+#: .\apps\people\templates\person.html.py:38 .\apps\work\templates\case_study
+#: - with-description.html.py:32 .\apps\work\templates\case_study.html.py:32
+#: .\sites\isobar\location\templates\agency.html.py:16
+msgid "Close"
+msgstr ""
+
+#: .\apps\news\templates\story.html.py:39
+msgid "Posted on:"
+msgstr ""
+
+#: .\apps\news\templates\story.html.py:46
+msgid "Posted in:"
+msgstr ""
+
+#: .\apps\news\templates\story.html.py:54
+msgid "Related links:"
+msgstr ""
+
+#: .\apps\people\templates\departments_nav.html.py:5
+#: .\sites\hk\people\templates\departments_nav.html.py:5
+msgid "Filter department"
+msgstr ""
+
+#: .\apps\people\templates\departments_nav.html.py:8
+#: .\sites\hk\people\templates\departments_nav.html.py:8
+msgid "Everyone"
+msgstr ""
+
+#: .\apps\people\templates\people.html.py:5
+msgid "meta_keywords_people"
+msgstr ""
+
+#: .\apps\people\templates\people.html.py:6
+msgid "meta_description_people"
+msgstr ""
+
+#: .\apps\people\templates\people.html.py:60
+msgid "previous"
+msgstr ""
+
+#: .\apps\people\templates\people.html.py:81
+msgid "next"
+msgstr ""
+
+#: .\apps\transurlvania\templates\admin\includes\ml_links.html.py:10
+msgid "Save"
+msgstr ""
+
+#: .\apps\transurlvania\templates\admin\includes\ml_links.html.py:12
+msgid "Save and Add/Edit Translation:"
+msgstr ""
+
+#: .\apps\work\templates\case_studies.html.py:8
+msgid "meta_keywords_casestudies"
+msgstr ""
+
+#: .\apps\work\templates\case_studies.html.py:9
+msgid "meta_description_casestudies"
+msgstr ""
+
+#: .\apps\work\templates\case_study - with-description.html.py:11
+#: .\apps\work\templates\case_study.html.py:11
+msgid "meta_keywords_casestudy"
+msgstr ""
+
+#: .\apps\work\templates\case_study - with-description.html.py:12
+#: .\apps\work\templates\case_study.html.py:12
+msgid "meta_description_casestudy"
+msgstr ""
+
+#: .\apps\work\templates\case_study - with-description.html.py:40
+#: .\apps\work\templates\case_study.html.py:40
+msgid "Featured work from"
+msgstr ""
+
+#: .\apps\work\templates\case_study - with-description.html.py:87
+#: .\apps\work\templates\case_study.html.py:87
+msgid "Share this video"
+msgstr ""
+
+#: .\apps\work\templates\case_study - with-description.html.py:101
+#: .\apps\work\templates\case_study.html.py:101
+msgid "View the work"
+msgstr ""
+
+#: .\sites\au\jobs\templates\jobs.html.py:19
+msgid ""
+"To upload your CV and to apply to any of our current vacancies, please "
+"follow this"
+msgstr ""
+
+#: .\sites\au\jobs\templates\jobs.html.py:19
+#: .\sites\uk\jobs\templates\jobs.html.py:19
+msgid "https://www.aegismediacareers.co.uk/aegis/glueisobar/"
+msgstr ""
+
+#: .\sites\au\jobs\templates\jobs.html.py:19
+#: .\sites\uk\jobs\templates\jobs.html.py:19
+msgid "this link"
+msgstr ""
+
+#: .\sites\fr\jobs\templates\jobs.html.py:19
+#: .\sites\uk\jobs\templates\jobs.html.py:19
+msgid ""
+"To upload your CV and to apply to any of our current vacancies, please follow"
+msgstr ""
+
+#: .\sites\fr\jobs\templates\jobs.html.py:19
+msgid "http://www.aegis-recrute.com"
+msgstr ""
+
+#: .\sites\fr\jobs\templates\jobs.html.py:19
+msgid "www.aegis-recrute.com"
+msgstr ""
+
+#: .\sites\isobar\home\templates\home.html.py:5
+msgid ""
+"Full service digital marketing agency, Online marketing agency, Modern "
+"communications agency, Interactive marketing agency network, Digital "
+"creative agency, Global digital agency network, Isobar, Isobar "
+"Communications, Isobar Worldwide, Isobar Global, Digital advertising, "
+"Digital agency, Digital agencies, Digital marketing, Online marketing, "
+"Online advertising, Email marketing, Wireless marketing, Interactive "
+"Television, SMS Marketing, Mobile marketing, Direct Marketing"
+msgstr ""
+
+#: .\sites\isobar\home\templates\home.html.py:9
+msgid ""
+"Isobar is a modern communications agency network with digital at its heart.  "
+"Made up of over 2000 talented individuals in 32 markets worldwide. What we "
+"do is simple, we bring people and brands together, like never before."
+msgstr ""
+
+#: .\sites\isobar\home\templates\home.html.py:70
+msgid ""
+"We're a modern communications agency network made up of over 2,200 talented "
+"individuals in 32 markets around the world. Together we bring people and "
+"brands together, like never before."
+msgstr ""
+
+#: .\sites\isobar\location\templates\agencies.html.py:31
+#: .\sites\isobar\location\templates\archive\agencies-temp.html.py:31
+msgid "Map showing office locations"
+msgstr ""
+
+#: .\sites\isobar\location\templates\agencies.html.py:38
+#: .\sites\isobar\location\templates\archive\agencies-temp.html.py:38
+msgid "Locations A-Z"
+msgstr ""
+
+#: .\sites\isobar\location\templates\agencies.html.py:176
+#: .\sites\isobar\location\templates\archive\agencies-temp.html.py:176
+msgid "Head Office"
+msgstr ""
+
+#: .\templates\404.html.py:3
+msgid "File not found"
+msgstr ""
+
+#: .\templates\404.html.py:11
+msgid "404"
+msgstr ""
+
+#: .\templates\404.html.py:15
+msgid "Sorry, we couldn't find the page you're looking for..."
+msgstr ""
+
+#: .\templates\404.html.py:20 .\templates\500.html.py:12
+msgid "Try going to the home page"
+msgstr ""
+
+#: .\templates\500.html.py:6
+msgid "Server Error"
+msgstr ""
+
+#: .\templates\500.html.py:10
+msgid "Sorry, something's gone wrong, very wrong indeed"
+msgstr ""
+
+#: .\templates\base.html.py:3
+msgid "en"
+msgstr ""
+
+#: .\templates\base.html.py:6
+msgid "Home"
+msgstr ""
+
+#: .\templates\base.html.py:6
+msgid "glue Isobar: A Modern Communications Agency"
+msgstr "TUS Isobar: A Modern Communications Agency"
+
+#: .\templates\base.html.py:8
+msgid ""
+"Interactive marketing, Interactive advertising, Isobar, Aegis, Digital "
+"agency, Digital agencies, Digital marketing, Online marketing, Online "
+"advertising, Email marketing, Wireless marketing, Interactive Television, "
+"SMS Marketing, Mobile marketing, Direct Marketing"
+msgstr ""
+
+#: .\templates\base.html.py:9
+msgid ""
+"Isobar is an advertising agency specialising in digital creative work. Our "
+"philosophy is simple: Stick great creative teams who really understand "
+"brands with the most talented designers and developers around and you will "
+"create unique and hard working advertising."
+msgstr ""
+
+#: .\templates\base.html.py:14
+msgid "Isobar is an advertising agency specialising in digital creative work!"
+msgstr ""
+
+#: .\templates\base.html.py:92
+msgid "More about"
+msgstr ""
+
+#: .\templates\base.html.py:92
+msgid "Isobar"
+msgstr ""
+
+#: .\templates\isobar_network.html.py:7
+msgid "Bringing people and brands together like never before"
+msgstr ""
+
+#: .\templates\isobar_network.html.py:12
+msgid ""
+"We are a modern communications agency network made up of over 2,500 talented "
+"individuals in 34 markets around the world. Together we bring people and "
+"brands together, like never before."
+msgstr ""
+
+#: .\templates\isobar_network.html.py:14
+msgid "Find out more at www.isobar.com"
+msgstr ""
+
+#: .\templates\isobar_network.html.py:15
+msgid "View our global locations"
+msgstr ""
+
+#: .\templates\admin\base_site.html.py:4 .\templates\admin\base_site.html.py:7
+msgid "Isobar admin"
+msgstr ""

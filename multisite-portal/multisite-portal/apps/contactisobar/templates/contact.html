@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}Contact{% endblock page_title %}
+{% block additional_headers %}
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.3&amp;sensor=true"></script>
+  
+  <script type="text/javascript">
+	  /**
+	   * The following JS is used in roundarch-contact.js but needs to be in the template file because it uses template tags:
+	   */
+	  var agencyData = [{% for agency in agencies %}
+	          { name: '{{ agency.name|striptags|upper }}', latitude: '{{ agency.latitude }}', longitude: '{{ agency.longitude }}', phone: '{{ agency.telephone|striptags }}',
+	            email: '{{ agency.email|striptags }}', url: '{{ agency.url|striptags }}', address1: '{{ agency.address_line1|striptags|safe }}', address2: '{{ agency.address_line2|striptags|safe }}',
+	            city: '{{ agency.city|striptags }}' },
+	     {% endfor %}
+	  ];
+  </script>
+  
+  <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/us/roundarch-contact.js"></script>
+  
+{% endblock additional_headers %}
+{% block primary_nav %}
+	{% primary_nav 'contact' %}
+{% endblock primary_nav %}    
+
+{% block content %}
+
+<div id="popup-office-template" style="display: none;">
+	<li class="popup-office-item">
+	    <a class="contact-city" href="#" alt="View map location">{{ office.city }}</a>
+	    <span class="contact-address-line-one">{{ office.address_line1 }}</span>
+	    <span class="contact-address-line-two">{{ office.address_line2 }}</span>
+	    <a class="directions-link ext-link" target="_blank" href="http://maps.google.co.uk/maps?f=d&source=s_d&saddr=&daddr={{ office.latitude }},{{ office.longitude }}" alt="Get Directions">Get Directions</a>
+        {% if office.get_absolute_url %}<a class="website-link ext-link" href="{{ office.get_absolute_url }}" alt="Go to website">{{ office.get_absolute_url }}</a>{% endif %}
+        <a class="telephone-link ext-link" href="tel:{{ office.telephone }}" alt="Telephone">{{ office.telephone }}</a>
+        <a class="email-link ext-link" href="mailto:{{ office.email }}" alt="Email" >{{ office.email }}</a>
+	</li>
+</div>
+
+<section class="contact wrap-content {{map}}">
+    <div class="main-content-pad">
+        <div class="container clearfix">
+        
+			<div id="contacts-popup">
+			    <div id="pop-up-header">
+	                <div id="pop-up-office-name"></div>
+	                <div id="popup-close-button" alt="Close">&times;</div>
+                </div>
+			    <div id="popup-content">
+				    <section id="container-map" class="contact-map-container">
+				        <div id="map">
+				        </div>
+				    </section>
+				    <div id="container-map-container-one"></div>
+	                <div id="container-map-container-two"></div>
+                </div>
+			</div>
+        
+            {% include "contactisobar/templates/local_region.html" %}
+            {% include "contactisobar/templates/common_contact.html" %}
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

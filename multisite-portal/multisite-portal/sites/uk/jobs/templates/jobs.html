@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% trans 'Join' %}{% endblock page_title %}
+{% block primary_nav %}
+	{% primary_nav 'join' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	<section class="jobs wrap-content">
+		<div class="main-content-pad">
+			<div class="container">
+				<div class="span2">
+					<section class="box-feature tl"> <!--box-text section-->
+						<header class="title-container">
+							<h1 class="title sub-title">{% trans 'Hello!' %}</h1>
+						</header>
+						<p class="serif">
+							{% trans 'We&#x27;re always on the lookout for established and up and coming talent across account management, planning, production, design, development and creative.' %}
+							<br>{% trans 'To upload your CV and to apply to any of our current vacancies, please follow' %} <a class="int-link" href="{% trans 'https://www.aegismediacareers.co.uk/aegis/glueisobar/' %}">{% trans 'this link' %}</a>.
+						</p>
+					</section> <!--end box-text section-->
+				</div>
+				
+			</div>
+		</div>
+	</section>
+{% endblock content %}

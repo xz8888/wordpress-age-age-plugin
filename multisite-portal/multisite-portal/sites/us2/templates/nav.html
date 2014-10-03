@@ -1,0 +1,12 @@
+
+<nav>
+	<ul class="list-site-nav clearfix">
+	    <li><a class="page-link{% if active == 'about' %} selected{% endif %}" href="{% url profile_view %}">About</a></li>
+	    <li><a class="page-link{% if active == 'work' %} selected{% endif %}" href="{% url work_view %}">Work</a></li>
+	    <li><a class="page-link{% if active == 'labs' %} selected{% endif %}" href="{% url labs_view %}">NowLab</a></li>
+	    <li><a class="page-link{% if active == 'blog' %} selected{% endif %}" href="{{ settings.BLOG_URL }}">Blog</a></li>
+	    <li><a class="page-link{% if active == 'career' %} selected{% endif %}" href="{% url job_list %}">Careers</a></li>
+	    <li><a class="page-link{% if active == 'news' %} selected{% endif %}" href="{% url news_view %}">News</a></li>
+	    <li><a class="page-link{% if active == 'contact' %} selected{% endif %}" href="{% url index 'north america' %}">Contact</a></li>
+	</ul>
+</nav>

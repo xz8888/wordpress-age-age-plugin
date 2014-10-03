@@ -1,0 +1,2905 @@
+[
+ {
+  "pk": 17, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "about", 
+   "name": "About page", 
+   "app_label": "about"
+  }
+ }, 
+ {
+  "pk": 16, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "abouttranslation", 
+   "name": "about translation", 
+   "app_label": "about"
+  }
+ }, 
+ {
+  "pk": 41, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "analytics", 
+   "name": "Analytics", 
+   "app_label": "social"
+  }
+ }, 
+ {
+  "pk": 35, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "application", 
+   "name": "application", 
+   "app_label": "social"
+  }
+ }, 
+ {
+  "pk": 15, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "award", 
+   "name": "award", 
+   "app_label": "work"
+  }
+ }, 
+ {
+  "pk": 14, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "casestudy", 
+   "name": "Case Study", 
+   "app_label": "work"
+  }
+ }, 
+ {
+  "pk": 13, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "casestudytranslation", 
+   "name": "case study translation", 
+   "app_label": "work"
+  }
+ }, 
+ {
+  "pk": 30, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "category", 
+   "name": "Category", 
+   "app_label": "news"
+  }
+ }, 
+ {
+  "pk": 5, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "contenttype", 
+   "name": "content type", 
+   "app_label": "contenttypes"
+  }
+ }, 
+ {
+  "pk": 18, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "department", 
+   "name": "department", 
+   "app_label": "people"
+  }
+ }, 
+ {
+  "pk": 23, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "email", 
+   "name": "Email address", 
+   "app_label": "footer"
+  }
+ }, 
+ {
+  "pk": 43, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "flatblock", 
+   "name": "Flat block", 
+   "app_label": "flatblocks"
+  }
+ }, 
+ {
+  "pk": 9, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "flatpage", 
+   "name": "flat page", 
+   "app_label": "flatpages"
+  }
+ }, 
+ {
+  "pk": 20, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "footer", 
+   "name": "footer", 
+   "app_label": "footer"
+  }
+ }, 
+ {
+  "pk": 34, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "friend", 
+   "name": "friend", 
+   "app_label": "news"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "group", 
+   "name": "group", 
+   "app_label": "auth"
+  }
+ }, 
+ {
+  "pk": 10, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "item", 
+   "name": "item", 
+   "app_label": "common"
+  }
+ }, 
+ {
+  "pk": 45, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "job", 
+   "name": "job", 
+   "app_label": "jobs"
+  }
+ }, 
+ {
+  "pk": 44, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "jobtranslation", 
+   "name": "job translation", 
+   "app_label": "jobs"
+  }
+ }, 
+ {
+  "pk": 12, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "layout", 
+   "name": "layout", 
+   "app_label": "home"
+  }
+ }, 
+ {
+  "pk": 11, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "layoutitem", 
+   "name": "layout item", 
+   "app_label": "home"
+  }
+ }, 
+ {
+  "pk": 28, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "link", 
+   "name": "link", 
+   "app_label": "contact"
+  }
+ }, 
+ {
+  "pk": 27, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "location", 
+   "name": "location", 
+   "app_label": "contact"
+  }
+ }, 
+ {
+  "pk": 8, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "logentry", 
+   "name": "log entry", 
+   "app_label": "admin"
+  }
+ }, 
+ {
+  "pk": 29, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "map", 
+   "name": "map", 
+   "app_label": "contact"
+  }
+ }, 
+ {
+  "pk": 4, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "message", 
+   "name": "message", 
+   "app_label": "auth"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "permission", 
+   "name": "permission", 
+   "app_label": "auth"
+  }
+ }, 
+ {
+  "pk": 26, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "person", 
+   "name": "person", 
+   "app_label": "contact"
+  }
+ }, 
+ {
+  "pk": 19, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "person", 
+   "name": "person", 
+   "app_label": "people"
+  }
+ }, 
+ {
+  "pk": 46, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "persontranslation", 
+   "name": "person translation", 
+   "app_label": "people"
+  }
+ }, 
+ {
+  "pk": 22, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "phone", 
+   "name": "Phone number", 
+   "app_label": "footer"
+  }
+ }, 
+ {
+  "pk": 37, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "posterousaccount", 
+   "name": "posterous account", 
+   "app_label": "social"
+  }
+ }, 
+ {
+  "pk": 38, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "posterouspost", 
+   "name": "posterous post", 
+   "app_label": "social"
+  }
+ }, 
+ {
+  "pk": 25, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "promo", 
+   "name": "promo", 
+   "app_label": "footer"
+  }
+ }, 
+ {
+  "pk": 42, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "promobox", 
+   "name": "promo box", 
+   "app_label": "social"
+  }
+ }, 
+ {
+  "pk": 24, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "promotranslation", 
+   "name": "promo translation", 
+   "app_label": "footer"
+  }
+ }, 
+ {
+  "pk": 33, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "relatedlink", 
+   "name": "related link", 
+   "app_label": "news"
+  }
+ }, 
+ {
+  "pk": 6, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "session", 
+   "name": "session", 
+   "app_label": "sessions"
+  }
+ }, 
+ {
+  "pk": 36, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "share", 
+   "name": "share", 
+   "app_label": "social"
+  }
+ }, 
+ {
+  "pk": 7, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "site", 
+   "name": "site", 
+   "app_label": "sites"
+  }
+ }, 
+ {
+  "pk": 21, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "social", 
+   "name": "Social link", 
+   "app_label": "footer"
+  }
+ }, 
+ {
+  "pk": 32, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "story", 
+   "name": "Story", 
+   "app_label": "news"
+  }
+ }, 
+ {
+  "pk": 31, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "storytranslation", 
+   "name": "story translation", 
+   "app_label": "news"
+  }
+ }, 
+ {
+  "pk": 39, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "twitteraccount", 
+   "name": "twitter account", 
+   "app_label": "social"
+  }
+ }, 
+ {
+  "pk": 40, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "twittertweet", 
+   "name": "twitter tweet", 
+   "app_label": "social"
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "contenttypes.contenttype", 
+  "fields": {
+   "model": "user", 
+   "name": "user", 
+   "app_label": "auth"
+  }
+ }, 
+ {
+  "pk": "51fd59b7edbcaac0f0085822dd94377c", 
+  "model": "sessions.session", 
+  "fields": {
+   "expire_date": "2011-07-12 20:31:12", 
+   "session_data": "ODU1NDRhNDY5YzVmZGUzMzJhZTkzN2QxNjQ2NzAzMGM0NWYxMjljNzqAAn1xAShVDV9hdXRoX3Vz\nZXJfaWRxAooBAVUSX2F1dGhfdXNlcl9iYWNrZW5kcQNVKWRqYW5nby5jb250cmliLmF1dGguYmFj\na2VuZHMuTW9kZWxCYWNrZW5kcQRVD2RqYW5nb19sYW5ndWFnZXEFWAIAAABlbnEGdS4=\n"
+  }
+ }, 
+ {
+  "pk": "b6702a2c9e5db69128bba9a2cea51182", 
+  "model": "sessions.session", 
+  "fields": {
+   "expire_date": "2011-07-14 17:12:55", 
+   "session_data": "YTJhZDg0MGEyNDg0ZGQ5YzU3MjMyNWM3ZGE1Mzk1NDEwYWFhYzdhNjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "sites.site", 
+  "fields": {
+   "domain": "example.com", 
+   "name": "example.com"
+  }
+ }, 
+ {
+  "pk": 45, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-30 17:51:55", 
+   "object_repr": "Map object", 
+   "object_id": "1", 
+   "change_message": "No fields changed.", 
+   "user": 1, 
+   "content_type": 29
+  }
+ }, 
+ {
+  "pk": 44, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-30 17:45:22", 
+   "object_repr": "Map object", 
+   "object_id": "1", 
+   "change_message": "Changed zoom_level.", 
+   "user": 1, 
+   "content_type": 29
+  }
+ }, 
+ {
+  "pk": 43, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-30 17:44:42", 
+   "object_repr": "Map object", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 29
+  }
+ }, 
+ {
+  "pk": 42, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-30 17:41:31", 
+   "object_repr": "Isobar Canada", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 27
+  }
+ }, 
+ {
+  "pk": 41, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-30 17:14:36", 
+   "object_repr": "Developer", 
+   "object_id": "1", 
+   "change_message": "Changed telephone.", 
+   "user": 1, 
+   "content_type": 26
+  }
+ }, 
+ {
+  "pk": 40, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-30 17:14:26", 
+   "object_repr": "Developer", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 26
+  }
+ }, 
+ {
+  "pk": 39, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 3, 
+   "action_time": "2011-06-30 17:13:41", 
+   "object_repr": "arthurnn", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 28
+  }
+ }, 
+ {
+  "pk": 38, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-30 17:13:31", 
+   "object_repr": "arthurnn", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 28
+  }
+ }, 
+ {
+  "pk": 37, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 3, 
+   "action_time": "2011-06-28 20:37:46", 
+   "object_repr": "friend2", 
+   "object_id": "2", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 34
+  }
+ }, 
+ {
+  "pk": 36, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-28 20:37:35", 
+   "object_repr": "friend2", 
+   "object_id": "2", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 34
+  }
+ }, 
+ {
+  "pk": 35, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-28 20:36:17", 
+   "object_repr": "new friend test", 
+   "object_id": "1", 
+   "change_message": "Changed url.", 
+   "user": 1, 
+   "content_type": 34
+  }
+ }, 
+ {
+  "pk": 34, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-28 20:35:37", 
+   "object_repr": "new friend test", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 34
+  }
+ }, 
+ {
+  "pk": 33, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-28 20:34:38", 
+   "object_repr": "PM", 
+   "object_id": "14", 
+   "change_message": "No fields changed.", 
+   "user": 1, 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 32, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-28 20:31:32", 
+   "object_repr": "PM", 
+   "object_id": "14", 
+   "change_message": "Changed contact.", 
+   "user": 1, 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 31, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-28 20:31:01", 
+   "object_repr": "PM", 
+   "object_id": "14", 
+   "change_message": "Changed body.", 
+   "user": 1, 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 30, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-28 20:30:52", 
+   "object_repr": "PM", 
+   "object_id": "14", 
+   "change_message": "Changed body.", 
+   "user": 1, 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 29, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-28 20:30:45", 
+   "object_repr": "PM", 
+   "object_id": "14", 
+   "change_message": "Changed body.", 
+   "user": 1, 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 28, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-28 20:30:25", 
+   "object_repr": "PM", 
+   "object_id": "14", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 27, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-28 20:14:21", 
+   "object_repr": "San Faustino", 
+   "object_id": "10", 
+   "change_message": "Changed body.", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 26, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-28 19:46:56", 
+   "object_repr": "arthurnn89", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 39
+  }
+ }, 
+ {
+  "pk": 25, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-28 19:43:52", 
+   "object_repr": "Twitter share", 
+   "object_id": "2", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 35
+  }
+ }, 
+ {
+  "pk": 24, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-28 19:43:48", 
+   "object_repr": "Twitter", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 35
+  }
+ }, 
+ {
+  "pk": 23, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-28 19:26:32", 
+   "object_repr": "Footer", 
+   "object_id": "13", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 20
+  }
+ }, 
+ {
+  "pk": 22, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 23:01:48", 
+   "object_repr": "Layout", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 12
+  }
+ }, 
+ {
+  "pk": 21, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 23:01:45", 
+   "object_repr": "sao paulo", 
+   "object_id": "12", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 20, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 23:00:15", 
+   "object_repr": "Ginza", 
+   "object_id": "11", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 19, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 22:58:37", 
+   "object_repr": "San Faustino", 
+   "object_id": "10", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 18, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 22:57:21", 
+   "object_repr": "canino", 
+   "object_id": "9", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 17, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 22:48:20", 
+   "object_repr": "Jesus College lodgings and chapel", 
+   "object_id": "8", 
+   "change_message": "Modifi\u00e9 body.", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 16, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 22:47:46", 
+   "object_repr": "Jesus College lodgings and chapel", 
+   "object_id": "8", 
+   "change_message": "Modifi\u00e9 body.", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 15, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 22:47:42", 
+   "object_repr": "Jesus College lodgings and chapel", 
+   "object_id": "8", 
+   "change_message": "Modifi\u00e9 body.", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 14, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 22:46:58", 
+   "object_repr": "Jesus College lodgings and chapel", 
+   "object_id": "8", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 13, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 22:45:13", 
+   "object_repr": "Santorini Greece", 
+   "object_id": "7", 
+   "change_message": "Modifi\u00e9 body.", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 12, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 22:45:09", 
+   "object_repr": "Santorini Greece", 
+   "object_id": "7", 
+   "change_message": "Modifi\u00e9 body.", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 11, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 22:44:53", 
+   "object_repr": "Santorini Greece", 
+   "object_id": "7", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 10, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 22:39:45", 
+   "object_repr": "another one", 
+   "object_id": "4", 
+   "change_message": "Modifi\u00e9 body.", 
+   "user": 1, 
+   "content_type": 32
+  }
+ }, 
+ {
+  "pk": 9, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 22:39:41", 
+   "object_repr": "another one", 
+   "object_id": "4", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 32
+  }
+ }, 
+ {
+  "pk": 8, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 22:37:44", 
+   "object_repr": "story 1", 
+   "object_id": "3", 
+   "change_message": "Modifi\u00e9 image.", 
+   "user": 1, 
+   "content_type": 32
+  }
+ }, 
+ {
+  "pk": 7, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 21:45:19", 
+   "object_repr": "Arthur Nogueira Neves", 
+   "object_id": "2", 
+   "change_message": "Changed body.", 
+   "user": 1, 
+   "content_type": 19
+  }
+ }, 
+ {
+  "pk": 6, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 21:45:11", 
+   "object_repr": "Arthur Nogueira Neves", 
+   "object_id": "2", 
+   "change_message": "Changed body.", 
+   "user": 1, 
+   "content_type": 19
+  }
+ }, 
+ {
+  "pk": 5, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 2, 
+   "action_time": "2011-06-27 21:39:43", 
+   "object_repr": "story 1", 
+   "object_id": "3", 
+   "change_message": "Modifi\u00e9 body.", 
+   "user": 1, 
+   "content_type": 32
+  }
+ }, 
+ {
+  "pk": 4, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 21:39:30", 
+   "object_repr": "story 1", 
+   "object_id": "3", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 32
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 21:38:45", 
+   "object_repr": "category1", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 30
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 21:30:01", 
+   "object_repr": "Arthur Nogueira Neves", 
+   "object_id": "2", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 19
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "admin.logentry", 
+  "fields": {
+   "action_flag": 1, 
+   "action_time": "2011-06-27 21:29:59", 
+   "object_repr": "Technology", 
+   "object_id": "1", 
+   "change_message": "", 
+   "user": 1, 
+   "content_type": 18
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 21:29:59", 
+   "created": "2011-06-27 21:29:59", 
+   "title": "Technology", 
+   "subclass": "department", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 21:45:19", 
+   "created": "2011-06-27 21:30:01", 
+   "title": "Arthur Nogueira Neves", 
+   "subclass": "person", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 22:37:44", 
+   "created": "2011-06-27 21:39:30", 
+   "title": "story 1", 
+   "subclass": "story", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 4, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 22:39:45", 
+   "created": "2011-06-27 22:39:41", 
+   "title": "another one", 
+   "subclass": "story", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 7, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 22:45:13", 
+   "created": "2011-06-27 22:44:52", 
+   "title": "Santorini Greece", 
+   "subclass": "casestudy", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 8, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 22:48:20", 
+   "created": "2011-06-27 22:46:57", 
+   "title": "Jesus College lodgings and chapel", 
+   "subclass": "casestudy", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 9, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 22:57:19", 
+   "created": "2011-06-27 22:57:19", 
+   "title": "canino", 
+   "subclass": "casestudy", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 10, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-28 20:14:21", 
+   "created": "2011-06-27 22:58:35", 
+   "title": "San Faustino", 
+   "subclass": "casestudy", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 11, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 23:00:13", 
+   "created": "2011-06-27 23:00:13", 
+   "title": "Ginza", 
+   "subclass": "casestudy", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 12, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-27 23:01:43", 
+   "created": "2011-06-27 23:01:43", 
+   "title": "sao paulo", 
+   "subclass": "casestudy", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 13, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-28 19:26:32", 
+   "created": "2011-06-28 19:26:32", 
+   "title": "Footer", 
+   "subclass": "footer", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 14, 
+  "model": "common.item", 
+  "fields": {
+   "updated": "2011-06-28 20:34:38", 
+   "created": "2011-06-28 20:30:25", 
+   "title": "PM", 
+   "subclass": "job", 
+   "active": true, 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 3, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 4, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 7, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 8, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 9, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 10, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 11, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 12, 
+  "model": "home.layoutitem", 
+  "fields": {}
+ }, 
+ {
+  "pk": 1, 
+  "model": "home.layout", 
+  "fields": {
+   "news_story_1": 3, 
+   "case_study_large_1": 8, 
+   "case_study_large_3": 9, 
+   "case_study_large_2": 7, 
+   "news_story_2": 4, 
+   "case_study_small_1": 10, 
+   "case_study_small_3": 12, 
+   "case_study_small_2": 11
+  }
+ }, 
+ {
+  "pk": 4, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p>normal body!</p>", 
+   "master": 7, 
+   "language_code": "en"
+  }
+ }, 
+ {
+  "pk": 6, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p><strong>Jesus College</strong> (in full: <strong>Jesus College in the University of Oxford of Queen Elizabeth's Foundation</strong>) is one of the <a title=\"Colleges of the University of Oxford\" href=\"http://en.wikipedia.org/wiki/Colleges_of_the_University_of_Oxford\">colleges</a> of the <a title=\"University of Oxford\" href=\"http://en.wikipedia.org/wiki/University_of_Oxford\">University of Oxford</a> in England. It is in the centre of the <a title=\"Oxford\" href=\"http://en.wikipedia.org/wiki/Oxford\">city</a>, on a site between <a title=\"Turl Street\" href=\"http://en.wikipedia.org/wiki/Turl_Street\">Turl Street</a>, <a title=\"Ship Street, Oxford\" href=\"http://en.wikipedia.org/wiki/Ship_Street,_Oxford\">Ship Street</a>, <a title=\"Cornmarket Street\" href=\"http://en.wikipedia.org/wiki/Cornmarket_Street\">Cornmarket Street</a> and <a title=\"Market Street, Oxford\" href=\"http://en.wikipedia.org/wiki/Market_Street,_Oxford\">Market Street</a>.</p>", 
+   "master": 8, 
+   "language_code": "en"
+  }
+ }, 
+ {
+  "pk": 11, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p>english!!!</p>", 
+   "master": 10, 
+   "language_code": "en"
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p>&nbsp;</p>\r\n<p><span id=\"result_box\" class=\"short_text\" lang=\"fr\"><span class=\"hps\" title=\"Click for alternate translations\">normale du corps</span><span title=\"Click for alternate translations\">!</span></span></p>", 
+   "master": 7, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 5, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p>Le <strong>Jesus College</strong> est connu traditionnellement comme le <a title=\"Coll&egrave;ge\" href=\"http://fr.wikipedia.org/wiki/Coll%C3%A8ge\">coll&egrave;ge</a> &laquo;&nbsp;<a title=\"Gallois\" href=\"http://fr.wikipedia.org/wiki/Gallois\">gallois</a>&nbsp;&raquo; de l'<a title=\"Universit&eacute; d'Oxford\" href=\"http://fr.wikipedia.org/wiki/Universit%C3%A9_d%27Oxford\">universit&eacute; d'Oxford</a> (en raison de ses affiliations ainsi que de son recrutement). Son nom complet est le <strong>Jesus College in the University of Oxford of Queen Elizabeth's Foundation</strong> car il fait partie des 39 <a title=\"Coll&egrave;ge\" href=\"http://fr.wikipedia.org/wiki/Coll%C3%A8ge\">Colleges</a> de l'<a title=\"Universit&eacute; d'Oxford\" href=\"http://fr.wikipedia.org/wiki/Universit%C3%A9_d%27Oxford\">Universit&eacute; d'Oxford</a>.</p>", 
+   "master": 8, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 7, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p>French</p>", 
+   "master": 9, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 8, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p>Frenchhhhh</p>", 
+   "master": 10, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 9, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p>f</p>", 
+   "master": 11, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 10, 
+  "model": "work.casestudytranslation", 
+  "fields": {
+   "body": "<p>f</p>", 
+   "master": 12, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 7, 
+  "model": "work.casestudy", 
+  "fields": {
+   "video_image": "img/uploads/case-study/00_btn_skip_off_2.png", 
+   "url": "", 
+   "country": "ca", 
+   "publish_to_external": 0, 
+   "created_by": null, 
+   "external_db_id": -1, 
+   "video": "video/uploads/case-study/00_btn_skip_off_2.png", 
+   "share_url": "", 
+   "publish_date": "2011-06-27", 
+   "posting_agency": "mindblossom Isobar", 
+   "hero_image": "img/uploads/case-study/darrell-gulin-blue-domed-church-imerovigli-santorini-greece_2.jpg", 
+   "slug": "santorini-greece"
+  }
+ }, 
+ {
+  "pk": 8, 
+  "model": "work.casestudy", 
+  "fields": {
+   "video_image": "img/uploads/case-study/00_btn_skip_off_3.png", 
+   "url": "", 
+   "country": "ca", 
+   "publish_to_external": 0, 
+   "created_by": null, 
+   "external_db_id": -1, 
+   "video": "video/uploads/case-study/00_btn_skip_off_2.png", 
+   "share_url": "", 
+   "publish_date": "2011-06-27", 
+   "posting_agency": "mindblossom Isobar", 
+   "hero_image": "img/uploads/case-study/800px-Jesus_College_lodgings_and_chapel.jpg", 
+   "slug": "jesus-college-lodgings-and-chapel"
+  }
+ }, 
+ {
+  "pk": 9, 
+  "model": "work.casestudy", 
+  "fields": {
+   "video_image": "img/uploads/case-study/00_btn_skip_on.png", 
+   "url": "", 
+   "country": "ca", 
+   "publish_to_external": 0, 
+   "created_by": null, 
+   "external_db_id": -1, 
+   "video": "video/uploads/case-study/00_btn_skip_on.png", 
+   "share_url": "", 
+   "publish_date": "2011-06-27", 
+   "posting_agency": "mindblossom Isobar", 
+   "hero_image": "img/uploads/case-study/Canino.png", 
+   "slug": "canino"
+  }
+ }, 
+ {
+  "pk": 10, 
+  "model": "work.casestudy", 
+  "fields": {
+   "video_image": "img/uploads/case-study/00_btn_skip_off_4.png", 
+   "url": "", 
+   "country": "ca", 
+   "publish_to_external": 0, 
+   "created_by": null, 
+   "external_db_id": -1, 
+   "video": "video/uploads/case-study/00_btn_skip_off_2.png", 
+   "share_url": "", 
+   "publish_date": "2011-06-27", 
+   "posting_agency": "mindblossom Isobar", 
+   "hero_image": "img/uploads/case-study/450px-San_Faustino_maggiore_Brescia_facciata3.jpg", 
+   "slug": "san-faustino"
+  }
+ }, 
+ {
+  "pk": 11, 
+  "model": "work.casestudy", 
+  "fields": {
+   "video_image": "img/uploads/case-study/00_btn_skip_off_5.png", 
+   "url": "", 
+   "country": "ca", 
+   "publish_to_external": 0, 
+   "created_by": null, 
+   "external_db_id": -1, 
+   "video": "video/uploads/case-study/00_btn_skip_off2x.png", 
+   "share_url": "", 
+   "publish_date": "2011-06-27", 
+   "posting_agency": "mindblossom Isobar", 
+   "hero_image": "img/uploads/case-study/800px-Ginza01s3872.jpg", 
+   "slug": "ginza"
+  }
+ }, 
+ {
+  "pk": 12, 
+  "model": "work.casestudy", 
+  "fields": {
+   "video_image": "img/uploads/case-study/00_btn_skip_off_6.png", 
+   "url": "", 
+   "country": "ca", 
+   "publish_to_external": 0, 
+   "created_by": null, 
+   "external_db_id": -1, 
+   "video": "video/uploads/case-study/00_btn_skip_off_2.png", 
+   "share_url": "", 
+   "publish_date": "2011-06-27", 
+   "posting_agency": "mindblossom Isobar", 
+   "hero_image": "img/uploads/case-study/saopaulo2.jpg", 
+   "slug": "sao-paulo"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "people.department", 
+  "fields": {
+   "colour": "#ff0000", 
+   "slug": "technology"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "people.persontranslation", 
+  "fields": {
+   "body": "<p>nothing much to say!</p>", 
+   "master": 2, 
+   "language_code": "en"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "people.persontranslation", 
+  "fields": {
+   "body": "<p><span id=\"result_box\" class=\"short_text\" lang=\"fr\"><span class=\"hps\" title=\"Click for alternate translations\">rien &agrave; dire</span><span title=\"Click for alternate translations\">!</span></span></p>", 
+   "master": 2, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "people.person", 
+  "fields": {
+   "department": 1, 
+   "image": "img/uploads/people/profile-photo_4.jpg", 
+   "role": "Developer", 
+   "slug": "arthur-nogueira-neves"
+  }
+ }, 
+ {
+  "pk": 13, 
+  "model": "footer.footer", 
+  "fields": {}
+ }, 
+ {
+  "pk": 1, 
+  "model": "footer.phone", 
+  "fields": {
+   "footer": 13, 
+   "number": "(647)444-2933", 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "footer.email", 
+  "fields": {
+   "footer": 13, 
+   "order": 999, 
+   "address": "arthurnn@gmail.com"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "contact.person", 
+  "fields": {
+   "telephone": "(647) 444-2933", 
+   "description": "Arthur Neves", 
+   "order": 999, 
+   "email": "arthurnn@gmail.com", 
+   "title": "Developer"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "contact.location", 
+  "fields": {
+   "title": "Isobar Canada", 
+   "longitude": "-79.3958263", 
+   "address": "116 Spadina , Toronto, Ontario\r\nCanada", 
+   "latitude": "43.6471201", 
+   "map_image": "", 
+   "order": 999
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "contact.map", 
+  "fields": {
+   "centre_point_latitude": "43.6471201", 
+   "zoom_level": "13", 
+   "centre_point_longitude": "-79.3958263"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "news.category", 
+  "fields": {
+   "slug": "category1", 
+   "title": "category1"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "news.storytranslation", 
+  "fields": {
+   "body": "<p>some pretty story...</p>", 
+   "master": 3, 
+   "language_code": "en"
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "news.storytranslation", 
+  "fields": {
+   "body": "<p>This is the english body..</p>", 
+   "master": 4, 
+   "language_code": "en"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "news.storytranslation", 
+  "fields": {
+   "body": "<p><span id=\"result_box\" class=\"short_text\" lang=\"fr\"><span class=\"hps\" title=\"Click for alternate translations\">certains</span> <span class=\"hps\" title=\"Click for alternate translations\">jolie histoire</span> <span class=\"hps\" title=\"Click for alternate translations\">...</span></span></p>", 
+   "master": 3, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 4, 
+  "model": "news.storytranslation", 
+  "fields": {
+   "body": "<p><span id=\"result_box\" class=\"short_text\" lang=\"fr\"><span class=\"hps\" title=\"Click for alternate translations\">Ceci est le corps</span> <span class=\"hps\" title=\"Click for alternate translations\">anglais</span> <span class=\"hps\" title=\"Click for alternate translations\">..</span></span></p>", 
+   "master": 4, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "news.story", 
+  "fields": {
+   "category": 1, 
+   "author": 2, 
+   "country": "ca", 
+   "image": "img/uploads/news/gutenberg-suspension-bridge-clifton1.jpg", 
+   "publish_to_external": 0, 
+   "created_by": null, 
+   "sticky": 0, 
+   "external_db_id": -1, 
+   "publish_date": "2011-06-26 06:00:00", 
+   "posting_agency": "mindblossom Isobar", 
+   "slug": "story-1"
+  }
+ }, 
+ {
+  "pk": 4, 
+  "model": "news.story", 
+  "fields": {
+   "category": 1, 
+   "author": 2, 
+   "country": "ca", 
+   "image": "img/uploads/news/nuit_-_bonus.jpg", 
+   "publish_to_external": 0, 
+   "created_by": null, 
+   "sticky": 0, 
+   "external_db_id": -1, 
+   "publish_date": "2011-06-26 06:00:00", 
+   "posting_agency": "mindblossom Isobar", 
+   "slug": "another-one"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "news.friend", 
+  "fields": {
+   "url": "http://example.com", 
+   "description": "new friend test", 
+   "title": "new friend test"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "social.application", 
+  "fields": {
+   "order": 999, 
+   "install": "Twitter"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "social.application", 
+  "fields": {
+   "order": 999, 
+   "install": "Twitter share"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "social.twitteraccount", 
+  "fields": {
+   "screen_name": "arthurnn89"
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "jobs.jobtranslation", 
+  "fields": {
+   "body": "<p>Looking for a new PM</p>", 
+   "master": 14, 
+   "language_code": "en"
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "jobs.jobtranslation", 
+  "fields": {
+   "body": "<p><span id=\"result_box\" class=\"short_text\" lang=\"fr\"><span class=\"hps\" title=\"Click for alternate translations\">Vous cherchez un</span> <span class=\"hps\" title=\"Click for alternate translations\">nouveau PM</span></span></p>", 
+   "master": 14, 
+   "language_code": "fr"
+  }
+ }, 
+ {
+  "pk": 14, 
+  "model": "jobs.job", 
+  "fields": {
+   "specification": "", 
+   "contact": "arthurnn@gmai.com", 
+   "slug": "pm"
+  }
+ }, 
+ {
+  "pk": 49, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_about", 
+   "name": "Can add About page", 
+   "content_type": 17
+  }
+ }, 
+ {
+  "pk": 50, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_about", 
+   "name": "Can change About page", 
+   "content_type": 17
+  }
+ }, 
+ {
+  "pk": 51, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_about", 
+   "name": "Can delete About page", 
+   "content_type": 17
+  }
+ }, 
+ {
+  "pk": 46, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_abouttranslation", 
+   "name": "Can add about translation", 
+   "content_type": 16
+  }
+ }, 
+ {
+  "pk": 47, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_abouttranslation", 
+   "name": "Can change about translation", 
+   "content_type": 16
+  }
+ }, 
+ {
+  "pk": 48, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_abouttranslation", 
+   "name": "Can delete about translation", 
+   "content_type": 16
+  }
+ }, 
+ {
+  "pk": 22, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_logentry", 
+   "name": "Can add log entry", 
+   "content_type": 8
+  }
+ }, 
+ {
+  "pk": 23, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_logentry", 
+   "name": "Can change log entry", 
+   "content_type": 8
+  }
+ }, 
+ {
+  "pk": 24, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_logentry", 
+   "name": "Can delete log entry", 
+   "content_type": 8
+  }
+ }, 
+ {
+  "pk": 4, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_group", 
+   "name": "Can add group", 
+   "content_type": 2
+  }
+ }, 
+ {
+  "pk": 5, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_group", 
+   "name": "Can change group", 
+   "content_type": 2
+  }
+ }, 
+ {
+  "pk": 6, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_group", 
+   "name": "Can delete group", 
+   "content_type": 2
+  }
+ }, 
+ {
+  "pk": 10, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_message", 
+   "name": "Can add message", 
+   "content_type": 4
+  }
+ }, 
+ {
+  "pk": 11, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_message", 
+   "name": "Can change message", 
+   "content_type": 4
+  }
+ }, 
+ {
+  "pk": 12, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_message", 
+   "name": "Can delete message", 
+   "content_type": 4
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_permission", 
+   "name": "Can add permission", 
+   "content_type": 1
+  }
+ }, 
+ {
+  "pk": 2, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_permission", 
+   "name": "Can change permission", 
+   "content_type": 1
+  }
+ }, 
+ {
+  "pk": 3, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_permission", 
+   "name": "Can delete permission", 
+   "content_type": 1
+  }
+ }, 
+ {
+  "pk": 7, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_user", 
+   "name": "Can add user", 
+   "content_type": 3
+  }
+ }, 
+ {
+  "pk": 8, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_user", 
+   "name": "Can change user", 
+   "content_type": 3
+  }
+ }, 
+ {
+  "pk": 9, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_user", 
+   "name": "Can delete user", 
+   "content_type": 3
+  }
+ }, 
+ {
+  "pk": 28, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_item", 
+   "name": "Can add item", 
+   "content_type": 10
+  }
+ }, 
+ {
+  "pk": 29, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_item", 
+   "name": "Can change item", 
+   "content_type": 10
+  }
+ }, 
+ {
+  "pk": 30, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_item", 
+   "name": "Can delete item", 
+   "content_type": 10
+  }
+ }, 
+ {
+  "pk": 82, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_link", 
+   "name": "Can add link", 
+   "content_type": 28
+  }
+ }, 
+ {
+  "pk": 83, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_link", 
+   "name": "Can change link", 
+   "content_type": 28
+  }
+ }, 
+ {
+  "pk": 84, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_link", 
+   "name": "Can delete link", 
+   "content_type": 28
+  }
+ }, 
+ {
+  "pk": 79, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_location", 
+   "name": "Can add location", 
+   "content_type": 27
+  }
+ }, 
+ {
+  "pk": 80, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_location", 
+   "name": "Can change location", 
+   "content_type": 27
+  }
+ }, 
+ {
+  "pk": 81, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_location", 
+   "name": "Can delete location", 
+   "content_type": 27
+  }
+ }, 
+ {
+  "pk": 85, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_map", 
+   "name": "Can add map", 
+   "content_type": 29
+  }
+ }, 
+ {
+  "pk": 86, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_map", 
+   "name": "Can change map", 
+   "content_type": 29
+  }
+ }, 
+ {
+  "pk": 87, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_map", 
+   "name": "Can delete map", 
+   "content_type": 29
+  }
+ }, 
+ {
+  "pk": 76, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_person", 
+   "name": "Can add person", 
+   "content_type": 26
+  }
+ }, 
+ {
+  "pk": 77, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_person", 
+   "name": "Can change person", 
+   "content_type": 26
+  }
+ }, 
+ {
+  "pk": 78, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_person", 
+   "name": "Can delete person", 
+   "content_type": 26
+  }
+ }, 
+ {
+  "pk": 13, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_contenttype", 
+   "name": "Can add content type", 
+   "content_type": 5
+  }
+ }, 
+ {
+  "pk": 14, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_contenttype", 
+   "name": "Can change content type", 
+   "content_type": 5
+  }
+ }, 
+ {
+  "pk": 15, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_contenttype", 
+   "name": "Can delete content type", 
+   "content_type": 5
+  }
+ }, 
+ {
+  "pk": 127, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_flatblock", 
+   "name": "Can add Flat block", 
+   "content_type": 43
+  }
+ }, 
+ {
+  "pk": 128, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_flatblock", 
+   "name": "Can change Flat block", 
+   "content_type": 43
+  }
+ }, 
+ {
+  "pk": 129, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_flatblock", 
+   "name": "Can delete Flat block", 
+   "content_type": 43
+  }
+ }, 
+ {
+  "pk": 25, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_flatpage", 
+   "name": "Can add flat page", 
+   "content_type": 9
+  }
+ }, 
+ {
+  "pk": 26, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_flatpage", 
+   "name": "Can change flat page", 
+   "content_type": 9
+  }
+ }, 
+ {
+  "pk": 27, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_flatpage", 
+   "name": "Can delete flat page", 
+   "content_type": 9
+  }
+ }, 
+ {
+  "pk": 67, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_email", 
+   "name": "Can add Email address", 
+   "content_type": 23
+  }
+ }, 
+ {
+  "pk": 68, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_email", 
+   "name": "Can change Email address", 
+   "content_type": 23
+  }
+ }, 
+ {
+  "pk": 69, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_email", 
+   "name": "Can delete Email address", 
+   "content_type": 23
+  }
+ }, 
+ {
+  "pk": 58, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_footer", 
+   "name": "Can add footer", 
+   "content_type": 20
+  }
+ }, 
+ {
+  "pk": 59, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_footer", 
+   "name": "Can change footer", 
+   "content_type": 20
+  }
+ }, 
+ {
+  "pk": 60, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_footer", 
+   "name": "Can delete footer", 
+   "content_type": 20
+  }
+ }, 
+ {
+  "pk": 64, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_phone", 
+   "name": "Can add Phone number", 
+   "content_type": 22
+  }
+ }, 
+ {
+  "pk": 65, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_phone", 
+   "name": "Can change Phone number", 
+   "content_type": 22
+  }
+ }, 
+ {
+  "pk": 66, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_phone", 
+   "name": "Can delete Phone number", 
+   "content_type": 22
+  }
+ }, 
+ {
+  "pk": 73, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_promo", 
+   "name": "Can add promo", 
+   "content_type": 25
+  }
+ }, 
+ {
+  "pk": 74, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_promo", 
+   "name": "Can change promo", 
+   "content_type": 25
+  }
+ }, 
+ {
+  "pk": 75, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_promo", 
+   "name": "Can delete promo", 
+   "content_type": 25
+  }
+ }, 
+ {
+  "pk": 70, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_promotranslation", 
+   "name": "Can add promo translation", 
+   "content_type": 24
+  }
+ }, 
+ {
+  "pk": 71, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_promotranslation", 
+   "name": "Can change promo translation", 
+   "content_type": 24
+  }
+ }, 
+ {
+  "pk": 72, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_promotranslation", 
+   "name": "Can delete promo translation", 
+   "content_type": 24
+  }
+ }, 
+ {
+  "pk": 61, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_social", 
+   "name": "Can add Social link", 
+   "content_type": 21
+  }
+ }, 
+ {
+  "pk": 62, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_social", 
+   "name": "Can change Social link", 
+   "content_type": 21
+  }
+ }, 
+ {
+  "pk": 63, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_social", 
+   "name": "Can delete Social link", 
+   "content_type": 21
+  }
+ }, 
+ {
+  "pk": 34, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_layout", 
+   "name": "Can add layout", 
+   "content_type": 12
+  }
+ }, 
+ {
+  "pk": 35, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_layout", 
+   "name": "Can change layout", 
+   "content_type": 12
+  }
+ }, 
+ {
+  "pk": 36, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_layout", 
+   "name": "Can delete layout", 
+   "content_type": 12
+  }
+ }, 
+ {
+  "pk": 31, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_layoutitem", 
+   "name": "Can add layout item", 
+   "content_type": 11
+  }
+ }, 
+ {
+  "pk": 32, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_layoutitem", 
+   "name": "Can change layout item", 
+   "content_type": 11
+  }
+ }, 
+ {
+  "pk": 33, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_layoutitem", 
+   "name": "Can delete layout item", 
+   "content_type": 11
+  }
+ }, 
+ {
+  "pk": 133, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_job", 
+   "name": "Can add job", 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 134, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_job", 
+   "name": "Can change job", 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 135, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_job", 
+   "name": "Can delete job", 
+   "content_type": 45
+  }
+ }, 
+ {
+  "pk": 130, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_jobtranslation", 
+   "name": "Can add job translation", 
+   "content_type": 44
+  }
+ }, 
+ {
+  "pk": 131, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_jobtranslation", 
+   "name": "Can change job translation", 
+   "content_type": 44
+  }
+ }, 
+ {
+  "pk": 132, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_jobtranslation", 
+   "name": "Can delete job translation", 
+   "content_type": 44
+  }
+ }, 
+ {
+  "pk": 88, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_category", 
+   "name": "Can add Category", 
+   "content_type": 30
+  }
+ }, 
+ {
+  "pk": 89, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_category", 
+   "name": "Can change Category", 
+   "content_type": 30
+  }
+ }, 
+ {
+  "pk": 90, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_category", 
+   "name": "Can delete Category", 
+   "content_type": 30
+  }
+ }, 
+ {
+  "pk": 100, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_friend", 
+   "name": "Can add friend", 
+   "content_type": 34
+  }
+ }, 
+ {
+  "pk": 101, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_friend", 
+   "name": "Can change friend", 
+   "content_type": 34
+  }
+ }, 
+ {
+  "pk": 102, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_friend", 
+   "name": "Can delete friend", 
+   "content_type": 34
+  }
+ }, 
+ {
+  "pk": 97, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_relatedlink", 
+   "name": "Can add related link", 
+   "content_type": 33
+  }
+ }, 
+ {
+  "pk": 98, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_relatedlink", 
+   "name": "Can change related link", 
+   "content_type": 33
+  }
+ }, 
+ {
+  "pk": 99, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_relatedlink", 
+   "name": "Can delete related link", 
+   "content_type": 33
+  }
+ }, 
+ {
+  "pk": 94, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_story", 
+   "name": "Can add Story", 
+   "content_type": 32
+  }
+ }, 
+ {
+  "pk": 95, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_story", 
+   "name": "Can change Story", 
+   "content_type": 32
+  }
+ }, 
+ {
+  "pk": 96, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_story", 
+   "name": "Can delete Story", 
+   "content_type": 32
+  }
+ }, 
+ {
+  "pk": 91, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_storytranslation", 
+   "name": "Can add story translation", 
+   "content_type": 31
+  }
+ }, 
+ {
+  "pk": 92, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_storytranslation", 
+   "name": "Can change story translation", 
+   "content_type": 31
+  }
+ }, 
+ {
+  "pk": 93, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_storytranslation", 
+   "name": "Can delete story translation", 
+   "content_type": 31
+  }
+ }, 
+ {
+  "pk": 52, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_department", 
+   "name": "Can add department", 
+   "content_type": 18
+  }
+ }, 
+ {
+  "pk": 53, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_department", 
+   "name": "Can change department", 
+   "content_type": 18
+  }
+ }, 
+ {
+  "pk": 54, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_department", 
+   "name": "Can delete department", 
+   "content_type": 18
+  }
+ }, 
+ {
+  "pk": 55, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_person", 
+   "name": "Can add person", 
+   "content_type": 19
+  }
+ }, 
+ {
+  "pk": 56, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_person", 
+   "name": "Can change person", 
+   "content_type": 19
+  }
+ }, 
+ {
+  "pk": 57, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_person", 
+   "name": "Can delete person", 
+   "content_type": 19
+  }
+ }, 
+ {
+  "pk": 136, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_persontranslation", 
+   "name": "Can add person translation", 
+   "content_type": 46
+  }
+ }, 
+ {
+  "pk": 137, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_persontranslation", 
+   "name": "Can change person translation", 
+   "content_type": 46
+  }
+ }, 
+ {
+  "pk": 138, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_persontranslation", 
+   "name": "Can delete person translation", 
+   "content_type": 46
+  }
+ }, 
+ {
+  "pk": 16, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_session", 
+   "name": "Can add session", 
+   "content_type": 6
+  }
+ }, 
+ {
+  "pk": 17, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_session", 
+   "name": "Can change session", 
+   "content_type": 6
+  }
+ }, 
+ {
+  "pk": 18, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_session", 
+   "name": "Can delete session", 
+   "content_type": 6
+  }
+ }, 
+ {
+  "pk": 19, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_site", 
+   "name": "Can add site", 
+   "content_type": 7
+  }
+ }, 
+ {
+  "pk": 20, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_site", 
+   "name": "Can change site", 
+   "content_type": 7
+  }
+ }, 
+ {
+  "pk": 21, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_site", 
+   "name": "Can delete site", 
+   "content_type": 7
+  }
+ }, 
+ {
+  "pk": 121, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_analytics", 
+   "name": "Can add Analytics", 
+   "content_type": 41
+  }
+ }, 
+ {
+  "pk": 122, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_analytics", 
+   "name": "Can change Analytics", 
+   "content_type": 41
+  }
+ }, 
+ {
+  "pk": 123, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_analytics", 
+   "name": "Can delete Analytics", 
+   "content_type": 41
+  }
+ }, 
+ {
+  "pk": 103, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_application", 
+   "name": "Can add application", 
+   "content_type": 35
+  }
+ }, 
+ {
+  "pk": 104, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_application", 
+   "name": "Can change application", 
+   "content_type": 35
+  }
+ }, 
+ {
+  "pk": 105, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_application", 
+   "name": "Can delete application", 
+   "content_type": 35
+  }
+ }, 
+ {
+  "pk": 109, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_posterousaccount", 
+   "name": "Can add posterous account", 
+   "content_type": 37
+  }
+ }, 
+ {
+  "pk": 110, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_posterousaccount", 
+   "name": "Can change posterous account", 
+   "content_type": 37
+  }
+ }, 
+ {
+  "pk": 111, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_posterousaccount", 
+   "name": "Can delete posterous account", 
+   "content_type": 37
+  }
+ }, 
+ {
+  "pk": 112, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_posterouspost", 
+   "name": "Can add posterous post", 
+   "content_type": 38
+  }
+ }, 
+ {
+  "pk": 113, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_posterouspost", 
+   "name": "Can change posterous post", 
+   "content_type": 38
+  }
+ }, 
+ {
+  "pk": 114, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_posterouspost", 
+   "name": "Can delete posterous post", 
+   "content_type": 38
+  }
+ }, 
+ {
+  "pk": 124, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_promobox", 
+   "name": "Can add promo box", 
+   "content_type": 42
+  }
+ }, 
+ {
+  "pk": 125, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_promobox", 
+   "name": "Can change promo box", 
+   "content_type": 42
+  }
+ }, 
+ {
+  "pk": 126, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_promobox", 
+   "name": "Can delete promo box", 
+   "content_type": 42
+  }
+ }, 
+ {
+  "pk": 106, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_share", 
+   "name": "Can add share", 
+   "content_type": 36
+  }
+ }, 
+ {
+  "pk": 107, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_share", 
+   "name": "Can change share", 
+   "content_type": 36
+  }
+ }, 
+ {
+  "pk": 108, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_share", 
+   "name": "Can delete share", 
+   "content_type": 36
+  }
+ }, 
+ {
+  "pk": 115, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_twitteraccount", 
+   "name": "Can add twitter account", 
+   "content_type": 39
+  }
+ }, 
+ {
+  "pk": 116, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_twitteraccount", 
+   "name": "Can change twitter account", 
+   "content_type": 39
+  }
+ }, 
+ {
+  "pk": 117, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_twitteraccount", 
+   "name": "Can delete twitter account", 
+   "content_type": 39
+  }
+ }, 
+ {
+  "pk": 118, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_twittertweet", 
+   "name": "Can add twitter tweet", 
+   "content_type": 40
+  }
+ }, 
+ {
+  "pk": 119, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_twittertweet", 
+   "name": "Can change twitter tweet", 
+   "content_type": 40
+  }
+ }, 
+ {
+  "pk": 120, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_twittertweet", 
+   "name": "Can delete twitter tweet", 
+   "content_type": 40
+  }
+ }, 
+ {
+  "pk": 43, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_award", 
+   "name": "Can add award", 
+   "content_type": 15
+  }
+ }, 
+ {
+  "pk": 44, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_award", 
+   "name": "Can change award", 
+   "content_type": 15
+  }
+ }, 
+ {
+  "pk": 45, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_award", 
+   "name": "Can delete award", 
+   "content_type": 15
+  }
+ }, 
+ {
+  "pk": 40, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_casestudy", 
+   "name": "Can add Case Study", 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 41, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_casestudy", 
+   "name": "Can change Case Study", 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 42, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_casestudy", 
+   "name": "Can delete Case Study", 
+   "content_type": 14
+  }
+ }, 
+ {
+  "pk": 37, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "add_casestudytranslation", 
+   "name": "Can add case study translation", 
+   "content_type": 13
+  }
+ }, 
+ {
+  "pk": 38, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "change_casestudytranslation", 
+   "name": "Can change case study translation", 
+   "content_type": 13
+  }
+ }, 
+ {
+  "pk": 39, 
+  "model": "auth.permission", 
+  "fields": {
+   "codename": "delete_casestudytranslation", 
+   "name": "Can delete case study translation", 
+   "content_type": 13
+  }
+ }, 
+ {
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+   "username": "admin", 
+   "first_name": "", 
+   "last_name": "", 
+   "is_active": true, 
+   "is_superuser": true, 
+   "is_staff": true, 
+   "last_login": "2011-06-30 17:12:55", 
+   "groups": [], 
+   "user_permissions": [], 
+   "password": "sha1$77a38$680d2e4092c616a4b4ed7bbf9b1a0587bec76421", 
+   "email": "arthurnn@gmail.com", 
+   "date_joined": "2011-06-27 21:26:37"
+  }
+ }
+]

@@ -1,0 +1,152 @@
+{% load i18n multilingual_tags %}
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{% trans 'en' %}{% endblock html_lang %}">
+	<head>
+		<meta charset="utf-8">
+		<title>{% block page_title %}{% trans 'Home' %}{% endblock page_title %}: {% trans 'glue Isobar: A Modern Communications Agency' %}</title>
+
+		<meta name="keywords" content="{% block meta_keywords %}{% trans 'Interactive marketing, Interactive advertising, Isobar, Aegis, Digital agency, Digital agencies, Digital marketing, Online marketing, Online advertising, Email marketing, Wireless marketing, Interactive Television, SMS Marketing, Mobile marketing, Direct Marketing' %}{% endblock meta_keywords %}">
+		<meta name="description" content="{% block meta_description %}{% trans 'Isobar is an advertising agency specialising in digital creative work. Our philosophy is simple: Stick great creative teams who really understand brands with the most talented designers and developers around and you will create unique and hard working advertising.' %}{% endblock meta_description %}">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta property="og:title" content="{% block meta_og_title %}{% trans 'Isobar: A Modern Communications Agency' %}{% endblock meta_og_title %}" /> 
+		<meta property="og:description" content="{% block meta_og_description %}{% trans 'Isobar is an advertising agency specialising in digital creative work.' %}{% endblock meta_og_description %}" /> 
+		<meta property="og:image" content="http://{{ request.META.HTTP_HOST }}{{ settings.MEDIA_URL }}img/facebook/{% if settings.LOCAL_LOGO %}{{ settings.LOCAL_LOGO }}{% else %}{% trans 'default.jpg' %}{% endif %}" />
+	
+		<link rel="shortcut icon" type="image/x-icon" href="{{ settings.MEDIA_URL }}favicon.ico">
+	
+		<link rel="apple-touch-icon-precomposed" href="{{ settings.MEDIA_URL }}ios-icon.png"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		{% if request.LANGUAGE_CODE == 'jp' %}
+			<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/default-jp.css">
+		{% endif %}
+				
+		{% if request.LANGUAGE_CODE == 'cn' or request.LANGUAGE_CODE == 'ko' %}
+			<!--only for chinese site-->
+			<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/{% trans 'additional.css' %}">
+			<!--all ch or ko site-->
+			<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/default-mbyte.css">
+		{% else %}
+			<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/default.css">
+		{% endif %}	
+	
+		<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/dropbox.css">
+		{% if settings.ISOBAR_SITE %}
+			<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/isobar.css">
+		{% endif %}
+		
+		<link media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css" href="{{ settings.MEDIA_URL }}css/iphone.css"/>
+  
+        {% if settings.LOCAL_CSS %}
+       		<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}{{settings.LOCAL_CSS}}">
+        {% endif %}
+  
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			/* If Google-hosted jQuery failed, fall back to a local copy. */
+			window.jQuery || document.write('<script src="{{ settings.MEDIA_URL }}js/jquery-1.7.2.min.js"><\/script>');
+		</script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!--[if IE 8]>
+			<link rel="stylesheet" type="text/css" href="{{ settings.MEDIA_URL }}css/ie8.css">
+			<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+		<!--[if IE 7]>
+			<link rel="stylesheet" type="text/css" href="{{ settings.MEDIA_URL }}css/ie7.css">
+		<![endif]-->
+
+
+		<!--[if lte IE 6]>
+			<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/jquery.pngFix.js"></script>
+			<link rel="stylesheet" type="text/css" href="{{ settings.MEDIA_URL }}css/ie6.css">
+		<![endif]-->
+
+		<script type="text/javascript">
+			var MEDIA_URL = '{{ settings.MEDIA_URL }}';
+		</script>
+		
+		<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/plugins.js"></script>
+		<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/global.js"></script>
+		<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/ie.js"></script>
+		{% block additional_headers %}{% endblock additional_headers %}
+		
+		{% analytics 'Top' %}
+	</head>
+	
+	<body class="no-js">
+		{% analytics 'Middle' %}
+		{% if settings.HIDE_NETWORK_BAR != 'True' %}
+			<section id="network">
+				<div class="clearfix isobar-network container trigger-container">
+					<a href="http://www.isobar.com/" {% if settings.CONTACT_FLYOUT %}rel="/{{ request.LANGUAGE_CODE }}/{{ settings.CONTACT_FLYOUT }}/"{% else %}rel="/{{ request.LANGUAGE_CODE }}/isobar-network/"{% endif %} class="db ajax-trigger isobar-bar">
+						<div class="fr clearfix">
+							<span class="fl">{% trans 'More about' %}</span><span class="brandname-sml db fl rollover">{% trans 'Isobar' %}</span>
+							<div class="icon-arrowhead fl rollover"></div>
+						</div>
+					</a>
+					<div class="clearfix panel isobar-map-container"></div>
+				</div>
+			</section>
+		{% endif %}
+	
+		<header class="{% if settings.ISOBAR_SITE %}wrap-brand{% endif %}">
+			<div class="site-header clearfix container">
+					
+				{% if settings.LANGUAGES|length > 1 %}
+					<dl class="dropdown clearfix">
+					    <dt><a href="#"><span>{{ request.LANGUAGE_CODE|language_name }}</span></a></dt>
+					    <dd>
+					        <ul class="drophover">
+							{% for lang in settings.LANGUAGES %}
+							<li><a href="/{{ lang.0 }}/" style="color: white;">{{ lang.1 }}</a></li>
+							{% endfor %}
+					        </ul>
+					    </dd>
+					</dl>
+					<script>
+						$(".dropdown dt a").click(function() {
+						    $(".dropdown dd ul").toggle();
+						});
+						$(".dropdown dd ul li a").click(function() {
+						    var text = $(this).html();
+						    $(".dropdown dt a span").html(text);
+						    $(".dropdown dd ul").hide();
+						}); 
+					</script>
+				{% endif %}		
+						
+				<h1 class="site-logo clearfix">
+					<a href="/{{ request.LANGUAGE_CODE }}/">
+					{% if settings.ISOBAR_SITE %}
+						<img with="100" src="{{ settings.MEDIA_URL }}img/logo/{{ settings.SITE }}.png" alt="{% trans 'glue Isobar' %}" class="isobar_logo logo">
+					{% else %}
+                        <img src="{{ settings.MEDIA_URL }}img/logo/{{ settings.SITE }}.gif" alt="{% trans 'glue Isobar' %}" class="logo">
+					{% endif %}
+					</a>
+				</h1>
+
+				{% block primary_nav %}
+					{% primary_nav %}
+				{% endblock primary_nav %}
+			</div>
+			
+		</header>
+				
+		{% block content %}{% endblock content %}
+
+		{% footer %}
+		
+		{% if settings.LOCAL_JS %}
+		<script type="text/javascript" src="{{ settings.MEDIA_URL }}{{settings.LOCAL_JS}}"></script>
+        {% endif %}
+		
+		{% analytics 'Bottom' %}
+	</body>
+</html>

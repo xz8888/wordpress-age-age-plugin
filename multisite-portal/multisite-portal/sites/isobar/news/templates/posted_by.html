@@ -1,0 +1,15 @@
+{% load i18n %}
+{% if story.created_by %}
+	<li class="clearfix"><!--Author-->
+		<section>
+			<div class="fl">
+				<p>{% trans 'Author:' %}</p>
+				{% if story.created_by.website %}
+					<h1 class="serif sub-title"><a href="{{ story.created_by.website }}">{{ story.created_by }}</a></h1>
+				{% else %}
+					<h1 class="serif sub-title">{{ story.created_by }}</h1>
+				{% endif %}
+			</div>
+		</section>
+	</li>
+{% endif %}

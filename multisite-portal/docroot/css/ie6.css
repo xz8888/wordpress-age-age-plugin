@@ -1,0 +1,401 @@
+input,button,textarea,select{font-size:100%;}
+
+* html .wrap-content .main-content-pad {
+/*	padding: 40px 0;*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+* html .site-footer a:hover {
+	color: #fff;
+}
+
+/* rule fix */
+
+* html .brandname-sml,
+* html .pagination .prev,
+* html .pagination .next,
+* html .single-prev,
+* html .single-next,
+* html .icon-arrowhead,
+* html .icon-close,
+* html .rule,
+* html .icon-arrowright,
+* html .icon-show-more {
+	font-size: 0 !important;
+}
+
+
+/* Link fixes */
+
+* html .media-box a:hover {
+	text-decoration: none;
+}
+
+* html ul.list-center-links li {
+	display: inline-block;
+	margin: 0 auto;
+	position: static;
+}
+
+* html ul.list-center-links a {
+	display: block;
+	float: left;
+}
+
+* html .isobar-network summary .icon-arrowheaddown {
+	top: 2px;
+}
+
+* html .sub-nav .icon-arrowhead {
+	float: left;
+	margin-top: 5px;
+}
+
+* html .sub-nav {
+	height: 34px;
+}
+
+/* ensure any list flow's that appear within containers get enough space for 2 columns */
+/* pull the container more to the right to cater for the extra width and ensure it lines up */
+.container .list-flow {
+	width: 740px;
+	margin-right: -30px !important;
+}
+
+
+/* anything that needs double margin float fix */
+ul.list-awards {
+	display: inline;
+}
+
+* html ul.list-flow li,
+* html ul.list-social-links li,
+* html ul.list-job-links li,
+* html ul.list-awards li {
+	display: inline;
+}
+
+
+* html ul.list-external-links li,
+* html ul.list-address-links li,
+* html ul.list-city li {
+	display: block;
+	float: none;
+}
+
+/* specific pages */
+
+
+* html #map {
+	width:340px;
+	border-width: 9px;
+}
+
+* html #map.isobar-map {
+	width:auto;
+}
+
+* html .pagination .carousel-link {
+	margin-right: 13px !important;
+}
+
+
+* html .pagination .carousel-link-container a.selected {
+	background-position: 11px 0;
+}
+
+* html .news-article .span160-to-span300 {
+	margin-left: 10px;
+	width: 120px;
+}
+
+* html .jobs .span2 .box-feature {
+	position: static;
+}
+
+* html .year .month {
+	width: 310px;
+}
+
+* html .news-archive ul.list-flow {
+	position: relative;
+
+}
+
+.case-info p.serif {
+	font-size: 1.2em;
+}
+
+
+/* gif image replacement */
+
+* html a.ext-link {
+	background-image: url(/static/img/gif_replacements/icons/shared/icon-link.gif);
+}
+
+* html .sml-icon-marker {
+	background-image: url(/static/img/gif_replacements/icons/sml-marker.gif);
+}
+
+* html .sml-icon-contacts {
+	background-image: url(/static/img/icons/gif_replacements/sml-get-in-touch.gif);
+}
+
+* html .tl-orange-triangle {
+	background-image: url(/static/img/gif_replacements/bg/corner-tl-orange-triangle.gif);
+}
+
+* html .sml-media-box .media-box-rollover {
+	background-image: url(/static/img/gif_replacements/bg/sml-media.gif);
+}
+
+* html .br-orange-triangle {
+	background-image: url(/static/img/gif_replacements/bg/corner-br-orange-triangle.gif);
+}
+
+/* Share boxes */
+
+/** html .twitter-share-button { float: right;}*/
+.share-box {
+	width: 200px;
+}
+
+/* ajax-slide-content fix */
+
+* html #ajax-slide-content .main-content-pad {
+	padding-top: 0 !important;
+}
+
+/* left align issue */
+
+/** html .about .main-content-pad .container,
+* html .home .main-content-pad .container,
+* html .work .main-content-pad .container {
+	padding-left: 53px !important;
+}*/
+
+/*
+* html .news .main-content-pad,
+* html .wrap-content .people,
+* html .work .case-studies {
+	padding-left: 20px !important;
+}*/
+
+/** html .work #ajax-slide-content .container {
+	padding: 0 0 0 0;
+}*/
+
+/** html .work .main-content-pad article ul.list-flow {
+	margin-left: 20px !important;
+}*/
+
+
+
+/** html .work .main-content-pad article .case-header {
+	margin-left: 40px !important;
+}*/
+
+/** html .work .main-content-pad article .case-header {
+	width: 702px;
+}*/
+
+
+
+* html .work .case-study .force-clear {
+	position: relative;
+}
+
+
+	
+* html .people .main-content-pad .carousel-container {
+	margin-left: 20px !important;
+}
+
+
+
+
+/* icons */
+
+* html a.more-link {
+	position: relative;
+	padding: 8px 25px 8px 15px;
+}
+
+* html a.more-link .icon-arrowright {
+	line-height: 10px;
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+}
+
+* html a.back-link,
+* html a.back-link-news {
+	position: relative;
+	padding-right: 35px !important;
+}
+
+* html a.back-link-news {
+	margin-top:-80px !important;
+}
+
+* html a.back-link .icon-close,
+* html a.back-link-news .icon-close {
+	margin-top: 0;
+	position: absolute;
+	top: 10px;
+}
+
+* html .icon-show-more {
+	top: 0;
+}
+
+* html .icon-rss {
+	line-height: 10px;
+	margin-top: 2px;
+}
+
+/* wysiwyg */
+
+* html .wysiwyg ol {
+	padding: 0.6em 0 0.6em 2em;
+}
+
+/* isobar */
+
+* html li.item-wrap-country {
+	margin-left: 10px;
+}
+
+* html li.multi-agency {
+	display: inline-block;
+}
+
+* html ul.list-country li.wrap-single-agency {
+	display: inline-block;
+}
+
+/* links */
+
+* html a.show-more-link {
+	width: 97%;
+}
+
+/** html .wrap-show-more {
+	padding-bottom: 20px;
+}*/
+
+/* pagination */
+
+* html .pagination {
+		width: 740px;
+}
+
+* html .single-prev,
+* html .single-person .single-prev,
+* html .people .single-prev {
+		 margin-left: -10px;
+	 }
+
+* html .people .single-next {
+		margin-right: -10px !important;
+	}
+
+.social-feed-container {
+	margin-top: 20px;
+}
+
+
+ul.list-news-articles .excerpt {
+	min-height: 0;
+	height: auto;
+	letter-spacing: 5px !important;
+}
+	
+.span1-to-span460 .excerpt {
+	letter-spacing: 5px !important;
+}
+
+/* home */
+span.int-link{
+	letter-spacing: 2px;
+}
+
+.box-title, .wrap-int-link .int-link, div .box-text strong, .dropdown dt a span { 
+	letter-spacing: 3px;
+}
+
+/* about */
+.span1-to-span460 .wysiwyg{
+	letter-spacing:4px;
+}
+
+/* work */
+#ajax-slide-content{
+	letter-spacing:4px;
+}
+
+ul.list-center-links a.ext-link{
+	width: 300px;
+}
+
+/* people: box resizing */
+.lrg-media-box .info, .person .box-feature, 
+.media-box .media-box-rollover .subtitle, 
+.person .title-dept .role, .media-box .info .subtitle {
+	letter-spacing:4px;
+}
+
+
+/* join */
+.enableBullet ol li {
+	letter-spacing:4px;
+	display:list-item;
+	list-style: decimal outside none;
+	margin-left: 40px;
+}
+
+.enableBullet ol {
+	list-style-position:inside;
+}
+
+.enableBullet p strong, .box-feature-footer {
+	letter-spacing:4px;
+}
+
+/* contact */
+dl.contact-info .sub-title{
+	letter-spacing:4px;
+}
+
+.icon-marker p.serif{
+	width: 220px;
+}
+
+a.ext-link{
+	letter-spacing:3px;
+}
+
+.box-title-underlined{
+	letter-spacing:3px;
+}
+
+.clearfix list-external-links, 
+#get-in-touch .box-title-underlined, 
+ul .list-center-links li a.ext-link, 
+.icon-contacts p{
+	letter-spacing:4px;
+}
+
+div.icon-contacts p{
+	letter-spacing:3px;
+}
+
+/* news */
+.news-body {
+	letter-spacing:4px;
+}
+
+a.more-link {
+	letter-spacing: 2px;
+}

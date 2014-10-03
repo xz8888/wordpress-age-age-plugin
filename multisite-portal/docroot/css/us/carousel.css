@@ -1,0 +1,368 @@
+div#carousel-outer {
+    padding: 30px 40px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px !important;
+}
+.slides {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.slide-panel {
+    position: absolute;
+    margin-left: -940px;
+    width: 100%;
+    height: 388px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 550px auto;
+    -webkit-transition: margin 500ms ease-in-out;
+    -moz-transition: margin 500ms ease-in-out;
+    -ms-transition: margin 500ms ease-in-out;
+    -o-transition: margin 500ms ease-in-out;
+    transition: margin 500ms ease-in-out;
+}
+.slide-panel.next {
+    margin-left: 940px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.slide-panel.active {
+    display: block;
+    margin-left: 0;
+    -webkit-transition: margin 500ms ease-in-out;
+    -moz-transition: margin 500ms ease-in-out;
+    -ms-transition: margin 500ms ease-in-out;
+    -o-transition: margin 500ms ease-in-out;
+    transition: margin 500ms ease-in-out;
+}
+.slide-panel .title {
+  font-family: Calibri, Verdana, Arial, sans-serif;
+  font-weight: bold;
+  color: #b0b1b6;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+}
+.slide-panel .panel-summary {
+  font-family: Georgia;
+  color: #2B2B2B;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 7px;
+  line-height: 146%;
+}
+.slide-panel .call-to-action {
+    width:  160px;
+    margin: 0 auto;
+}
+.slide-panel .call-to-action .call-to-action-text {
+  font-family: Georgia;
+  color: #f74902;
+  font-size: 16px;
+  font-style: italic;
+  margin: 5px 0 0 8px;
+  display: block;
+  float: right;
+}
+.slide-panel .call-to-action .call-to-action-button img {
+    vertical-align: text-top;
+}
+.rule-290 {
+  background-color: #D9D9D9;
+  border: 0px;
+  display: block;
+  width: 290px;
+  margin-top: 8px;
+  height: 1px;
+}
+.span290 {
+  width: 290px;
+}
+.slide-left-column {
+  float: left;
+  text-align: center;
+}
+div#carousel {
+    width: 100%;
+    position: relative;
+
+}
+hr.clear {
+    visibility: hidden;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+#carousel .thumbs {
+    position: relative;
+}
+#carousel .thumbs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#carousel .thumbs li {
+  display: inline-block;
+  margin-right: 40px;
+  cursor: pointer;
+  width: 100px;
+  height: 76px;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  border-radius: 9px;
+  background-size: auto;
+}
+#carousel .thumbs li.active {
+  background-position: center -76px;
+}
+.IE7 #carousel .thumbs li {
+    float: left;
+}
+ #carousel .thumbs ul {
+   margin-top: 12px;
+}
+
+#carousel .thumbs {
+    background: transparent url(/static/img/homecarousel/carousel-thumb-separator-918x19.png) center top no-repeat;
+    padding-top: 4px;
+    width: 812px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.IE8 #carousel .thumbs {
+  width: 840px;
+}
+#carousel .thumbs li:first-child {
+
+}
+#carousel .thumbs li:last-child {
+    margin-right: 0;
+}
+#carousel .thumbs #carousel-indicator {
+    background: url(/static/img/homecarousel/carousel-indicator-3500.png) top center no-repeat;
+    height: 19px;
+    -webkit-transition: background 500ms ease-in-out;
+    -moz-transition: background 500ms ease-in-out;
+    -ms-transition: background 500ms ease-in-out;
+    -o-transition: background 500ms ease-in-out;
+    transition: background 500ms ease-in-out;
+}
+#carousel .thumbs #carousel-indicator.position0 {
+    background-position: -1696px top;
+}
+#carousel .thumbs #carousel-indicator.position1 {
+    background-position: -1556px top;
+}
+#carousel .thumbs #carousel-indicator.position2 {
+    background-position: -1416px top;
+}
+#carousel .thumbs #carousel-indicator.position3 {
+    background-position: -1272px top;
+}
+#carousel .thumbs #carousel-indicator.position4 {
+    background-position: -1131px top;
+}
+#carousel .thumbs #carousel-indicator.position5 {
+    background-position: -991px top;
+}
+#carousel video {
+	width: 100% !important;
+}
+#carousel .casestudy-video {
+  display: none;
+  width: 500px;
+  height: 388px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#carousel .video-js-box-inner {
+	max-width: 500px !important;
+	float: right;
+}
+
+.video-js-box img.vjs-poster {
+    height: 280px !important;
+    width: 500px !important;
+    margin-top: 42px !important;
+}
+
+#carousel .casestudy-video .hidden,
+#carousel .slide-panel.showVideo .casestudy-video .hidden {
+  display: none;
+}
+#carousel .slide-panel.showVideo {
+  background: none !important;
+}
+#carousel .slide-panel.showVideo .casestudy-video {
+  display: block;
+}
+#carousel .video-js-box-inner {
+  position: relative;
+  text-align: center;
+}
+#carousel .case-study-video {
+  margin: 42px 0 0;
+}
+#carousel .video-close {
+  right: 0px;
+  top: 12px;
+}
+#carousel-outer .slidefill.active.full {
+  padding-top: 40px;
+}
+#carousel-outer .slidefill-content {
+  width: 616px;
+  margin: 8% auto 0;
+}
+
+#carousel .play-video {
+  font-size: 12pt;
+  font-family: Georgia, serif;
+}
+ @media only screen and (min-width: 765px) and (max-width: 1005px) {
+    #container {
+        width: 700px;
+    }
+    #carousel-indicator {
+        display: none;
+    }
+    #carousel .thumbs {
+        background: none;
+        width: auto;
+    }
+    #carousel .thumbs ul {
+        margin-left: 0;
+    }
+    #carousel .thumbs li {
+        -webkit-transition: box-shadow 500ms ease-in-out;
+        -moz-transition: box-shadow 500ms ease-in-out;
+        -ms-transition: box-shadow 500ms ease-in-out;
+        -o-transition: box-shadow 500ms ease-in-out;
+        transition: box-shadow 500ms ease-in-out;
+        background-size: cover;
+        background-position: center 5px;
+        width: 85px;
+        height: 68px;
+        margin-right: 10px;
+    }
+    #carousel .thumbs li.active {
+      background-position: center -61px;
+    }
+    #carousel .slides {
+        height: 300px;
+    }
+    #carousel .slide-panel {
+        background-size: 320px auto;
+        height: 300px;
+    }
+    #carousel .slide-panel .slide-left-column {
+        margin-top: 0;
+    }
+    .slide-panel .panel-summary {
+      font-size: 13px;
+    }
+
+#carousel .video-js-box-inner {
+        max-width: 320px !important;
+        float: right;
+}
+
+.video-js-box img.vjs-poster {
+    height: 180px !important;
+    width: 320px !important;
+    margin-top: 42px !important;
+}
+
+ 
+ }
+ @media only screen and (max-width: 765px) {
+    #container {
+        width: 275px;
+    }
+    #carousel-indicator {
+        display: none;
+    }
+    #carousel .thumbs {
+        background: none;
+        width: auto;
+    }
+
+  #carousel .case-study-video {
+    margin: 26px 0 0;
+  }
+
+.video-js-box img.vjs-poster {
+    height: 124px !important;
+    width: 220px !important;
+    margin-top: 42px !important;
+}
+
+    div#carousel-outer {
+        padding: 20px 20px 0;
+    }
+    #carousel .thumbs li {
+        width: 26%;
+        height: 40px;
+        margin: 0 7% 0 0;
+        background-size: cover;
+        background-position: center -5px;
+
+    }
+    #carousel .thumbs li:nth-child(3n+0) {
+        margin-right: 0;
+    }
+    #carousel .thumbs li.active {
+      background-position: center -51px;
+    }
+
+    #carousel .slides {
+        min-height: 400px;
+    }
+    #carousel .slide-panel {
+        background-size: contain;
+        background-position: right top;
+        height: 300px;
+        max-width: 450px;
+    }
+    #carousel .slide-panel .slide-left-column {
+        margin-top: 69%;
+        float: none;
+        width: 100%;
+    }
+    #carousel .slide-panel .slide-left-column .rule-290 {
+        margin: 1px 0 5px;
+        width: 100%;
+    } 
+    #carousel .slide-panel .slide-left-column p.title {
+        margin: 0;
+        font-size: 14px;
+    }
+    #carousel .thumbs ul {
+        margin-left: 0;
+    }
+    .slide-panel {
+        margin-left: -800px;
+                  }
+    .slide-panel.next {
+        margin-left: 800px;
+    }
+    .slide-panel .panel-summary {
+        font-size: 12px;
+    }
+    .isobar-video-header span.rule, .slide-panel span.rule {
+      margin: 4px auto;
+    }
+    a.call-to-action-text {
+      background-size: 25px auto;
+    }
+
+ }

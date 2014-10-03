@@ -1,0 +1,58 @@
+{% load i18n truncatechars %}
+<li class="box">
+	<div class="fr mobile icon-arrowright"><a href="{{ item.get_absolute_url }}">{% trans 'Read More' %}</a></div>
+	<article class="clearfix news-article span1-to-span2">
+		<figure class="fl not-mobile">
+			<a href="{{ item.get_absolute_url }}" title="{{ item.title_label }}">
+				{% if item.image %}
+					<img class="news-image" src="{{ item.image|thumbnail:'340x255x1' }}" alt="{{ item.title_label }}">
+				{% else %}
+					<img class="news-image" src="{% place_holder_img %}700x525.gif" alt="{{ item.title_label }}">
+				{% endif %}
+			</a>
+		</figure>
+		<div class="fr span1">
+			<header class="clearfix">
+				<a href="{{ item.get_absolute_url }}"><h1 class="title fl">{{ item.title_label }}</h1></a>
+			</header>
+				<section><!--post meta-->
+					<ul class="clearfix list-story-meta">
+
+						{% block posted_by_small_item %}
+							{% posted_by_small_item item %}
+						{% endblock posted_by_small_item %}
+
+						<li>
+							{% if item.author %}
+								<span>{% trans 'on' %}&nbsp;</span>
+							{% else %}
+								<span>{% trans 'Posted on' %}&nbsp;</span>
+							{% endif %}
+							<time class="serif sub-title" datetime='{{ item.publish_date|date:"c" }}'>{{ item.publish_date|date:"jS F Y" }}</time>
+						</li>
+						
+						
+						{% if not settings.ISOBAR_SITE %}
+							{% if item.category %}
+								<li>
+									<span>in&nbsp;</span>
+									<a class="serif sub-title" href="{{item.category.get_absolute_url}}">{{ item.category.title_label }}</a>
+								</li>
+							{% endif %}
+						{% endif %}
+					</ul>
+				</section>
+			<div class="not-mobile excerpt">
+			{% if request.LANGUAGE_CODE == 'jp' or request.LANGUAGE_CODE == 'cn' or request.LANGUAGE_CODE == 'ko' %}
+				{{ item.body|striptags|safe|truncatechars:150  }}
+			{% else %}
+				{{ item.body|striptags|safe|truncatewords:30  }}
+			{% endif %}
+			
+			</div>
+			<footer class="clearfix not-mobile">
+				<a class="more-link fl" href="{{ item.get_absolute_url }}" title="{{ item.title_label }}">{% trans 'Read More' %}<span class="icon-arrowright rollover">&gt;</span></a><!--read more-->
+			</footer>
+		</div>
+	</article>
+</li>

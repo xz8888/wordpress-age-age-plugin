@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% trans 'Join' %}{% endblock page_title %}
+{% block primary_nav %}
+	{% primary_nav 'join' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	<section class="jobs wrap-content">
+		<div class="main-content-pad">
+			<div class="container">
+				<div class="span2">
+					<section class="box-feature tl"> <!--box-text section-->
+						<header class="title-container">
+							<h1 class="title sub-title">{% trans 'Hello!' %}</h1>
+						</header>
+						<p class="serif">
+							{% trans 'We&#x27;re always on the lookout for established and up and coming talent across account management, planning, production, design, development and creative.' %}
+							<a class="int-link" href="mailto:{% trans 'iwanttowork@glueisobar.com' %}">{% trans 'iwanttowork@glueisobar.com' %}</a>.
+						</p>
+						<span class="rule rule-60"></span>
+						<footer class="box-feature-footer">
+						  {% trans 'See our current vacancies below...' %}
+						</footer>
+					</section> <!--end box-text section-->
+				</div>
+				<ul class="list-job span2">
+					<li class="job">
+						<details open="open">
+							<summary class="clearfix"><h2 class="fl sub-title title">{{ job.title_label }}</h2></summary>
+							<div class="clearfix">
+								<section>
+									{{ job.body|safe }}
+									<footer class="job-footer">
+										<ul class="list-job-links clearfix">
+											<li><a class="int-link" href="mailto:{{ job.contact }}?subject={{ job.title_label }}">{% trans 'Apply to' %} {{ job.contact }}</a></li>
+										</ul>
+									</footer>
+								</section>
+							</div>
+						</details>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% load i18n %}
+{% if story.author %}
+	<li class="clearfix"><!--Author-->
+		<section class="vcard">
+			<figure class="photo fl not-mobile">
+				{% if author_size == 'small' %}
+					<img src="{{ story.author.image|thumbnail:'37x37x1' }}" width="37" height="37">
+				{% else %}
+					<img src="{{ story.author.image|thumbnail:'70x70x1' }}" width="70" height="70">
+				{% endif %}
+			</figure>
+			<div class="fl">
+				<p>{% trans 'Author:' %}</p>
+				<h1 class="fn url serif sub-title"><a class="sub-title" href="{{ story.author.get_absolute_url }}">{{ story.author.title }}</a>
+
+				{% if show_department == 'yes' %}
+					<span class="not-mobile">: </span></h1>
+					<span class="not-mobile serif sub-title">{{ story.author.department.title }}</span>
+				{% else %}
+					</h1>
+				{% endif %}
+			</div>
+		</section>
+	</li>
+{% endif %}

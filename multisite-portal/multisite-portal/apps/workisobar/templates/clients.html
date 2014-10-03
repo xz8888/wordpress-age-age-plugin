@@ -1,0 +1,34 @@
+{% if featuredclients or clientslist %}
+<div class="dogear dogear-top dogear-bottom clients">
+  <div class="top"></div>     
+  
+    
+    {% if featuredclients %}
+    <div class="featured_clients_container">  
+       {% for client in featuredclients %}
+            {% if client %}
+            <div class="featured_client" style="background-image: url({{ settings.MEDIA_URL }}{{client.logo}});" title="{{client.name}}"></div>
+            {% endif %}
+       {% endfor %}
+       <hr style="visibility: hidden; clear: both; margin: 0; padding: 0; height: 1px;" />
+    </div>
+    {% endif %}
+    
+    {% if clientslist %}
+	    <div class="seeMoreClients" style="width: 150px; margin: 0px auto; padding-bottom:20px; padding-top:1px; clear:both">
+	        <span class="rule rule-300" style="background-color: #ccc; margin-top: 30px;margin-left:-78px;margin-bottom: 25px;"></span>
+	        <a id="showMoreClients" alt="Show More" class="colored-link">See More Clients</a>
+	    </div>
+	    <div class="clients_container" style="display: none">
+	       {% for client in clientslist %}
+	           <div class="client">
+	               {{client.client}}
+	           </div>
+	       {% endfor %}  
+	       <hr style="visibility: hidden; clear: both; margin: 0; padding: 0; height: 1px;" />
+	    </div>
+    {% endif %}
+    
+  <div class="bottom"></div>
+</div>
+{% endif %}

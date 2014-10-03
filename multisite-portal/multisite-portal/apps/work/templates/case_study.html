@@ -1,0 +1,146 @@
+{% extends parent_template %}
+{% load i18n %}
+
+{% block page_title %}
+	{{ casestudy.title_label }}
+{% endblock page_title %}
+
+{% block additional_headers %}
+	<script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+	<meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_casestudy' %}{% endblock meta_keywords %}">
+	<meta name="description" content="{% block meta_description %}{% trans 'meta_description_casestudy' %}{% endblock meta_description %}">
+{% endblock additional_headers %}
+
+{% block primary_nav %}
+	{% primary_nav 'work' %}
+{% endblock primary_nav %}
+
+{% block content %}
+	{{ casestudy.video_url }}
+
+	{% if not ajax %}
+		<section class="wrap-content">
+	{% else %}
+		<span class="ajax-page-title-update hide">
+				{{ casestudy.title_label }}
+		</span>
+	{% endif %}
+
+		<div class="main-content-pad">
+			<article class="container clearfix case-study">
+				<a href="{% url works_view %}" class="back-link fr">{% trans 'Close' %}<span class="icon-close rollover">X</span></a>
+				<header class="case-header clearfix content-crossfade">
+					<div class="fl clearfix">
+						<h1 class="fl title sub-title">
+							{{ casestudy.title_label }}
+						</h1>
+						{% if casestudy.created_by %}
+							<h2 class="fl">
+								{% trans 'Featured work from' %}
+								{% if casestudy.created_by.website %}
+									<a href="{{ casestudy.created_by.website }}">{{ casestudy.created_by }}</a>,
+								{% else %}
+									{{ casestudy.created_by }},
+								{% endif %}
+
+								{{ casestudy.created_by.city }}, {{ casestudy.created_by.country.title }}
+							</h2>
+						{% endif %}
+					</div>
+					{% block share %}&nbsp;
+						{% share casestudy.title_label casestudy.get_absolute_url %}
+					{% endblock share %}
+					
+					
+					
+					
+				</header>
+				<ul class="list-flow mobile-clear clearfix force-clear">
+					<li class="container-pagination span2 fl">
+						
+						<figure class="video-js-box">
+							<div class="video-js-box-inner">
+								{% if casestudy.video_download_url %}
+								<video id="video-1" class="video-js" controls="controls" preload="auto" poster="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}">
+									<source src="{{ casestudy.video_download_url }}.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+									<source src="{{ casestudy.video_download_url }}.webm" type='video/webm; codecs="vp8, vorbis"'>
+									<source src="{{ casestudy.video_download_url }}.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+
+									<object id="flash-1" class="vjs-flash-fallback" width="620" height="348" type="application/x-shockwave-flash" data="{{ settings.MEDIA_URL }}flash/player.swf">
+										<param name="movie" value="{{ settings.MEDIA_URL }}flash/player.swf">
+										<param name="allowfullscreen" value="true">
+										<param name="wmode" value="transparent">
+										<param name="flashvars" value='is_stream=false&img={{ settings.MEDIA_URL }}{{ casestudy.video_image }}&video={{ casestudy.video_download_url }}.mp4'>
+										<a href="{{ casestudy.video_download_url }}.3gp"><img src="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}" alt="{{ casestudy.title_label }}"></a>
+									</object>
+								</video>
+								
+								{% else %}
+								<img class="video-js" width="620" height="348" style="width: 620px;height: 348px;" src="{{ settings.MEDIA_URL }}{{ casestudy.video_image }}" alt="{{ casestudy.title_label }}">
+								{% endif %}
+							</div>
+						</figure>
+						
+						{% if casestudy.share_url %}
+						<p>
+							<a href="{{ casestudy.share_url }}" class="ext-link icon-openshare" target="_blank">{% trans 'Share this video' %}</a>
+						</p>
+						{% endif %}
+					</li>
+
+					<li class="content-crossfade">
+						<div class="box fl span2-to-span1">
+							<section class="box-feature clearfix tl case-info">
+								<p class="serif">
+									{{ casestudy.body|removetags:"p"|safe }}
+								</p>
+								<span class="rule rule-60"></span>							
+								{% if casestudy.url %}
+								<footer>
+									<ul class="clearfix list-center-links"><li><a class="ext-link" href="{{ casestudy.url }}" target="_blank">{% trans 'View the work' %}</a></li></ul>
+								</footer>
+								{% endif %}
+							</section>
+						</div>
+					</li>
+					
+					{% if casestudy.award_case_study.all %}
+						<li class="content-crossfade this-css">
+							<section class="awards spanAll fl">
+								<div class="container-award-info">
+									<ul class="list-awards clearfix">
+										{% for award in casestudy.award_case_study.all %}
+											<li class="award">
+												<table border="0" cellspacing="0" cellpadding="0">
+													<tr><td class="emblem"><img src="{{ settings.MEDIA_URL }}{{ award.image }}" alt="{{ award.title }}"></td></tr>
+													<tr><td><h3 class="awardee">{{ award.date|date:"F jS Y"}}</h3></td></tr>
+													<tr><td><h3>
+													{% if award.description != None %}
+															{{award.description}}
+													{% else %}
+													   
+													{% endif%}
+													</h3></td></tr>
+												</table>
+											</li>
+										{% endfor %}
+									</ul>
+								</div>
+							</section>
+						</li>
+					{% else %}
+						<!-- This element serves to hold the content open in IE7 -->
+<!--						<section class="awards spanAll fl"></section>-->
+<!--						<li>&nbsp;</li>-->
+
+
+
+					{% endif %}
+				</ul>
+			</article>
+		</div>
+	{% if not ajax %}
+		</section>
+	{% endif %}
+{% endblock content %}

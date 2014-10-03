@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{{ title }}{% endblock page_title %}
+{% block additional_headers %}
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+    <meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_labsisobar' %}{% endblock meta_keywords %}">
+    <meta name="description" content="{% block meta_description %}{% trans 'meta_description_labsisobar' %}{% endblock meta_description %}">
+    
+                
+    <link href="{{ settings.MEDIA_URL }}css/us/local.css" rel="stylesheet">
+
+{% endblock additional_headers %}
+{% block primary_nav %}
+	{% primary_nav 'labs' %}
+{% endblock primary_nav %}
+
+{% block content %}
+
+<section class="labs wrap-content">
+    <div class="main-content-pad">
+        <div class="container clearfix">
+            {% if headline %}
+                <section class="serif headline">
+                    <span>{{ headline }}</span>
+                </section>
+            {% endif %}
+        
+            {% if casestudy %}
+            <section class="dogear dogear-top dogear-bottom isobar-video-header tl clearfix space"> <!--box-text section-->
+                <div class="top"></div>
+	            <ul class="list-flow mobile-clear clearfix force-clear">
+		            <li class="content-crossfade">
+		                <div class="isobar-video-text box fl span2-to-span1">
+                            <p class="title">{{ casestudy.title|safe }}</p>
+                            <span class="rule"></span>
+                            <div class="panel-summary">{{ casestudy.body|safe }}</div>
+                            {% if casestudy.video_download_url %}
+		                    <span class="rule rule-60"></span>
+		                    <a class="call-to-action-text sub-title play-video" href="#" alt="Watch the Video">Watch the Video</a>
+                            {% endif %}
+		                </div>
+		            </li>
+	                <li class="container-pagination isobar-span fr">
+                         {% include "common/templates/video.html" %}
+	                </li>
+	            </ul>
+            <div class="bottom"></div>
+	        </section> <!--end box-text section-->
+	        {% endif %}
+	        
+	        {% for partnership in partnerships %}
+            <section class="dogear dogear-top dogear-bottom isobar-video-header tl clearfix space secondary-module"> <!--box-text section-->
+            <div class="top"></div>
+                <ul class="list-flow mobile-clear clearfix force-clear">
+                    <li class="content-crossfade">
+                        <div class="box fl span2-to-span1">
+                            <p class="secondary-module-heading">{{ partnership.title|safe }}</p>
+                            <span class="rule heading-rule"></span>
+                            {{ partnership.description|safe }}
+		                    {% if partnership.url %}
+		                    <div class="center-align">
+			                    <span class="rule rule-60"></span>
+			                    <a class="call-to-action-text sub-title" href="{{ partnership.url }}" alt="Link to Project">View Details</a>
+		                    </div>
+		                    {% endif %}
+                        </div>
+                    </li>
+                    <li class="container-pagination isobar-span fl">
+                        {% if partnership.image %}
+                        <img src="{{ partnership.image.url }}" alt="{{ partnership.title }} picture" class="labs-entry">
+                        {% endif %}
+                    </li>
+                </ul>
+            <div class="bottom"></div>
+	        </section>
+	        {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

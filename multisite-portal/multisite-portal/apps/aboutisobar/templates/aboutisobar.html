@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}{% trans 'About' %}{% endblock page_title %}
+{% block additional_headers %}
+    <script>
+      /*  
+        -- This is kind of a cheap hack, but we're going to pre-load the position indicator 
+           for the PageCarousel subnav so that it doens't look like a gray square until it loads.
+      */
+      (function(window, document, undefined){
+      	var i = new Image;
+      	i.src = '/static/img/us/carousel/li-carousel-bg.png';
+      })(this, this.document);
+    </script>
+    <meta name="keywords" content="{% block meta_keywords %}{% trans 'meta_keywords_aboutisobar' %}{% endblock meta_keywords %}">
+    <meta name="description" content="{% block meta_description %}{% trans 'meta_description_aboutisobar' %}{% endblock meta_description %}">  
+  
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/video-js.css">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ settings.MEDIA_URL }}css/us/roundarch-pagecarousel.css"> 
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/us/roundarch-urls.js"></script>
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/video.js"></script>
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/us/roundarch-pagecarousel.js"></script>  
+    <script type="text/javascript" src="{{ settings.MEDIA_URL }}js/us/roundarch-about.js"></script>
+{% endblock additional_headers %}
+{% block primary_nav %}
+	{% primary_nav 'about' %}
+{% endblock primary_nav %}
+
+{% block content %}
+    <section class="about wrap-content">
+        <div class="main-content-pad">
+            <div class="container">
+            
+                {% if slogan %}
+				<section class="serif headline">
+				    <span>{{ slogan }}</span>
+				</section>
+				{% endif %}
+
+				{% if casestudy %}
+                <!--box-text section-->
+                <section class="dogear dogear-top dogear-bottom isobar-video-header space tl clearfix"> 
+                    <div class="top"></div>
+                    
+                    <ul class="list-flow mobile-clear clearfix force-clear">
+                    <li class="container-pagination isobar-span fl">
+                        {% include "common/templates/video.html" %}
+                    </li>
+
+                    <li class="content-crossfade">
+                        <div class="isobar-video-text box fl span2-to-span1">
+                    
+						    <p class="title">{{ casestudy.title|safe|upper }}</p>
+						    <span class="rule"></span>
+						    <div class="panel-summary">{{ casestudy.body|safe }}</div>
+                            {% if casestudy.video_download_url %}
+						    <span class="rule rule-60"></span>
+						    <a class="call-to-action-text sub-title play-video" href="{{ casestudy.url }}" alt="{% if casestudy.link_text %}{{ casestudy.link_text }}{% else %}Watch the Video{% endif %}">{% if casestudy.link_text %}{{ casestudy.link_text }}{% else %}Watch the Video{% endif %}</a>
+                            {% endif %}
+						</div>
+				    </li>
+				    </ul>
+				    
+				    <div class="bottom"></div>
+                </section> <!--end box-text section-->
+                {% endif %}
+                
+              <div class="pagecarousel-button-parent"> 
+              	<div class="dogear dogear-top aftershadow">
+              	 <div class="top"></div>
+              	 <div id="pagecarousel-thumb-buttons">
+                	 <ul>
+                	   <li class="pagecarousel-thumb active"><a href="{% url about_view %}" data-target="#profiles">Who We Are</a></li>
+                	   <li class="pagecarousel-thumb"><a href="{% url service_view %}" data-target="#services">Services</a></li>
+                	   <li class="pagecarousel-thumb"><a href="{% url partner_view %}" data-target="#partners">Partners</a></li>
+                	 </ul>
+              	 </div>
+              	</div>
+              </div>
+                    
+            <div id="about-page-carousel" class="pagecarousel-parent">
+              <div class="pagecarousel-panel {% if page == 'profiles' %}active{% endif %} zero-pad" id="profiles">
+                {% if page == 'profiles' %}
+                  {% include "aboutisobar/templates/profiles.html" %}
+                {% else %}
+                  <script>
+                  raURL.ajaxUrl('profiles', '#profiles', function() {
+                     ISOBAR.setProfileSummaries();
+                  });
+                  </script>
+                {% endif %}
+              </div>
+              <div class="pagecarousel-panel main-content-pad container zero-pad {% if page == 'services' %}active{% endif %}" id="services">
+                {% if page == 'services' %}
+                  {% include "aboutisobar/templates/services.html" %}
+                {% else %}
+                  <script>
+                  raURL.ajaxUrl('services', '#services', function() {
+                	  ISOBAR.sizeServiceContainers();
+                  });
+                  </script>
+                {% endif %}
+              </div>
+              <div class="pagecarousel-panel main-content-pad container zero-pad {% if page == 'partners' %}active{% endif %}" id="partners">
+                {% if page == 'partners' %}
+                  {% include "aboutisobar/templates/partners.html" %}
+                {% else %}
+                  <script>
+                  raURL.ajaxUrl('partners', '#partners', function() {
+                	  ISOBAR.sizePartnerContainers();
+                  });
+                  </script>
+                {% endif %}
+              </div>
+            </div>
+                
+            </div>
+        </div>
+    </section>
+{% endblock %}

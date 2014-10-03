@@ -1,0 +1,17 @@
+{% load i18n %}
+<span class="clear-320"></span>
+{% if settings.NAV_OVERRIDE %}
+    {% include settings.NAV_OVERRIDE %}
+{% else %}
+<nav>
+
+	<ul class="list-site-nav clearfix">
+		<li><a class="page-link{% if active == 'about' %} selected{% endif %}" href="{% url about_view %}">{% trans 'About' %}</a></li>
+		<li><a class="page-link{% if active == 'work' %} selected{% endif %}" href="{% url works_view %}">{% trans 'Work' %}</a></li>
+		<li><a class="page-link{% if active == 'people' %} selected{% endif %}" href="{% url people_view %}">{% trans 'People' %}</a></li>
+		{% if not settings.ISOBAR_SITE %}<li><a class="page-link{% if active == 'join' %} selected{% endif %}" href="{% url jobs_view %}">{% trans 'Join' %}</a></li>{% endif %}
+		<li><a class="page-link{% if active == 'news' %} selected{% endif %}" href="{% url news_view %}">{% trans 'News' %}</a></li>
+		<li><a class="page-link{% if active == 'contact' %} selected{% endif %}" href="{% url contact_view %}">{% trans 'Contact' %}</a></li>
+	</ul>
+</nav>
+{% endif %}

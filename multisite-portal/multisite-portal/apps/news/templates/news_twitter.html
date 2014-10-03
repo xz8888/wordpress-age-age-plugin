@@ -1,0 +1,26 @@
+{% load i18n %}
+<li class="span1 box">
+	<section id="tweet" class="box-feature"><!--box-text section-->
+			<div>
+				<h1 class="box-title title-container">{% trans 'Our Latest Tweet' %}</h1>
+				<span class="rule rule-220"></span>
+				<div class="icon-twitter-bird rollover"></div>
+			</div>
+			
+			<ul class="list-standard clearfix">
+			{% for tweet in tweets %}
+				<li>
+					<p class="serif sub-title">{{ tweet.text|urlize|safe }}</p>
+<!--					<time datetime='{{tweet.created|date:"c"}}'>{{ tweet.created }}</time>-->
+					<time datetime='{{ tweet.created|date:"c" }}'>{{ tweet.created|date:"jS M Y, h:i A" }}</time>
+					<span class="rule rule-30"></span>
+				</li>
+			{% endfor %}
+			</ul>
+			<footer class="wrap-int-link">
+				<a href="http://twitter.com/{{ tweets.0.screen_name }}">
+					<span class="int-link">{% trans 'follow us @' %}{{ tweets.0.screen_name }}</span>
+				</a>
+			</footer>
+	</section><!--end box-text section-->
+</li>

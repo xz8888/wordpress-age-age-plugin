@@ -1,0 +1,13 @@
+{% load i18n %}
+{% if item.created_by %}
+	<li>
+		<section>
+			<span>{% trans 'By' %}&nbsp;</span>
+			{% if item.created_by.website %}
+				<a href="{{ item.created_by.website }}" class="serif sub-title">{{ item.created_by }}</a>
+			{% else %}
+				<span class="serif sub-title">{{ item.created_by }}</span>
+			{% endif %}
+		</section>
+	</li>
+{% endif %}
